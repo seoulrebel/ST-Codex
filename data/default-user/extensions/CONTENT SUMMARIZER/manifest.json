@@ -1,0 +1,12 @@
+{
+  "display_name": "Context Summarizer",
+  "loading_order": 100,
+  "requires": [],
+  "optional": [],
+  "js": "summarizer.js",
+  "css": "",
+  "author": "Rob + GPT-4",
+  "version": "1.0.0",
+  "homePage": "https://github.com/your-repo/ContextSummarizer",
+  "auto_update": false
+}

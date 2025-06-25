@@ -1,0 +1,453 @@
+/* Right-side action buttons */
+/* .gg-button class might be deprecated if .gg-action-button is used exclusively */
+/* Keep for potential backward compatibility or other uses */
+.gg-button {
+    font-size: 1.1em; /* Adjust size as needed */
+    padding: 0 5px;   /* Add some horizontal padding */
+    cursor: pointer;
+    display: flex;    /* Align icon vertically */
+    align-items: center;
+    height: 100%;     /* Match height of parent */
+    margin: 0 2px;  /* Add small margin between buttons */
+}
+
+/* General Styles for Guided Generations Buttons - Keep if needed elsewhere */
+.gg-icon-spacing {
+    margin-right: 5px; /* Add some space between icon and text */
+}
+
+/* Style for the container holding the Guided Generations action buttons (now below input area) */
+.gg-action-buttons-container {
+    display: flex; /* Use flex layout */
+    gap: 5px; /* Space between buttons */
+    padding: 5px; /* Add some padding */
+    width: 100%;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Container for menu buttons (left side) */
+.gg-menu-buttons-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    order: 0; /* Place before QR container */
+    flex-shrink: 0; /* Prevent menu buttons from shrinking */
+    flex-grow: 0; /* Prevent menu buttons from growing */
+}
+
+/* Container for regular action buttons (right side) */
+.gg-regular-buttons-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    order: 2; /* Place after QR container */
+    flex-shrink: 0; /* Prevent regular buttons from shrinking */
+    flex-grow: 0; /* Prevent regular buttons from growing */
+}
+
+/* Container for the QR bar integration */
+#gg-qr-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    order: 1; /* Place after menu buttons */
+    flex-grow: 1; /* Make the QR container fill available space */
+    justify-content: flex-start; /* Align QR items to the left */
+}
+
+/* QR bar styling adjustments */
+#qr--bar {
+    margin-top: 0 !important;
+}
+
+/* Common style for Action Buttons and Menu Button */
+.gg-action-button,
+.gg-menu-button {
+    padding: 5px 8px; /* Adjust padding */
+    border: 1px solid var(--SmartThemeBodyColor); /* Use theme color for border */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger icon */
+    display: inline-flex; /* Ensure they align nicely as flex items */
+    align-items: center; /* Center icon vertically */
+    transition: background-color 0.2s, color 0.2s;
+    background-color: var(--SmartThemeBg); /* Use theme background */
+    color: var(--SmartThemeBodyColor); /* Use theme text color */
+}
+
+/* Common hover style */
+.gg-action-button:hover,
+.gg-menu-button:hover {
+    background-color: var(--SmartThemeHover); /* Use theme hover color */
+    color: var(--SmartThemeUi); /* Adjust text color on hover if needed */
+}
+
+/* Specific styles for the Menu Button */
+.gg-menu-button {
+    position: relative; /* Needed for dropdown menu positioning */
+}
+
+/* Specific style for the Persistent Guides Menu Button */
+#pg_menu_button {
+    margin-left: 5px; /* Add some spacing from the GG Tools button */
+}
+
+/* Style for the Persistent Guides counter span */
+.pg-guide-counter {
+    font-size: 0.9em; /* Slightly smaller, adjust as needed */
+    color: inherit;   /* Inherit text color from the button */
+    margin-left: 5px; /* Add 5px space to the left of the counter */
+}
+
+/* Style for the GG tools dropdown/popup menu */
+.gg-tools-menu {
+    position: absolute;
+    z-index: 1050; /* Ensure it's above other elements */
+    display: none; /* Hidden by default */
+    background-color: var(--SmartThemeBlurTintColor); /* Use theme menu background or fallback */
+    -webkit-backdrop-filter: blur(var(--SmartThemeBlurStrength));
+    backdrop-filter: blur(var(--SmartThemeBlurStrength));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex-flow: column;
+    border-radius: 10px;
+    padding: 2px;
+    border: 1px solid var(--SmartThemeBorderColor, var(--SmartThemeBodyColor));
+    min-width: 150px; /* Minimum width */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+
+}
+
+.gg-tools-menu.shown {
+    display: block; /* Show when .shown class is added */
+}
+
+/* Style items within the menu */
+.gg-tools-menu > .interactable {
+    display: block; /* Ensure each item takes full width */
+    padding: 5px 10px; /* Add some padding (adjust as needed) */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--SmartThemeBodyColor); /* Ensure text color matches theme */
+}
+
+/* Optional: Add hover effect if not provided by .interactable */
+.gg-tools-menu > .interactable:hover {
+    background-color: var(--SmartThemeHover); /* Match theme hover */
+    color: var(--SmartThemeUi); /* Match theme hover text */
+}
+
+/* Style for items within the tools menu */
+.gg-tools-menu .list-group-item {
+    background-color: transparent; /* Inherit from menu background */
+    color: var(--SmartThemeBodyColor);
+    border: none; /* Remove default list-group borders */
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    display: block; /* Ensure full width clickable */
+    text-decoration: none; /* Remove underline from links */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.gg-tools-menu .list-group-item:hover {
+    background-color: var(--SmartThemeHover);
+    color: var(--SmartThemeUi, var(--SmartThemeBodyColor));
+}
+
+/* Persistent Guides Styles */
+#persistent-guides-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: var(--SmartThemeBg);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pg-separator {
+    margin: 5px 0;
+    border: 0;
+    height: 1px;
+    background-color: var(--SmartThemeBorderColor);
+}
+
+.persistent-guides-header {
+    font-weight: 500;
+    position: relative;
+    border-top: 1px solid var(--SmartThemeBorderColor, rgba(128, 128, 128, 0.2));
+    margin-top: 5px;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--SmartThemeBodyColor);
+}
+
+.persistent-guides-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.persistent-guide-item {
+    padding: 3px 0;
+    text-decoration: none;
+    color: var(--SmartThemeBodyColor);
+    display: flex;
+    align-items: center;
+}
+
+.persistent-guide-item:hover,
+.persistent-guides-header:hover {
+    color: var(--SmartThemeActColor);
+}
+
+.persistent-guide-item i {
+    margin-right: 8px;
+}
+
+.persistent-guides-content {
+    padding-left: 15px;
+}
+
+.persistent-guides-content > .interactable {
+    font-size: 0.95em;
+    padding: 4px 8px;
+}
+
+/* Persistent Guides Counter Badge */
+#pg_counter_badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translate(40%, -40%);
+    background-color: var(--accent-color, #E53E3E); /* Fallback red if accent-color is not defined */
+    color: white;
+    border-radius: 20px; /* Pill shape */
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    z-index: 1;
+    display: none; /* Hidden by default, shown via JS if count > 0 */
+}
+
+/* Settings panel specific styles */
+.gg-setting-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.gg-setting-inline label {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.gg-setting-inline input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* Ensure preset input and buttons wrap on narrow widths */
+.GuidedGenerations-Extension-settingslist .setting_item > div {
+    flex-wrap: wrap;
+}
+
+.setting_item {
+    padding-left: 10px; /* Indent items slightly */
+    padding-right: 10px;
+}
+
+.guide-prompt-overrides-section .setting_item {
+    margin-bottom: 15px;
+}
+
+.setting_item label {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* Edit Intros Popup Styles */
+.gg-popup {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--SmartThemeShadowColor);
+    /* Revert flexbox changes */
+    /* display: flex; */
+    /* align-items: center; */ /* Vertical center */
+    /* justify-content: center; */ /* Horizontal center */
+}
+
+.gg-popup-content {
+    background-color: var(--SmartThemeBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+    /* Remove old margin */
+    /* margin: 5vh auto; */ 
+    padding: 20px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px var(--SmartThemeShadowColor);
+    /* Add absolute positioning and transform for centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gg-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--SmartThemeBorderColor);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.gg-popup-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--SmartThemeBodyColor);
+}
+
+.gg-popup-close {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--SmartThemeBodyColor);
+}
+
+.gg-popup-close:hover {
+    color: var(--SmartThemeBorderColor);
+}
+
+.gg-popup-body {
+    margin-bottom: 20px;
+}
+
+.gg-popup-section {
+    margin-bottom: 15px; /* Space between sections */
+}
+
+.gg-popup-section h3 {
+    margin-bottom: 8px; /* Space below heading */
+    margin-top: 0; /* Remove default top margin */
+    font-size: 1.1em; /* Slightly larger heading */
+    color: var(--SmartThemeBodyColor); /* Use theme color */
+    border-bottom: 1px solid var(--SmartThemeBorderColor); /* Optional separator */
+    padding-bottom: 4px; /* Space above border */
+}
+
+.gg-option-group {
+    display: flex; /* Arrange options in a row */
+    flex-wrap: wrap; /* Allow options to wrap */
+    gap: 8px; /* Space between options */
+}
+
+.gg-option {
+    background-color: var(--SmartThemeBlurTintColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.gg-option:hover {
+    background-color: var(--ac-style-color-hoveredBackground, var(--SmartThemeBotMesBlurTintColor));
+}
+
+.gg-option.selected {
+    background-color: var(--SmartThemeUserMesBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+}
+
+.gg-option-title {
+    font-weight: 500;
+}
+
+.gg-suboptions {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--SmartThemeBlurTintColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 10;
+    min-width: 200px;
+    box-shadow: 0 2px 5px var(--SmartThemeShadowColor);
+}
+
+.gg-option:hover .gg-suboptions {
+    display: block;
+}
+
+.gg-suboption {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.gg-suboption:hover {
+    background-color: var(--ac-style-color-hoveredBackground, var(--SmartThemeBotMesBlurTintColor));
+}
+
+.gg-suboption.selected {
+    background-color: var(--SmartThemeUserMesBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+}
+
+.gg-popup-footer {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: flex-end; /* Aligns buttons to the right, adjust as needed */
+    gap: 10px; /* Adds some space between buttons */
+    padding-top: 10px; /* Add some space above the buttons */
+}
+
+.gg-popup-footer .gg-button {
+    min-width: 100px; /* Adjust as needed */
+}
+
+.gg-button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.gg-button-primary {
+    background-color: var(--SmartThemeUserMesBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+}
+
+.gg-button-secondary {
+    background-color: var(--SmartThemeChatTintColor);
+    color: var(--SmartThemeBodyColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+}
+
+.gg-button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,4249 @@
+
+label a2_noel_tv1_nav:
+    $ renpy.hide_screen("return_map")
+
+    show screen a2_noel_tv with d3
+    scene a1_noel_tv1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_noel_tv
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_noel_tv:
+    hide screen a2_noel_tv
+    if not a2_noel_tv1 :
+        jump a2_noel_tv1
+    if a2_noel_tv2 :
+        jump a2_noel_tv_idle
+    if a2_noel_tv1 :
+        jump a2_noel_tv2
+
+label a2_noel_tv_idle:
+    scene a1_noel_tv2 with dissolve
+    E "Hey Cap'n."
+    MC "Hey. Got any more of those Super Robowars videos?"
+    E "Not right now. But I sent in a request to HQ to download some more. I'll let you know."
+    jump a2_noel_tv1_nav
+label a2_noel_tv1:
+    scene a1_noel_tv2 with dissolve
+    E "Hey Cap'n. I know how much you liked Super Robowars. So I downloaded all my favorite fights for you."
+    E "Do you wanna watch some with me?"
+    menu:
+        "Yes.":
+            E "Sweet! I'll start them up then! Grab a seat!"
+            jump a2_noel_tv1_yes
+        "Maybe later.":
+            E "Aw. I'll hold ya to it!"
+            jump a2_noel_tv1_nav
+label a2_noel_tv1_yes:
+    scene a2_noel_tv1 with fade
+    "You sit on the couch next to Noel and start watching her collection."
+    E "Watch, watch. This is my favorite part."
+    E "{b}BOOM!{/b} Hahaha. Did ya see that?!"
+    MC "Yeah. Nice one."
+    MC "{i}(She's like a kid in a candy shop. It's kinda cute though.)"
+    scene black with fade
+    "A few hours and many episodes later."
+    scene a2_noel_tv2 with fade
+    E "-yawn- You still watchin' Cap'n?"
+    MC "Huh? Yeah."
+    E "I'm feelin' kinda tired all of the sudden."
+    MC "{i}(All her cheering must have caught up with her.)"
+    scene a2_noel_tv3 with dissolve
+    E "Mind if I rest my eyes a bit before the finals?"
+    MC "Sure, go for it."
+    E "Ya gotta wake me up though. I can't miss Tomb Crusher's match."
+    MC "Mhm. Got it."
+    play sound "audio/effect/clothing.mp3"
+    scene a2_noel_tv4 with vpunch
+    MC "{i}(Ah-)"
+    "She unexpectedly lays her head right in your lap."
+    E "Night Cap'n."
+    scene a2_noel_tv5 at pan_down_up_2 with dissolve
+    "You can't focus on the tv any longer, as your eyes scan over Noel's toned body."
+    "Her beautiful tanned skin accents her athletic figure perfectly, but her tanlines draw your gaze to her soft breasts."
+    play sound "audio/effect/upclothing.mp3"
+    show spec with vpunch
+    "Your dick twitches in your pants."
+    MC "{i}(Fuck. Did she notice?)"
+    "..."
+    E "-deep breathing-"
+    MC "{i}(-whew- She's still sleeping...Close one.)"
+    scene black with fade
+    "You try your best to clear your mind to avoid any more awkward erections."
+    E "Nngh..."
+    scene a2_noel_tv6 with dissolve
+    "She wakes up and wipes the slight drool from her mouth."
+    E "Much better...Did I miss Tomb Crusher's match?"
+    MC "I think it's coming up next."
+    E "Sweet! Thanks for the pillow, Cap'n."
+    $ a2_noel_tv1 = True
+    scene black with Dissolve(1.5)
+    "You continue watching until the finals. Tomb Crusher vs Atomic Ranger."
+    scene a2_noel_tv1 with fade
+    E "Aaaaand {b}DOWN COMES THE HAMMER!"
+    scene black with Dissolve(1.5)
+    "And your winner~ Tomb Crusherrrrrrrr!!"
+    scene a2_noel_tv6 with dissolve
+    E "Yaawn- As much as I'd like to stay awake. I need a real nap."
+    MC "-plat plat- Best pillow on the Agni right here."
+    E "If you're okay with that..."
+    MC "Yeah. I'll just watch some TV. I got all the time."
+    scene black with fade
+    "You relax and watch TV while Noel rests her head on your lap."
+    scene a2_noel_tv4 with dissolve
+    E "-deep breathing-"
+    "She falls asleep quickly, leaving you frozen in place."
+    scene a2_noel_tv7 with fade
+    "Unfortunately for you, in space, Netflux sucks too."
+    MC "{i}(Yes, I'm still watching...)"
+    "Equally as unlucky...the remote is just out of your reach."
+    scene a2_noel_tv8 with dissolve
+    MC "Gnhh."
+    "You grunt, as you stretch your arm to the limit..."
+    E "Mmgh..."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_noel_tv9 with dissolve
+    "She rolls over on your lap because of all your movement."
+    MC "{i}(Guess I better give up on the remote for now...)"
+    scene a2_noel_tv10 with dissolve
+    "Her face is now parked right in front of your crotch, and you can feel her warm breath on your thigh through your pants."
+    MC "{i}(-gulp- Well...at least I took a shower this morning. I'd hate for her to get a whiff of my crotch stink...Aw gross. What am I thinking?)"
+    MC "{i}(Without TV I just have to sit here...alone...Gaaaawd...)"
+    scene a2_noel_tv11 with vpunch
+    MC "{i}(Huh?)"
+    "Out of the corner of your eye, you see Noel's tit hanging out of her shirt."
+    "You try to take your eyes off of it, but with nothing else to hold your attention, your eyes drift back to it."
+    scene a2_noel_tv9 with dissolve
+    "Blood rushes to your penis, but there's nothing you can do to stop it. At least not with her breast hanging out like that."
+    menu:
+        "Cover her back up.":
+            scene a2_noel_tv12 with dissolve
+            "You reach your hand out to pull her top back up."
+        "Try to squeeze her breasts.":
+            scene a2_noel_tv12 with dissolve
+            "You reach out to try to squeeze her breast."
+    scene a2_noel_tv13 with vpunch
+    E "Cap'n...?"
+    "Your arm freezes as Noel's voice rings through your ears."
+    E "Try'n to cop a feel on me are ya?"
+    MC "N-no...I was jus-"
+    scene a2_noel_tv14 with dissolve
+    E "Who you tryin' to fool, Cap'n? I can feel your dick twitchin' right in my face."
+    E "And while I'm sleepin', no less."
+    scene a2_noel_tv15 with dissolve
+    "She stands up from the couch."
+    E "Guess I gotta be careful around you, huh?"
+    scene a2_noel_tv16 with dissolve
+    E "Ya know...I like massaging my breasts before I sleep. It really helps me relax..."
+    MC "Uh-"
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_noel_tv17 at pan_down_up_2 with dissolve
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    E "If ya would have just asked, I might'a let ya. That really is too bad..."
+    E "After seeing how hard your dick was gettin'."
+    scene a2_noel_tv18 with dissolve
+    E "Maybe next time I'll be the one tryin' to feel ya up."
+    E "I won't wait till you're sleepin' though..."
+    $ noel_lust += 1
+    window hide
+    show lust_gain_text "Noel lust +1" with dissolve
+    pause (0.5)
+    hide lust_gain_text "Noel lust +1" with dissolve
+    window auto
+    scene black with fade
+    $ a2_noel_tv2 = True
+    E "Hahaha!"
+    "Noel walks off leaving you stunned for a moment. You head back out to the hallway."
+    jump a2_main_midday
+
+
+label a2_lym_breakfast_nav:
+    $ renpy.hide_screen("return_map")
+
+    show screen a2_lym_breakfast with d3
+    scene a1_lym_breakfast1
+
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_lym_breakfast
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_lym_breakfast:
+    hide screen a2_lym_breakfast
+    scene a1_lym_breakfast2 with fade
+    "You walk up behind Lym while she is making some food."
+label a2_lym_breakfast1:
+    menu:
+        "Smack her ass.":
+            jump a2_lym_breakfast_smack
+        "Do nothing":
+            jump a2_lym_breakfast_nav
+label a2_lym_breakfast_smack:
+    play sound "audio/effect/spank.mp3"
+    pause 0.1
+    scene a2_lym_breakfast1 with vpunch
+    "{b}-slap-"
+    "You smack your hand against Lym's plump behind."
+    scene a2_lym_breakfast2 with dissolve
+    MG "Hey! What do you think you're doing?!"
+    MC "Your butt looked so nice I just had to slap it."
+    MG "Huuuuh?! Just because we slept together doesn't mean you can do what you like. Get out of here!"
+    MC "S-sor-"
+    MG "Now!"
+    scene black with fade
+    $ a2_lym_breakfast1 = True
+    "You scamper off before she kills you."
+    jump a2_main_midday2
+
+label a2_noel_gym1_nav:
+
+    $ renpy.hide_screen("return_map")
+    show screen a2_noel_gym1 with d3
+    scene a2_noel_gym1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_noel_gym1
+    scene a2_noel_gym1
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_noel_gym1:
+    hide screen a2_noel_gym1
+    scene a2_noel_gym2 with dissolve
+    "You approach Noel who is stretching in the back."
+    E "Hey Cap'n. You workin' out today?"
+    menu:
+        "Yes.":
+            E "Right on! Hit the dip station. Nobody likes a flabby belly."
+            MC "Perfect."
+            jump a2_noel_gym1_yes
+        "Not right now.":
+            E "Ok Cap'n. Don't skip out too much or you'll get fat!"
+            jump a2_noel_gym1_nav
+label a2_noel_gym1_yes:
+    scene a2_noel_gym3 with fade
+    "You get set up on the dip station while Noel gets ready for some cardio."
+    MC "{i}(Those shorts she's wearing are killer.)"
+    scene a2_noel_gym4 at pan_down_up_2 with dissolve
+    "From the sweat glistening on her skin, you can tell she's been here for quite a while."
+    "Her butt and thighs are toned to perfection. You can tell she really works hard for her figure."
+    "You can't take your eyes off her as she mounts the stationary bicycle."
+    scene a2_noel_gym5 with dissolve
+    "Her butt lightly kisses the seat as she begins to pedal, while her sexy bubble butt almost bursts through her shorts."
+    scene a2_noel_gym6 with dissolve
+    "The bike begins to hum, as she picks up the pace. Her ass bounces back and forth while she pushes on the pedals."
+    scene a2_noel_gym7 with vpunch
+    "You shake your head to break out of her trance, then continue your workout."
+    scene a2_noel_gym8 with fade
+    E "Woo! What a workout, huh Cap'n?"
+    MC "Yeah. I'm already feeling it, though..."
+    E "Hahaha! That means that you gotta keep at it. so...Arms today, too?"
+    MC "Pfft. Is that even a question?"
+    scene black with fade
+    $ a2_noel_gym1 = True
+    "You walk over to the bench and take a seat. Curls will do."
+    jump a2_noel_gym2
+    jump a2_main_midday2
+
+label a2_noel_gym2:
+    scene a2_noel_gym10 with dissolve
+    MC "{i}(1...2...3...4...)"
+    "You are so focused on \"pumping iron\" that you don't hear Noel sneaking up on you."
+    E "Hey Cap'n."
+    stop music fadeout 1
+    scene a2_noel_gym11 with vpunch
+    MC "Huh?"
+    play music "audio/noel/hard_metal.mp3" fadein 3
+    E "I've been thinking about your cock lately..."
+    MC "Wha-!? -cough cough-"
+    E "I don't know whether it's that horny juice Doc's got swirlin' around here, or your cock's just that good."
+    scene a2_noel_gym12 with dissolve
+    E "I'm down for some \"cardio\"...how about you?"
+    menu:
+        "Agree.":
+            jump a2_noel_gym2_agree
+        "Fuck cardio. It ruins your gains!":
+            jump a2_noel_gym2_no
+        "Cocky answer. {color=#8f0a00}(Warfare)" if mc_spec == "war":
+            play sound "audio/effect/special.mp3" volume 0.6 fadein .5
+            show war_usage
+            pause 0.9
+            default noel_tf_cocky = False
+            $ noel_tf_cocky = True
+            MC "My cock's my strongest muscle, but it can always use a bit more exercise."
+            E "Heh. That sounds like a challenge."
+            $ noel_affection += 1
+            window hide
+            show affection_gain_text "noel affection +1" with dissolve
+            pause (0.5)
+            hide affection_gain_text "noel affection +1" with dissolve
+            window auto
+            jump a2_noel_gym2_agree
+label a2_noel_gym2_no:
+    scene a2_noel_gym13 with dissolve
+    E "Are you sure you don't wanna...?"
+    menu:
+        "Fuck yeah. I'm down for some \"cardio.\"":
+            jump a2_noel_gym2_no_yes
+        "Get off me woman! Don't steal my gains!":
+            scene black with fade
+            stop music fadeout 1.5
+            "You push her off you and escape with your gains intact."
+            MC "{i}(Fuck bitches, obtain gains.)"
+            call ship_music from _call_ship_music_11
+            jump a2_main_midday2
+label a2_noel_gym2_agree:
+    scene a2_noel_gym13 with dissolve
+    "She kneels in front of you and tugs on your pant leg."
+label a2_noel_gym2_no_yes:
+    if _in_replay:
+        call replayNames from _call_replayNames_30
+    E "I felt your eyes on me again, Cap...You know what that does to me..."
+    E "Working on arms? Heh. I just wanted you in a place where I could get that big cock in my face."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_noel_gym14 with dissolve
+    E "Oo~ It's even bigger up close."
+    MC "Keep talking dirty, and he'll show you how big he really is."
+    E "Dirty, huh?"
+    "She takes a sultry tone with her next few words..."
+    E "Like how I want to shove it between my fat tiddies then bounce up and down; over and over~?"
+    scene a2_noel_gym15 with dissolve
+    E "Ooohohoho~"
+    E "You weren't kidding. Just a few naughty words is all it takes to turn you on. I learn somethin' new about my sexy Captain, every day."
+    scene a2_noel_gym16 with dissolve
+    MC "Only when it comes from someone as hot as you."
+    scene a2_noel_gym17 with dissolve
+    E "Oh yeah? How turned-on would you be if I took action on those words?"
+    if noel_tf_cocky:
+        MC "Now that sounds like a real challenge to me."
+    else:
+        MC "That sounds like a challenge to me."
+    E "It wouldn't be much of fight, now that I know your weakness."
+    MC "You wanna try it?"
+    scene a2_noel_gym18 with vpunch
+    E "Heh."
+    "She pushes you down against the bench and takes your cock in her hand..."
+    scene a2_noel_gym19 with dissolve
+    "...and lifts up her shirt.."
+    scene a2_noel_gym20 with vpunch
+    "Then slams her breasts around your cock."
+    E "Guess it's not too big after all."
+    MC "It's gonna take more than that."
+    scene a2_noel_gym20_1 with dissolve
+    E "What if I squeeze it like this? Doesn't that feel good?"
+    E "Of course not. You wouldn't be the Captain if that's all it took.."
+    show a2_noel_gym_tf1
+    "She begins to slowly rub her sweaty breasts up and down along your cock."
+    pause
+    "Over and over she uses her breasts to knead your cock from base to tip."
+    E "How's that feel Cap'n? I can already feel him throbbing."
+    MC "..."
+    E "Playin' the silent card? I'll have to test just how good your poker face really is."
+    "She squeezes her breasts tightly together, to make sure every inch of your cock is touched while looking you in the eye."
+    show a2_noel_gym_tf2 with dissolve
+    hide a2_noel_gym_tf1
+    E "Gh..."
+    pause
+    "She leans in and picks up the pace to better please your cock."
+    E "-pant pant- Or do you like it faster?"
+    "Even through her exhaustive exercise, her deciphering eyes never leave your face."
+    "You try your best to hide your reactions, but truth be told, you always sucked at poker."
+    E "Heh. So that's it, huh? Just like that."
+    E "Haah- You like having these big sweaty jugs bobbing all over your fat cock?"
+    "After finding the perfect titfucking rhythm, she uses her soft voice to coax your body further in sexual bliss."
+    E "Fuck...-haah-..All this talk is even making me wet. -pant- Time to step up my game before I can't help myself..."
+    show a2_noel_gym_tf3 with dissolve
+    hide a2_noel_gym_tf2
+    E "Ngh...hah..hah. Feels good, huh?"
+    pause
+    MC "F-fuck..."
+    "The armor you built up around you starts to crack, as a moan squeaks out from your pursed lips."
+    E "Listen to that. -pant pant- You're finally bein' honest."
+    E "Tell me how you like it. I want your big, throbbing cock to feel the best."
+    MC "S-squeeze them more..."
+    "She closes the gap and wraps her tits tighter around your dick."
+    show spec with vpunch
+    MC "Ah-"
+    "Instantly, the pleasure doubles; pushing you against the thin wall of ejaculation. Noel recognizes the opening and moves in for the kill."
+    E "And now for my secret move:"
+    E "Cum for me, Cap'n. Paint these dumb tits with your white-hot cum! Ahh-{font=Meiryo.ttf}♥{/font}"
+    scene a2_noel_gym21 with flash
+    MC "..gh...-"
+    "Strands of warm cum shoot from your cock and drizzle on her breasts."
+    scene a2_noel_gym22 with dissolve
+    E "Haah...Told you it wouldn't be much of a challenge..."
+    "You aren't done yet though...another load rumbles deep inside you..."
+    menu:
+        "Warn her.":
+            MC "Not..finished."
+            E "Huh?~"
+            scene a2_noel_gym23_1 with flash
+            E "Awwhnn-"
+            "-splurt- She takes the head of your cumming cock into her mouth, as you let out another juicy load."
+            scene a2_noel_gym23_2 with dissolve
+            "She looks up to you with a mouthful of jizz, then without hesitation..."
+            scene a2_noel_gym23_3 with dissolve
+            E "-gulp- Ahh--"
+            E "Glad I got the chance to catch that second load."
+            MC "You're an angel, Noel."
+            E "Heh."
+        "Cum in her face.":
+            scene a2_noel_gym23 with flash
+            "Eager to enact a bit of revenge, you shoot a wad of sticky spunk aimed right toward her face..."
+            E "Ehhh?!"
+            "-splurt- Your warm cock milk splatters across her face."
+            scene a2_noel_gym24 with dissolve
+            E "Jeez Cap'n...I thought you were already done."
+            MC "I had to get a blow in before it was over."
+            E "Heh. A worthy opponent. I won't forget that, though."
+            MC "{i}(What a champ...)"
+    stop music fadeout 2
+    if not a2_noel_gym2 :
+        $ noel_lust += 2
+        window hide
+        show lust_gain_text "Noel lust +2" with dissolve
+        pause (0.5)
+        hide lust_gain_text "Noel lust +2" with dissolve
+        window auto
+    scene black with fade
+    $ renpy.end_replay()
+    $ a2_noel_gym2 = True
+    $ persistent.a2_noel_gym1 = True
+    $ renpy.save_persistent()
+    "You clean up, then head back to the hallway."
+    call ship_music from _call_ship_music_12
+    jump a2_main_midday2
+
+label a2_nyx_noel_engine_nav:
+
+    $ renpy.hide_screen("return_map")
+    if a2_noel_nyx_engine1 :
+        jump noel_nyx_alex1_nav
+    show screen a2_noel_nyx_engine1 with d3
+    scene a2_noel_nyx_engine1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_noel_nyx_engine1
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_noel_nyx_engine1:
+    hide screen a2_noel_nyx_engine1
+    scene a2_noel_nyx_engine2 with dissolve
+    "Nyx and Noel are reading blueprints and discussing something."
+    E "And here's the power converter. It's connected to all the systems in the ship."
+    scene a2_noel_nyx_engine3 with dissolve
+    N "Interesting...It works using a primitive type of Crestology..."
+    E "Crest what-now?"
+    N "Hmm..."
+    scene a2_noel_nyx_engine4 with dissolve
+    N "You see this arrangement of power cores here?"
+    N "This trigram increases the power efficiency by three times."
+    E "What?! Just by putting them in this arrangement does all that?"
+    scene a2_noel_nyx_engine5 with dissolve
+    N "In the simplest terms. Yes."
+    E "Rad! The Gregorians really know their stuff, huh?"
+    N "Gregorians...? Where have I heard that name before?"
+    scene a2_noel_nyx_engine6 with dissolve
+    E "You don't know em? All the girls have these big fluffy ears like this."
+    E "And little whisker marks on their faces."
+    N "Oh! The {b}Gregorians.{/b} Your pronunciation is that of a toddler. Sorry for the confusion."
+    scene a2_noel_nyx_engine7 with dissolve
+    E "W-whattya say bout me?!"
+    E "Why I oughta smack the grin off your face, missy..."
+    "You decide not to get in on this argument."
+    scene black with fade
+    $ a2_noel_nyx_engine1 = True
+    "You sneak back out into the hallway."
+    jump a2_stairsup_evening2
+
+label a2_lym_shoot_nav:
+
+    $ renpy.hide_screen("return_map")
+    if not a2_lym_shoot1 :
+        show screen a2_lym_shoot1 with d3
+        scene a2_lym_shoot1
+        $ renpy.pause(delay=None, hard=True)
+        show screen a2_lym_shoot1
+        $ renpy.pause(delay=None, hard=True)
+    else:
+        show screen a2_lym_shoot2 with d3
+        scene a2_lym_shoot9
+        $ renpy.pause(delay=None, hard=True)
+        show screen a2_lym_shoot2
+        $ renpy.pause(delay=None, hard=True)
+
+label a2_lym_shoot1:
+    hide screen a2_lym_shoot1
+    scene a2_lym_shoot2 with dissolve
+    "You walk up to Lym who is doing some bow training."
+    "You remain completely silent so as to not interrupt her concentration."
+    scene a2_lym_shoot3 with dissolve
+    MG "Hmmp."
+    "Lym groans, as she pulls the bowstring back."
+    play sound "audio/effect/bow.mp3"
+    scene a2_lym_shoot4 with vpunch
+    "-Flllp-"
+    "The bowstring snaps forward, as the arrow flies toward the target."
+    MG "Yes!"
+    MC "Nice shot."
+    scene a2_lym_shoot5 with dissolve
+    MG "Oh hey, [name]. How long were you watching?"
+    if mc_spec == "war":
+            play sound "audio/effect/special.mp3" volume 0.6 fadein .5
+            show war_usage
+            pause 0.9
+            MC "Long enough to see your perfect form. Bravo."
+            $ lym_affection += 1
+            window hide
+            show affection_gain_text "lym affection +1" with dissolve
+            pause (0.5)
+            hide affection_gain_text "lym affection +1" with dissolve
+            window auto
+            scene a2_lym_shoot6 with dissolve
+            L "Ah. I didn't know you were into archery."
+            MC "Dabbling with all sorts of weaponry is kinda my thing..."
+            scene a2_lym_shoot5 with dissolve
+            L "Wait a minute...I thought-"
+            MC "Anyway! What are you doing?"
+    else:
+        MC "Not long. What are you doing?"
+    scene a2_lym_shoot6 with dissolve
+    MG "Well, I realized from our last mission that I need to get better with primitive weaponry.  You never know what kind of situation we might find ourselves in."
+    MG "So I'm brushing up on my archery skills."
+    MG "Want to give it a try?"
+    MC "I'm good. I think I'll stick with my pistol for now. Primitive enough if you ask me."
+    scene a2_lym_shoot7 with dissolve
+    MG "Ah! That reminds me."
+    MG "You remember those monsters on Xerxes?"
+    MC "How could I forget?"
+    MG "Well, my bullets were barely effective. I asked Noel and Dr. Clermont what I could do."
+    scene a2_lym_shoot8 with dissolve
+    MG "I think they are whipping me up some tranquilizer rounds so that never happens again."
+    MC "Oh, nice. That's great!"
+    MG "Hehe. Those two are really fantastic when they work together, huh?"
+    $ a2_lym_shoot1 = True
+    scene black with fade
+    "You and Lym chat while she practices, then you head back to the hallway."
+    jump a2_main_evening
+
+label a2_lym_shoot2:
+    hide screen a2_lym_shoot2
+    if a2_lym_shoot2 and not a3_lym_shoot1 and idris:
+        jump a3_lym_shoot1
+    if a3_lym_shoot1 and not a3_lym_shoot2:
+        jump a3_lym_shoot2
+    if a3_lym_shoot2:
+        jump a3_lym_shoot_idle
+    play sound "audio/effect/biggunshot.mp3"
+    scene a2_lym_shoot10 with dissolve
+    "{b}-BANG-"
+    "A booming shot echoes across the room."
+    scene a2_lym_shoot11 with dissolve
+    "Lym is practicing her long-range shooting with the combustion rifle."
+    "She's using ear protection, so she wouldn't notice if you took a closer look at her rear end."
+    menu:
+        "Move behind her.":
+            scene a2_lym_shoot12 with dissolve
+        "Back off.":
+            "You decide that you've seen enough already."
+            jump a2_lym_shoot_nav
+    "You move in behind her, making sure not to alert her."
+    "Her cute butt wiggles around, as she lines up her shot. It's just begging to be squeezed, but molesting someone armed with a deadly weapon doesn't seem like the smartest thing to do."
+    menu:
+        "Man up and Grab. That. Booty.":
+            scene a2_lym_shoot13 with dissolve
+        "Back away.":
+            "You chicken out. It's probably the safe choice but you feel you missed out on a great opportunity."
+            jump a2_lym_shoot_nav
+    "You position yourself behind her butt and reach out with both hands towards your target."
+    "Your hands tremble as you inch closer."
+    "You muster up the courage and plunge your hands into her soft cheeks!"
+    play sound "audio/effect/biggunshot.mp3"
+    scene a2_lym_shoot14 with vpunch
+    "{b}-BANG-"
+    "The sudden attack causes Lym to squeeze the trigger and let a shot fly."
+    scene a2_lym_shoot15 with dissolve
+    MG "What the.."
+    "She looks back at you with a look of bewilderment."
+    "Which quickly transforms into a face of pure anger..."
+    MG "[name]! What the fu-"
+    play sound "audio/effect/clothing.mp3"
+    scene a2_lym_shoot16 with dissolve
+    MG "Ah!"
+    "Before she finishes her sentence you squeeze her cute butt and spread her cheeks apart."
+    MG "Y-y-y-y-y-you pervert!"
+    $ a2_lym_shoot2 = True
+    scene black with fade
+    "You quickly release her and run away to safety in the hallway."
+    jump a2_main_evening
+
+label a2_noel_room_evening_nav:
+    $ renpy.hide_screen("return_map")
+    if idris and not a3_noel_spike_drag1:
+        show screen a3_spike_drago1 with d3
+        scene a3_spike_drag0
+        $ renpy.pause(delay=None, hard=True)
+    if a3_noel_spike_drag1 and not a3_noel_spike_drag2:
+        jump a3_noel_spike_drag2
+    if a2_noel_spike2 :
+        show screen a2_noel_room_evening_nav2 with d3
+        scene noelroomidle_nav
+        $ renpy.pause(delay=None, hard=True)
+    if not a2_noel_spike1 :
+        show screen a2_noel_room_evening_nav1 with d3
+        scene a2_noel_room1
+        $ renpy.pause(delay=None, hard=True)
+    else:
+        jump a2_noel_room2
+label noel_room_idle1:
+    hide screen a2_noel_room_evening_nav2
+    scene noel_room_idle1 with dissolve
+    E "Sup, Cap'n? Come to see Spike show off some more?"
+    MC "Hah. So I can get shot in the face again? Count me out."
+    E "Hahaha! Okay."
+    jump a2_noel_room_evening_nav
+
+label a2_noel_room1:
+    hide screen a2_noel_room_evening_nav1
+    scene a2_noel_room2 with dissolve
+    "Noel is tinkering with something."
+    MC "{i}(Should I say something?)"
+    menu:
+        "Speak up.":
+            MC "Hey Noel, whatcha workin' on?"
+        "Not right now":
+            jump a2_noel_room_evening_nav
+    scene a2_noel_room3 with dissolve
+    E "Ah. Hey Cap'n."
+    E "Just rigging up a toy for Spike. I don't want him to be bored while I'm working all day, hahaha."
+    MC "That's great and all...but isn't it a bit too...metallic for a cat?"
+    scene a2_noel_room4 with dissolve
+    E "Yeah hahaha! He's gonna freakin' love it!"
+    MC "Ok Noel...Whatever you say."
+    $ a2_noel_spike1 = True
+    scene black with fade
+    "You chat with Noel for a while then head back to the hallway."
+    jump a2_left_night
+
+label a2_noel_room2:
+    stop music fadeout 1
+    scene a2_noel_room5 with fade
+    "You step into Noel's room."
+    play music "audio/fairlight.mp3" volume 0.8 fadein 7
+    E "Hahahahaha!"
+    MC "{i}(She's laughing maniacally.)"
+    E "Get 'em Spike!"
+    MC "{i}(I have a bad feeling about this...)"
+    play sound "audio/effect/tank.mp3"
+    scene a2_noel_room6 with dissolve
+    "{b}-vroom-"
+    stop sound fadeout 5
+    MC "W-what?"
+    scene a2_noel_room7 with dissolve
+    E "Hey Cap'n, come to watch the show?"
+    "-thud thud-"
+    MC "Is this that \"toy\" you were building?"
+    scene a2_noel_room8 with dissolve
+    E "Yeah, hahaha."
+    MC "W-why..?"
+    E "Cuz it's freakin' badass!"
+    MC "How are you even controlling it? A remote or something?"
+    scene a2_noel_room9 with dissolve
+    E "Hahaha. That's why it's so cool!"
+    E "He's controlling it. From the inside!"
+    scene a2_noel_room10 with dissolve
+    MC "Huh?! Really?"
+    MC "He's actually driving it?!"
+    SPIKE "Meow."
+    play sound "audio/effect/beanbag.mp3"
+    scene a2_noel_room11 with vpunch
+    "-Ffflump-"
+    scene a2_noel_room12 with dissolve
+    MC "Huh?!"
+    "-thunk- The small plastic ball smacks into your forehead."
+    scene a2_noel_room13 with dissolve
+    E "Hahaha. Nice shot, Spike. You got him right in the head!"
+    stop music fadeout 2
+    MC "Ugh..."
+    scene black with fade
+    $ a2_noel_spike2 = True
+    "You play around with Noel and Spike for a while then head back out to the hallway."
+    call ship_music from _call_ship_music_13
+    jump a2_left_night
+
+label a2_dr_engine1:
+    hide screen a2_dr_engineering1
+    if a2_lym_catch1  and not a2_lym_catch_finger:
+        jump a2_lym_catch2
+    scene a1_dr_engineering4 with dissolve
+    MC "Hi, Dr. Clermont."
+    scene a1_dr_engineering7 with dissolve
+    DR "Good afternoon, [name]. I'm sure you noticed that Noel and I finished the repairs on the serum distribution center."
+    DR "It's been pumping lightly throughout the ship ever since we left Xerxes's orbit."
+    scene a1_dr_engineering7 with dissolve
+    DR "Let me know if a special occasion arises and you need a little extra juice."
+    MC "Uh...ok."
+    DR "Don't give me that innocent act. I know what you really want."
+    MC "A-..."
+    "You try to refute her, but you have no words."
+    DR "Mhmmm...I'll be waiting."
+    scene black with fade
+    $ a2_dr_engine1 = True
+    "You sneak back out to the hallway."
+
+    jump a2_stairsup_night
+
+label a2_dr_room_nav:
+    $ renpy.hide_screen("return_map")
+    if idris and a2_dr_room2:
+        show screen a3_dr_read1 with d3
+        scene a3_dr_read0
+        $ renpy.pause(delay=None, hard=False)
+        show screen a3_dr_read1
+        $ renpy.pause(delay=None, hard=False)
+    show screen a2_dr_room with d3
+    scene a1_dr_room1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_dr_room
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_dr_room:
+    hide screen a2_dr_room
+    if not a2_dr_room1 :
+        jump a2_dr_room1
+    else:
+        jump a2_dr_room2
+
+label a2_dr_room1:
+    scene a1_dr_room2 with dissolve
+    MC "Hi Dr. Clermont, am I interrupting?"
+    scene a1_dr_room3 with dissolve
+    DR "No...I was just doing my morning reading."
+    MC "That's what I was hoping for. I brought a book I have been meaning to read."
+    MC "Mind if I join you?"
+    DR "Reading is usually meant to be enjoyed in peace and quiet."
+    MC "Oh..."
+    DR "But your company might prove to be...amusing."
+    MC "Perfect!"
+    scene a2_dr_room1 with fade
+    "You pull up a chair next to her and pull out your book."
+    scene a2_dr_room2 with dissolve
+    DR "-scoff- Why do you insist on sitting so close to me..."
+    MC "Don't be like that. What if I need vocabulary help or something?"
+    DR "Hmph...So childish."
+    scene a2_dr_room1 with fade
+    "You sit and read in silence for a few minutes."
+    scene a2_dr_room3 with dissolve
+    MC "Soo...whatcha reading?"
+    DR "[name]."
+    "She scolds you without taking her eyes off the page."
+    $ dr_affection += 1
+    window hide
+    show affection_gain_text_dr "Dr. Clermont affection +1" with dissolve
+    pause (0.5)
+    hide affection_gain_text_dr "Dr. Clermont affection +1" with dissolve
+    window auto
+    scene black with fade
+    $ a2_dr_room1 = True
+    "You read for a bit longer then head back out to the hallway."
+    jump a2_right_midday2
+
+label a2_dr_room2:
+    stop music fadeout 2
+    scene a1_dr_room2 with dissolve
+    MC "Care if I join you, again?"
+    play music "audio/doc/bad_self.mp3" fadein 4
+    DR "Hmph."
+    "She gives you an agreeable grunt, and you take a seat next to her."
+    scene a2_dr_room1 with dissolve
+    "You're trying a new book this time...Hopefully it's a more engaging read."
+    scene a2_dr_room1 with fade
+    MC "{i}(\"She pressed her lips against his cock.\" \"She gasped as his member twitched from her touch.\")"
+    MC "{i}(This story has really taken a wild turn.)"
+    MC "{i}(I'm starting to get a bit turned on.)"
+    play sound "audio/effect/clothing.mp3"
+    scene a2_dr_room1 with vpunch
+    "You rustle around to rearrange the bulge forming in your crotch."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_dr_room1 with vpunch
+    MC "Unh."
+    "You groan as you adjust your pants again."
+    scene a2_dr_room3 with dissolve
+    DR "Do you mind?"
+    MC "Sorry..."
+    scene a2_dr_room1 with dissolve
+    "..."
+    scene a2_dr_room3 with dissolve
+    MC "It's just that my book was getting \"hot and heavy\" and...uhh I had to rearrange my pants."
+label a2_dr_room_hj_replay:
+    if _in_replay:
+        call replayNames from _call_replayNames_31
+    scene a2_dr_room2 with dissolve
+    DR "-sigh- Take them off."
+    MC "Huh?"
+    scene a2_dr_room4 with dissolve
+    DR "It's obvious you aren't going to be quiet until we deal with that."
+    DR "Pants. Now."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_dr_room5 with fade
+    "You quickly oblige and unzip your pants."
+    "She firmly grasps the base of your cock."
+    scene a2_dr_room6 with dissolve
+    "She is still engrossed in her book and is trying to ignore the situation."
+    show a2_dr_reading_hj1 with dissolve
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She slowly strokes your cock while never taking her attention away from her book."
+    "You can't make up your mind whether her complete disregard of the situation makes you angry...or hornier."
+    "Either way, her hand keeps a steady pace around your shaft."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    show a2_dr_reading_hj2 with dissolve
+    hide a2_dr_reading_hj1
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She must be able to feel that you are already reaching your limit because she speeds up her assault."
+    "Even after all this, not once has she even glanced in your direction."
+    "You don't have time to worry about that."
+    "The pressure swells in your dick with each firm stroke from her hand."
+label a2_dr_room2_cum:
+    $ renpy.pause(delay=None, hard=False)
+    menu:
+        "Cum.":
+            scene a2_dr_room7 with flash
+            hide a2_dr_reading_hj2
+    MC "Nhhg."
+    scene a2_dr_room8 with dissolve
+    "You couldn't hold it anymore and shoot a huge load all over the floor."
+    "She isn't done with you yet, as she gives you one last tug."
+    scene a2_dr_room9 with flash
+    DR "Ah!"
+    "She wrung out one last spurt from your dick."
+    scene a2_dr_room10 with dissolve
+    "Your strand of jizz had a mind of its own and landed right on Dr. Clermont's book."
+    stop music fadeout 2
+    MC "Shit."
+    "You fear for your life because you know the crime you committed was the most heinous."
+    scene a2_dr_room11 with dissolve
+    DR "[name]...I'm going to have to ask you to please leave."
+    "You feel the anger swelling in her voice, but you aren't sticking around to see her explode."
+    scene black with fade
+    call ship_music from _call_ship_music_14
+    $ renpy.end_replay()
+    $ a2_dr_room2 = True
+    $ persistent.a2_dr_room2 = True
+    $ renpy.save_persistent()
+    "You quickly retreat back out to the hallway."
+    jump a2_right_midday2
+
+label a2_nyx_living1_nav:
+    $ renpy.hide_screen("return_map")
+    show screen a2_nyx_living1 with d3
+    scene a2_nyx_living1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_nyx_living1
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_nyx_living1:
+    hide screen a2_nyx_living1
+    scene a2_nyx_living2 with dissolve
+    "You approach Nyx who appears to be writing...or drawing something in her notebook."
+    menu:
+        "Talk to her.":
+            MC "Hi Nyx. How's it going?"
+        "Do nothing.":
+            jump a2_nyx_living1_nav
+    scene a2_nyx_living3 with dissolve
+    N "Hello again, handsome. What can I do for you?"
+    MC "Nothing. Just looking for ways to pass some time. Mind if I join you?"
+    N "Hmph. Do as you please."
+    scene a2_nyx_living4 with dissolve
+    "You take a seat next to Nyx."
+    "She sketches long streaks along the paper."
+    MC "What are you drawing?"
+    scene a2_nyx_living5 with dissolve
+    "She takes her notebook in her arms and turns to you."
+    N "Uhm...Home."
+    MC "Oh...You mean back on Eldar?"
+    N "Mhm..."
+    scene a2_nyx_living6 with dissolve
+    N "I was never one for drawing, or any kind of art, really."
+    N "But ever since getting stranded away from home, it's all I want to do."
+    N "It feels like I'll forget about it...forget all that history that I cherish."
+    scene a2_nyx_living7 with dissolve
+    N "Heh. It's silly. I know..."
+    MC "No it's not. That's a part of yourself that you don't want to lose. I completely understand."
+    if mc_spec == "tech":
+        play sound "audio/effect/special.mp3" volume 0.6 fadein .5
+        show tech_usage
+        pause 0.9
+        MC "I can just imagine all of the beautiful blinking lights and huge buildings. The amount of history and advancements laid into each of those walls...I'm sure it's greater than my mind can even think of..."
+        MC "Longing to remember all of that...That can't be silly."
+        scene a2_nyx_living6 with dissolve
+        N "[name]..."
+        $ nyx_affection += 1
+        window hide
+        show affection_gain_text "Nyx affection +1" with dissolve
+        pause (0.5)
+        hide affection_gain_text "Nyx affection +1" with dissolve
+        window auto
+        N "-cough-"
+    else:
+        scene a2_nyx_living6 with dissolve
+        "..."
+        N "-cough-"
+    scene a2_nyx_living8 with dissolve
+    N "Well! H-Having this new pencil and paper is really a godsend though."
+    N "There's only so far a quill and ink can take you. Heh."
+    MC "I'm glad you're enjoying the upgrade."
+    MC "One more thing before I get back to work."
+    N "Hm?"
+    MC "Could you tell me more about Eldar sometime?"
+    scene a2_nyx_living9 with dissolve
+    N "Hmph."
+    N "I suppose I can enlighten you about a few things."
+    MC "Hah. I'm looking forward to it."
+    if not a2_nyx_live1 :
+        $ nyx_affection += 2
+        window hide
+        show affection_gain_text "Nyx affection +2" with dissolve
+        pause (0.5)
+        hide affection_gain_text "Nyx affection +2" with dissolve
+        window auto
+    scene black with fade
+    $ a2_nyx_live1 = True
+    "You part with Nyx and head back out to the hallway."
+    jump a2_main_evening
+
+label a2_nyx_med_nav:
+    $ renpy.hide_screen("return_map")
+    show screen a2_nyx_med1 with d3
+    scene a2_nyx_medbay1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_nyx_med1
+    $ renpy.pause(delay=None, hard=False)
+label a2_nyx_medbay1_idle:
+    scene a2_nyx_medbay2 with dissolve
+    N "Oh? Hi there, [name]."
+    MC "Hey Nyx. Whatcha doin?"
+    scene a2_nyx_medbay3 with dissolve
+    N "Cut the small talk. We both know why you're here. You want to play again don't you?"
+    menu:
+        "Accept.":
+            jump a2_nyx_medbay1_replay
+        "Decline.":
+            MC "No thanks."
+            N "Hmph."
+            jump a2_nyx_med_nav
+
+label a2_nyx_medbay1:
+    hide screen a2_nyx_med1
+    if a2_nyx_medbay1 :
+        jump a2_nyx_medbay1_idle
+    scene a2_nyx_medbay2 with dissolve
+    stop music fadeout 2
+    N "Oh...just the man I was looking for."
+    MC "Glad to know that I'm always on your mind."
+    play music "audio/nyx/cruise.mp3" volume 0.5 fadein 5
+    N "Hmph. What a cocky brat."
+    scene a2_nyx_medbay3 with dissolve
+    N "I found something interesting on the doctor's desk."
+    "She jiggles the little test tube of Dr. Clermont's serum."
+    N "Know anything about it?"
+    MC "It's a special serum for increasing our production and quality of life. I told her to tell you. Did she not?"
+    scene a2_nyx_medbay4 with dissolve
+    N "Oh, I've heard it all. I just wanted to see if you'd tell me the complete truth."
+    N "But you conveniently omitted the most important part: that its side effect is to turn you all into raging nymphos..."
+    MC "What? It's not like that..."
+    scene a2_nyx_medbay5 with dissolve
+    N "No? Then what do you say about giving it a try right now?"
+    MC "Uh-"
+    N "Don't sound so nervous, boy. It's a simple question...Do you want to share a bed with an Eldarian woman?"
+    "Those words cripple you. You can't do anything but nod."
+    play sound "audio/effect/sizzle.mp3" volume 0.8
+    scene a2_nyx_medbay6 with dissolve
+    "-fssssh-"
+    "A small flame appears from her palm. It heats the mixture almost instantly."
+label a2_nyx_medbay1_replay:
+    scene a2_nyx_medbay7 with dissolve
+    "Fumes start to rise, as she holds the potion up to her lips."
+    N "-wooosh-"
+    "She cautiously blows the fumes in your direction."
+    scene a2_nyx_medbay8 with dissolve
+    MC "-grunt-"
+    "You stand your ground against the fumes and inhale them into your lungs willingly."
+    N "Heh. That should be enough."
+    MC "-cough- Wh-what about you?"
+    scene a2_nyx_medbay9 with dissolve
+    N "Poor boy...Were you under the assumption that I would be joining you?"
+    MC "What..?"
+    N "It does excite my heart to know the lengths you'd go to share a night with me. But alas, this serum has no effect on me."
+    MC "Y-you tricked me..."
+    N "Heh...I just want to see how low you'll really go..."
+    scene a2_nyx_medbay10 with dissolve
+    "Completely overwhelmed by the serum, you unzip your pants and hold your throbbing cock in your hand."
+    N "Oooh~ It's begging for relief...I'd be more than happy to lend a helping hand..."
+    scene a2_nyx_medbay9 with dissolve
+    N "So...how deep are you willing to sink underneath me?"
+    MC "What do you want?"
+    N "I want you on your knees at my feet."
+    stop music fadeout 2
+    menu:
+        "Kneel in front of her.":
+            jump a2_nyx_medbay1_kneel
+        "Don't kneel. You have a perfectly good hand.":
+            jump a2_nyx_medbay1_deny
+label a2_nyx_medbay1_deny:
+    MC "I won't bow my head to you. Especially not for something as simple as a raging erection."
+    N "An interesting man...Your pride outweighs your lust. But to deny a woman like myself...fuhuh..."
+    menu:
+        "Leave.":
+            scene black with dissolve
+            call ship_music from _call_ship_music_15
+            "You stuff your rock-hard boner into your pants and retreat back to the safety of the hallway."
+            $ renpy.end_replay()
+            $ a2_nyx_medbay1 = True
+            jump a2_main_night2
+        "Assert your dominance by vigorously masturbating in front of her.":
+            MC "I'll show you who the true alpha is!"
+            play music "audio/noel/dirty.mp3" fadein 1
+    scene a2_nyx_medbay10 with dissolve
+    "You let the wolf inside you out and furiously start stroking your raging hard boner."
+    scene a2_nyx_medbay11 with dissolve
+    N "Ah-"
+    "She's struck with utter amazement from the confidence exuding from you."
+    scene a2_nyx_medbay10 with dissolve
+    MC "Ah fuck yeah! I'm gonna fucking cum!"
+    scene a2_nyx_medbay11 with dissolve
+    "You look her dead in the eye while you make a few final strokes."
+    MC "...aah-..."
+    scene a2_nyx_medbay14 with flash
+    "-splurrrrrt-"
+    MC "Ahhh- You love watching me cum, huh?!"
+    if not a2_nyx_medbay1 :
+        $ nyx_lust += 5
+        window hide
+        show lust_gain_text "Nyx lust +5" with dissolve
+        pause (0.5)
+        hide lust_gain_text "Nyx lust +5" with dissolve
+        window auto
+        N "W-what..."
+    scene black with fade
+    "The wolf inside you is nothing to be afraid of. Embrace it..."
+    stop music fadeout 1
+    $ renpy.end_replay()
+    $ a2_nyx_medbay1 = True
+    "You shove your cock back in your pants and strut back to the hallway."
+    call ship_music from _call_ship_music_16
+    jump a2_main_night2
+label a2_nyx_medbay1_kneel:
+    scene a2_nyx_medbay15 with dissolve
+    "You swallow your pride in the name of lust and kneel at her feet."
+    MC "Please make me cum."
+    play music "audio/nyx/beach.mp3" volume 0.7 fadein 4
+    scene a2_nyx_medbay16 with dissolve
+    N "Heh. What a pervert. But since you're such a good boy, I'll help you get off."
+    "She adjusts her position in her chair to lean over you."
+    scene a2_nyx_medbay17 with dissolve
+    N "How about I use my mouth, hmm? Wouldn't you love to cum between these lips?"
+    N "You wouldn't last a minute of my mouth sucking your balls dry..."
+    "Your dick twitches with anticipation."
+    scene a2_nyx_medbay18 with dissolve
+    N "Oh fuhuh...Aren't you precious? Your dirty dick doesn't deserve to touch these lips."
+    scene a2_nyx_medbay19 with dissolve
+    "She rubs her foot against the underside of your cock."
+    N "Mmmmh...I have some special treatments for fat, dirty cocks like this."
+    scene a2_nyx_medbay20 with dissolve
+    "She separates from your dick and kicks off her heels."
+    N "Does the thought of getting touched by my feet make you excited?"
+    scene a2_nyx_medbay21 with dissolve
+    N "Heh..."
+    "She dangles her toes in front of your face."
+    scene a2_nyx_medbay22 with vpunch
+    MC "..gh..."
+    "She shoves her foot into your face, over your nose and mouth. The smell and feel of nylon overwhelm your senses."
+    N "Heh...Did your dick just get harder? Does this turn you on, boy?"
+    scene a2_nyx_medbay24 with dissolve
+    "Her toes run up along your chin and across your jaw."
+    N "Don't you wonder what they would taste like?"
+    menu:
+        "Open your mouth.":
+            jump a2_nyx_medbay1_sucktoes
+        "Look away.":
+            jump a2_nyx_medbay1_spit
+
+
+label a2_nyx_medbay1_spit:
+    "You pull your eyes away from her seductive face. That's not a line you'd like to cross today."
+    "Even through her domineering attitude. she respects your boundaries."
+    jump a2_nyx_medbay1_footjob
+label a2_nyx_medbay1_sucktoes:
+    "You nod and spread your lips."
+    scene a2_nyx_medbay23 with vpunch
+    MC "Mmmm"
+    "She pushes her sweet toes and nylon stockings inside your open mouth."
+    "Your tongue traces each of her tiny wiggling toes. Your lips close around them, as you try to savor that sweet flavor."
+    scene a2_nyx_medbay24 with dissolve
+    "She pulls her foot out of your mouth."
+    MC "Haaah...Haaah."
+    N "So greedy. Just like the pig you are."
+    if not a2_nyx_medbay1 :
+        $ nyx_dom += 1
+        window hide
+        show dom_gain_text "Nyx dominance +1" with dissolve
+        pause (0.5)
+        hide dom_gain_text "Nyx dominance +1" with dissolve
+        window auto
+label a2_nyx_medbay1_footjob:
+    N "Now, let's focus on that dirty dick of yours."
+    scene a2_nyx_medbay25 with dissolve
+    "She hovers her foot over your dick, and your heart thumps with anticipation of her foot's touch again."
+    N "Huhu. I haven't even touched it, yet."
+    scene a2_nyx_medbay26 with vpunch
+    N "Sit. Boy."
+    "She pushes against your chest and knocks you on your butt."
+    scene a2_nyx_medbay27 with dissolve
+    N "Ah- I want to see you squirm under my foot..."
+    show a2_nyx_medbay_fj1 with dissolve
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She rubs her sole and toes against the underside of your dick. The smooth nylon texture of her pantyhose grips against your skin as she slides her foot up and down."
+    N "Look at me, boy. I want to see your face as you're being stepped on."
+    N "Nnnnuah...that's good."
+    "The sight of your distressed face causes her to moan in ecstasy."
+    N "Don't you cum before I say so."
+    show a2_nyx_medbay_fj2 with dissolve
+    hide a2_nyx_medbay_fj1
+    MC "Ah-"
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She squishes your cock between her feet and strokes it quickly."
+    N "How does it feel between my feet, boy?"
+    MC "Ah-"
+    N "Is that all you have to say? Pitiful..."
+    N "Keep your mouth open. I want to hear those moans."
+    "A spell is cast over your body by her beautiful figure and touch. You hopelessly obey her by opening your mouth."
+    N "What an obedient puppy. Ah-- It just makes me want to hear you squirm even more..."
+    show a2_nyx_medbay_fj3 with dissolve
+    hide a2_nyx_medbay_fj2
+    "She takes your cock between her soles and kneads it relentlessly."
+    MC "Ngh.."
+    "With your mouth open, there's nothing preventing the moans from escaping."
+    N "Haah...Haah...that's perfect keep squirming."
+    "Your anguish is her ecstasy."
+    MC "Haah- Haah--"
+    "Without the need for any more orders, your body displays your full excitement."
+    N "Not yet. I need more...Beg for it. Beg me to let you cum..."
+    MC "P-please..."
+    N "S-say it properly, pig."
+    MC "M-make me cum with your feet{font=Meiryo.ttf}♥{/font}!"
+    N "Ngggh{font=Meiryo.ttf}♥{/font}- Beautiful...Cum. Cum for me."
+    scene a2_nyx_medbay28 with flash
+    MC "Nnnngh!"
+    "-splurt-"
+    scene a2_nyx_medbay29 with flash
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She bends your dick over her foot and milks even more silky cum out of you."
+    N "Nghhh..."
+    scene a2_nyx_medbay30 with dissolve
+    stop music fadeout 4
+    "Your warm jizz painted her feet and pantyhose."
+    N "Look what you did...all over my toes..."
+    MC "S-sorry."
+    N "No-no don't apologize...Your face of pure bliss was amazing..."
+
+    if not a2_nyx_medbay1 :
+        $ nyx_lust += 1
+        $ nyx_dom += 1
+        window hide
+        show dom_gain_text "Nyx dominance +1" with dissolve
+        pause (0.5)
+        hide dom_gain_text "Nyx dominance +1" with dissolve
+        window auto
+    scene black with Dissolve(1.5)
+    $ renpy.end_replay()
+    $ a2_nyx_medbay1 = True
+    $ persistent.a2_nyx_medbay1 = True
+    $ renpy.save_persistent()
+    call ship_music from _call_ship_music_17
+    "You clean yourself and head back to the hallway."
+    jump a2_main_night2
+
+
+label a2_yoori_sybil_explore:
+    scene black with fade
+    "Meanwhile lightyears away on a wild planet...."
+    scene yoori_sybil1 with fade
+    "The Belona's exploration group of Yoo-ri and Sybil are exploring an unknown planet..."
+    "-bushes rustle-"
+    SK "Ah! What was that?!"
+    R "Who's there!? Come out and face me!"
+    $ yoori_sybil_explore = True
+    $ yoori_sybil_explore2 = True
+    scene black with slowfade3
+    jump a2_mc_morning
+
+
+label a2_noel_dr_sauna1_nav:
+    show screen a2_noel_dr_sauna with d3
+    scene a2_noel_dr_sauna1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_noel_dr_sauna
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_noel_dr_sauna1:
+    hide screen a2_noel_dr_sauna
+    if a2_noel_dr_sauna :
+        jump a2_noel_dr_sauna_idle
+    scene a2_noel_dr_sauna2 with dissolve
+    "You walk into the sauna where Noel and Dr. Clermont are wearing nothing but towels."
+    E "I can't wait! It's been years since I've been to a proper sauna. If it's as good as you say it is, I'm in for a treat."
+    E "The ones at home always smell like old man sweat."
+    DR "I can assure you that there haven't been any old men here."
+    scene a2_noel_dr_sauna3 with dissolve
+    DR "Unless you count our courageous captain, here."
+    MC "What about me?"
+    DR "Oh, nothing. I was just taking Noel on a trip to our nice little sauna. Care to join us?"
+    MC "Oh, no. I don't want to break up your girl time."
+    scene a2_noel_dr_sauna4 with dissolve
+    E "Aw, Cap'n! Come on! The more, the merrier."
+    MC "Hmm. If you aren't against me coming. I'll gladly join."
+    E "Rad!"
+    scene a2_noel_dr_sauna5 with dissolve
+    DR "We got some company, so keep that immaculate thing under the towel. I know it'll be hard with all those memories rushing back into your head."
+    DR "That's all I'll be thinking about..."
+    scene a2_noel_dr_sauna5_1 with dissolve
+    DR "AHPS. Start up the sauna simulation, please."
+    stop music fadeout 1
+    AHPS "Welcome back, Doctor. Starting the simulation."
+    scene a2_noel_dr_sauna6 at pan_up_down with pixellate
+    play music "audio/noel/4letter.mp3" fadein 2
+    E "Ooooooh. This is some nice work, Doc!"
+    DR "Heh, just wait until it starts steaming."
+    DR "[name], would you do the honors?"
+    MC "Gladly."
+    scene black with fade
+    "You switch on the sauna and turn around to sit somewhere."
+    scene a2_noel_dr_sauna7 with dissolve
+    "The girls are already seated with quite some space between them."
+    MC "{i}(Who should I sit with...?)"
+    menu:
+        "Noel.":
+            "You move forward to sit with Noel."
+        "Dr. Clermont.":
+            "You move forward to sit with Dr. Clermont."
+            "But are stopped before you can make it to her."
+        "Sit in the middle.":
+            "You move forward to sit in between the two."
+            "But are stopped before you can make it there."
+    scene a2_noel_dr_sauna8 with dissolve
+    E "Cap'n! Sit. Sit. Come on. I don't bite."
+    DR "Don't make a lady wait. Help her enjoy her first time here."
+    scene a2_noel_dr_sauna9 with dissolve
+    "You sit down next to Noel, and she drags you closer around the shoulder."
+    E "Hey Cap'n. What's got ya so nervous?! Never been around two hot babes at once?"
+    MC "Pfft. Just thinking about how I'd handle both of you at once."
+    scene a2_noel_dr_sauna11 with dissolve
+    E "Doc, you hear what he just said?."
+    E "He thinks he could handle both of us.."
+    scene a2_noel_dr_sauna10 with dissolve
+    DR "Oh I heard him, all right. Something about this sauna really makes him cocky."
+    DR "He may be the Captain, but we're a lot of woman to handle. Isn't that right, Noel?"
+    scene a2_noel_dr_sauna11 with dissolve
+    E "Haha. That's right! But I'd love to see him try."
+    E "Heck, I'd even pay to see it."
+    "Somehow, your off-hand comment has turned so badly against you. You're now the butt of the joke."
+    scene a2_noel_dr_sauna9 with dissolve
+    E "Why ya makin' that face? Has it been that long since someone had a good laugh at your expense?"
+    MC "Actually, yeah."
+    E "Heh. We do it 'cause we like you. You're kinda cute when you're embarrassed."
+    scene black with Dissolve(1.5)
+    "You sit and chat for a while, as the sauna heats up."
+    scene a2_noel_dr_sauna12 with dissolve
+    E "Why'd ya keep this a secret so long, Doc? This is great. I could sit in here all day!"
+    scene a2_noel_dr_sauna13 with dissolve
+    E "Haaaaaaaaaaah..."
+    "She leans back with a satisfied sigh."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_noel_dr_sauna14 with dissolve
+    "-floooop- Her towel slips down from around her breasts."
+    E "You really need to get the Major in here. She could do with some loosening up!"
+    MC "Noel...Your towel."
+    E "Huh?! Whoops!"
+    scene a2_noel_dr_sauna15 with dissolve
+    E "Thanks Cap'n. Guess the girls were gettin' a little warm in there."
+    stop music fadeout 1.5
+    if not a2_noel_dr_sauna :
+        $ noel_affection += 1
+        window hide
+        show affection_gain_text "Noel affection +1"
+        pause (0.5)
+        hide affection_gain_text "Noel affection +1" with dissolve
+        window auto
+    scene black with fade
+    $ a2_noel_dr_sauna = True
+    "You and the girls spend some more time in the sauna, then you head back out to the hallway."
+    call ship_music from _call_ship_music_18
+    jump a2_main_night2
+label a2_noel_dr_sauna_idle:
+    scene a2_noel_dr_sauna4 with dissolve
+    E "Hey Cap'n! You wanna come to the sauna with us again?"
+    MC "Maybe next time. Not really feeling like getting all sweaty today."
+    E "Aw. Suit yourself."
+    jump a2_noel_dr_sauna1_nav
+
+label a2_lym_catch1_nav:
+    show screen a2_lym_catch with d3
+    scene a2_lym_catch1
+    $ renpy.pause(delay=None, hard=False)
+
+
+label a2_lym_catch1:
+    hide screen a2_lym_catch
+    scene a2_lym_catch1 with dissolve
+    stop music fadeout 1
+    MC "{i}(Oooh. Lym didn't hear me come in. Time to give her a little scare as payback.)"
+    play music "audio/retrofuture.mp3" fadein 4
+    scene a2_lym_catch2 with dissolve
+    "You sneak up behind her chair."
+    "She's watching something on her phone, but you can't quite make it out."
+    scene a2_lym_catch3 with dissolve
+    "You reach your hands out and inch closer."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_lym_catch4 with vpunch
+    MC "Boo!"
+    MG "Eeek!"
+    "Lym shrieks, as she tosses her phone in the air."
+    play sound "audio/effect/phonedrop.mp3"
+    scene a2_lym_catch5 with dissolve
+    "-crash-"
+    "Her phone bounces and slides across the floor."
+    MC "Oh crap...I'm sorry."
+    scene a2_lym_catch6 with dissolve
+    MC "Lemme grab that for you."
+    MG "No. W-wait..."
+    scene a2_lym_catch7 with dissolve
+    stop music fadeout 0.5
+    MC "Here ya g-..."
+    "..."
+    MC "{i}(Petite blonde takes her boss's huge dick.)"
+    scene a2_lym_catch8 with dissolve
+    MC "Here."
+    MG "Thanks..."
+    call ship_music from _call_ship_music_19
+    scene a2_lym_catch9 with dissolve
+    "..."
+    MC "Uh...I have to do some...things..."
+    MG "Mhm...Good luck."
+    $ lym_lust += 1
+    window hide
+    show lust_gain_text "lym lust +1" with dissolve
+    pause (0.5)
+    hide lust_gain_text "lym lust +1" with dissolve
+    window auto
+    scene black with fade
+    "You leave Lym and head back to the hallway."
+    $ a2_lym_catch1 = True
+    jump a2_main_night
+
+label a2_lym_catch2:
+    hide screen a2_dr_engineering1
+    scene a2_lym_catch10 with dissolve
+    DR "Hello, [name]. What can I do for you?"
+    MC "Well...I was actually looking for advice."
+    DR "And you thought I would be the best person for that? I'm honored."
+    MC "It's about Lym. I, uh...caught her watching porn."
+    scene a2_lym_catch11 with dissolve
+    DR "Hehe. Poor Ms. Toyotomi, she must have been mortified."
+    MC "And now she won't talk to me like normal. I don't know what to do."
+    scene a2_lym_catch12 with dissolve
+    DR "Hmm. When's the last time you talked to her?"
+    MC "Just a few minutes ago...through her door."
+    scene a2_lym_catch11 with dissolve
+    DR "Go see her again. I'll see what I can do."
+    DR "No promises, though."
+
+    scene a1_stairsup_evening with fade
+    MC "{i}(Hmm...she told me to go see Lym again. Guess I can do that.)"
+    $ a2_lym_catch_med = True
+label a3_lym_horny1:
+    scene a1_right_evening with dissolve
+    MC "{i}(Locked up in there once more. I don't know what I thought Dr. Clermont would do. Oh well, I'll knock.)"
+    "-Knock knock-"
+    stop music fadeout 2
+    MC "Hey Lym, it's [name] again. You busy?"
+    L "Ah. One second!"
+    play music "audio/lym/azteka.mp3" fadein 2
+    scene a3_lym_horny1 at pan_down_up_2 with dissolve
+    pause
+    L "H-hey."
+    "Lym answers the door with a flushed face and a disheveled appearance."
+    MC "Hey. Can I come in? I'd like to talk."
+    L "I just got off the phone with Dr. Clermont. She'd told me you were coming by. Come on in..."
+    scene a3_lym_horny2 with fade
+    MC "Huh. I forgot that your room doesn't really have chairs does it."
+    L "I didn't want to cramp the room up. Plus I have a nice window seat to sit at."
+    L "Come on. The bed will do fine."
+    scene a3_lym_horny3 with fade
+    L "Haaah...See? Who needs chairs when you have a big comfy bed."
+    MC "True. Your bed is nicer than mine, for sure."
+    L "So. What did you want to talk to me about?"
+    MC "Well. You've been locked up in your room a lot lately. And I wanted to make sure you're ok. I even asked Dr. Clermont about it."
+    scene a3_lym_horny4 with dissolve
+    L "Ah. Is that all?"
+    L "I don't know. Lately, I've been feeling tired and just want to rest."
+    L "I'm really busy keeping the ship running all day."
+    scene a3_lym_horny5 with dissolve
+    L "Sometimes a girl just wants to take a break."
+    L "Lie down and relax, ya know?"
+    "You spot something out of the corner of your eye, sliding off the bed."
+    stop music fadeout 1
+    play sound "audio/effect/dropwood.mp3"
+    scene a3_lym_horny6 with vpunch
+    "-clank clank-"
+    play music "audio/retrofuture.mp3" volume 0.8 fadein 4
+    play sound "audio/effect/vibrator.mp3"
+    scene a3_lym_horny7 with dissolve
+    "-vrrrrrrrrrrrrrr-"
+    "It falls to the ground and starts to buzz loudly."
+    scene a3_lym_horny8 with dissolve
+    "-vrrrrrrrrrrrrrr-"
+    MC "Uh...You going to get that?"
+    L "Nuh-uh..."
+    MC "I'll grab it then..."
+    scene a3_lym_horny9 with dissolve
+    L "No wait! I'll do it..."
+    stop sound fadeout 2
+    "-vrrrrrrrrrrr- -click-"
+
+    $ a2_lym_catch_finger = True
+    $ a2_lym_catch_knock = True
+    scene a3_lym_horny10 with dissolve
+    L "It's not what it looks like..."
+    L "I-I just..."
+    menu:
+        "Tell her \"it's a normal thing to do.\"":
+            MC "Don't be so embarrassed, Lym. Everyone does it. Hell, I used to jack off twice every day after school."
+        "Embarrass her a bit.":
+            MC "I don't know...it looks pretty obvious about what's going on here."
+            MC "You've been pretty horny lately, huh?"
+            scene a3_lym_horny13 with dissolve
+            L "You jerk! Idiot! Ahh!"
+            $ a3_lym_horny1 = True
+            stop music fadeout 1
+            L "Get out! Now!"
+            scene black with fade
+            "You quickly run out of her room to avoid her wrath."
+            call ship_music from _call_ship_music_20
+            jump a2_right_night
+    scene a3_lym_horny11 with dissolve
+    L "Heh...Stop being gross..."
+    MC "It's not gross! It's life or death! If I didn't let it out like that I would have exploded!"
+    scene a3_lym_horny12 with dissolve
+    L "Hah..That's not how it works!"
+    MC "Might as well be, I can hardly focus when I'm horny."
+    scene a3_lym_horny10 with dissolve
+    L "Me too..."
+    L "T-That's why I'm here so often..."
+    MC "You should have told me! I can help with those problems!"
+    scene a3_lym_horny11 with dissolve
+    L "Geeze, [name]. Don't be such a pervert all the time."
+    MC "You can't blame me for trying."
+    MC "Okay. I'll give you some privacy! Don't wear yourself out!"
+    stop music fadeout 2
+    scene black with fade
+    L "[name]! Grrrrr..."
+    if not a3_lym_horny1 :
+        $ lym_affection += 1
+        window hide
+        show affection_gain_text "lym affection +1" with dissolve
+        pause (0.5)
+        hide affection_gain_text "lym affection +1" with dissolve
+        window auto
+    $ a3_lym_horny1 = True
+    "You hear Lym groan behind you as you walk back to the hallway."
+    call ship_music from _call_ship_music_21
+    jump a2_right_night
+
+
+label a2_lym_catch3:
+    scene a2_lym_catch15 with dissolve
+    "-knock knock-"
+    "You knock once more, but are met with the same result. No answer."
+    "You are about to give up when the door starts to open."
+    scene a2_lym_catch16 with dissolve
+    "-Fsssh-"
+    "You jump back as the familiar purple fumes roll out from her room."
+    MC "Ah fuck, I forgot to take one of those pills before I knocked."
+    scene a2_lym_catch16_1 with dissolve
+    "You shake two of the chewable pills out and pop them in your mouth."
+    scene a2_lym_catch16 with dissolve
+    MC "{i}(Cherry flavor...Gross.)"
+    MC "{i}(Okay!)"
+    "You muster up the courage and enter into the lust-filled cave."
+    scene a2_lym_catch17 with dissolve
+    "You adventure into the hallway in her room."
+    "Your head is staying clear and unclouded."
+    MC "{i}(Looks like the blocker is working.)"
+    scene a2_lym_catch18 with dissolve
+    MC "{i}(Now, where is Lym?)"
+    "You push through down the hallway."
+    MC "{i}(Her bathroom door is open. Maybe she's in there.)"
+    scene a2_lym_catch19 with dissolve
+    MC "{i}(Nothing. She has to be in her bedroom then.)"
+label lym_catch_finger_replay:
+
+    scene a2_lym_catch20 with dissolve
+    "You creep up to the end of the hallway and crouch next to the corner."
+    UK "Ngggh. Haah haah."
+    if _in_replay:
+        call replayNames from _call_replayNames
+    "Your heart races as you hear moans coming from around the corner."
+    "You man up and take a peek."
+    show lym_catch1 with dissolve
+    "You peek around the corner and are met with the beautiful sight of Lym pleasuring herself."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "Your eyes are drawn toward her fingers sliding across her slit and against her clit."
+    MG "Nggh."
+    "She can't keep her moans silenced as lust overwhelms her."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    show lym_catch2 with dissolve
+    hide lym_catch1
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She slides down and fully concentrates on the pleasure."
+    "She slides two fingers deep inside her tight pussy."
+    MG "Haaaah...Haaah...Hah..hah."
+    "Her breathing hastens as she gets closer and closer to climaxing."
+    MG "Nngggh...Fuck me harder [name]...Fill me up more..."
+    MG "Nnnnggggh."
+
+    scene a2_lym_catch21 with flash
+    MG "Ah!!!"
+    "She raises her hips as she has a powerful orgasm."
+    scene a2_lym_catch22 with dissolve
+    "Her body quivers as her orgasm continues for several seconds."
+    "You're stunned in place from what you just witnessed. You have to get out of there, but you just can't move."
+    MC "{i}(Did she just cum while moaning my name?)"
+    if not a2_lym_catch_finger :
+        $ lym_lust += 4
+        window hide
+        show lust_gain_text "lym lust +4" with dissolve
+        pause (0.5)
+        hide lust_gain_text "lym lust +4" with dissolve
+        window auto
+    scene black with fade
+    $ renpy.end_replay()
+    $ a2_lym_catch_finger = True
+    $ persistent.a2_lym_catch = True
+    $ renpy.save_persistent()
+    "You pull yourself together and sneak out of her room unnoticed."
+    jump a2_right_night
+
+
+label a2_noel_spacewalk_nav:
+    if not a2_noel_spacewalk1:
+        show screen a2_noel_spacewalk1 with d3
+        scene a1_noel_engineering8_nav
+        $ renpy.pause(delay=None, hard=False)
+        show screen a2_noel_spacewalk1
+        $ renpy.pause(delay=None, hard=False)
+    show screen a2_noel_spacewalk2 with d3
+    scene a2_noel_spacewalk6
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_noel_spacewalk2
+    $ renpy.pause(delay=None, hard=False)
+
+label noel_spacewalk_idle:
+    scene a2_noel_spacewalk7 with dissolve
+    MC "Hey Noel."
+    scene a2_noel_spacewalk8 with dissolve
+    E "Yeah? What's up?"
+    MC "Keepin' busy I hope."
+    E "Yep. You know it."
+    MC "Hah. Okay then."
+    jump a2_noel_spacewalk_nav
+
+label a2_noel_spacewalk1:
+    hide screen a2_noel_spacewalk1
+    scene a2_noel_spacewalk1 with dissolve
+    "Noel's patiently working on some type of machinery at her desk."
+    MC "Hey, Noel. Whatcha workin' on?"
+    scene a2_noel_spacewalk2 with dissolve
+    E "Hey, Cap'n. We hit a little snag on our departure from Xerxes's orbit."
+    E "One of the coolant cables on the rear thruster is loose and leaking."
+    scene a2_noel_spacewalk3 with dissolve
+    E "I'm making the necessary modifications to my EVA suit so I can go and fix it."
+    MC "Why wasn't I told about this? It sounds serious."
+    scene a2_noel_spacewalk2 with dissolve
+    E "Nah. I'll just be outside for like an hour, tops. Nothing to worry about."
+    MC "Nothing to worry about?!"
+    MC "You're thinking about going outside the ship...In outer space...all alone..."
+    scene a2_noel_spacewalk4 with dissolve
+    E "Ah...I guess you're right...That does sound dangerous..."
+    MC "Exactly."
+    scene a2_noel_spacewalk5 with dissolve
+    E "Ah! Why don't you come with me then!"
+    MC "W-w-what? No that's not wh-"
+    E "Hahaha, yeah! Then you'll see how safe it is."
+    MC "C-can't we just wait till we land?"
+    scene a2_noel_spacewalk2 with dissolve
+    E "No can do, Cap'n. This gotta be done."
+    E "You comin' with me or am I gonna be out there..."
+    scene a2_noel_spacewalk4 with dissolve
+    E "In the {i}big scary space{/i}...all alone?"
+    MC "Noel...please."
+    scene a2_noel_spacewalk5 with dissolve
+    E "Haha! Come on Cap'n, you'll love it."
+    MC "F-fine. I'll help."
+    scene black with fade
+    $ a2_noel_spacewalk1 = True
+    MC "{i}(What did I get myself into...)"
+    "You make some preparations with Noel and head back to the hallway."
+    jump a2_stairsup_evening
+
+
+label a2_noel_spacewalk2:
+    hide screen a2_noel_spacewalk2
+    if noel_spacewalk_sex and a3_idris and not a3_noel_engine_upgrade1:
+        jump a3_noel_engine_upgrade1
+    if noel_spacewalk_sex :
+        jump noel_spacewalk_idle
+    scene a2_noel_spacewalk7 with dissolve
+    "As soon as you walk into engineering, you are met with Noel's smokin' hot body leaning over the railing."
+    "You take a moment to bask in her beauty before calling out to her."
+    MC "Hey, Noel."
+    scene a2_noel_spacewalk8 with dissolve
+    E "Yo, Cap. You ready for our little adventure outside?"
+    MC "-gulp- Not really."
+    scene a2_noel_spacewalk9 with dissolve
+    play sound "audio/effect/punch.mp3"
+    E "Haha! You'll be fine."
+    "She punches your shoulder as she passes you."
+    scene a2_noel_spacewalk10 with dissolve
+    E "For being so brave and helping me out, I'll give you a special reward."
+    E "Ya don't wanna miss it, so don't chicken out on me now."
+    scene black with fade
+    "You follow Noel out of the hallway towards the starboard airlock."
+    scene a2_noel_spacewalk11 with dissolve
+    MC "Okay, run-down one more time what you need me to do, just to be sure."
+    E "Sure."
+    E "The loose cable is about 100 meters down from the airlock exit, along the starboard side."
+    E "All you gotta do is follow me along the ladder and hang on tight."
+    scene a2_noel_spacewalk12 with dissolve
+    E "We're connected on the hip out there, so if you fall. I'm comin' with ya!"
+    MC "Errr...."
+    E "Relax! At the end of the ladder is the Thruster Maintenance Box."
+    scene a2_noel_spacewalk13 with dissolve
+    E "Just hang out for a few minutes while I tighten that bad boy up. Then we just climb back down and back into the airlock."
+    stop music fadeout 5
+    E "Easy, easy."
+    MC "-gulp- Okay."
+    scene black with fade
+    "You walk for a few more minutes until you reach your destination."
+    scene a2_noel_spacewalk14 with dissolve
+    play music "audio/noel/slow_burn.mp3" fadein 1
+    MC "{i}(What the fuck was I thinking? Did I really agree to do this?)"
+    E "Cap'n?"
+    MC "Huh?"
+    E "Suit up."
+    MC "Oh...Yeah."
+    scene a2_noel_spacewalk15 with dissolve
+    "You walk over to the suit on the wall."
+    MC "This suit?"
+    E "Yeah! We're about the same height, so you can use mine!"
+    MC "{i}(\"About\" is a {b}really{/b} great word to use for a spacewalk.)"
+    scene a2_noel_spacewalk16 with fade
+    "You strip down to your underwear, as you suit up."
+    "You're a little embarrassed so you glance behind you to make sure no one's peeking at you."
+    scene a2_noel_spacewalk17 at pan_down_up_2 with dissolve
+    MC "Ah-"
+    "You're stunned by the sight of Noel bending over in nothing but her boots and panties."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    scene black with fade
+    "You snap out of it and focus on getting suited up."
+    scene a2_noel_spacewalk18 with dissolve
+    E "Okay, Cap'n. You ready?"
+    MC "As ready as I'll ever be."
+    E "Heh. Hold on tight."
+    scene a2_noel_spacewalk19 with dissolve
+    "You grab on to the handle near the door."
+    SPEAKER "Lowering Artificial Gravity."
+    scene a2_noel_spacewalk20 with dissolve
+    E "Wooaah. That never gets old."
+    "You and Noel lift slightly in the air, as your bodies become weightless."
+    MC "Heh. This is pretty wild."
+    scene a2_noel_spacewalk21 with dissolve
+    E "First time?"
+    MC "Yeah...I thought I made it pretty clear how under-qualified I am for this."
+    E "Haha! You got this. Let's do it."
+    scene a2_noel_spacewalk22 with dissolve
+    "Noel hovers down next to you, as the system message speaks up again."
+    SPEAKER "Starboard Airlock Exit Disengaged."
+    SPEAKER "Stand Clear."
+    play sound "audio/effect/doorpump.wav" volume 0.8
+    scene a2_noel_spacewalk23 with dissolve
+    "-Fssh-"
+    "The door opens and leaves little between you and the \"Great Beyond.\""
+    MC "Wow..."
+    E "Heh. It's a bit different from here, huh?"
+    MC "Y-yeah."
+    scene a2_noel_spacewalk25 with dissolve
+    "She moves up and hangs on the handle outside the exit."
+    E "Come on, Cap'n. It's even better out here."
+    scene a2_noel_spacewalk26 with dissolve
+    "You turn around one last time to make sure you're locked in."
+    MC "{i}(Whew...You got this, [name].)"
+    scene a2_noel_spacewalk27 with dissolve
+    "You muster up some courage and step out the exit."
+    "Noel is already quickly moving up the ladder towards the destination."
+    MC "{i}(Careful, [name]. One step at a time.)"
+    scene a2_noel_spacewalk28 with dissolve
+    "You pull yourself over and cling to the ladder."
+    MC "{i}(-whew- This isn't so bad now.)"
+    scene a2_noel_spacewalk29 with dissolve
+    "You look up at Noel who is already up at the goal beckoning for you to hurry up."
+    MC "{i}(..gh...Doesn't she know I'm freaking out a bit here.)"
+    scene black with fade
+    "You slowly make your way up to Noel's position."
+    scene a2_noel_spacewalk30 with dissolve
+    "She looks back at you and gives you a thumbs up."
+    "You feel a sense of relief knowing that you can stay where you are for a bit."
+    scene a2_noel_spacewalk31 with dissolve
+    "Your gaze drifts to the stars, as you wait for Noel to finish repairs."
+    "The tether connecting you and Noel floats around in front of you."
+    E "{i}-bzzzt- Hey. Crawl up here for a sec. I need a little help."
+    MC "{i}-bzzt- On my way."
+    scene black with dissolve
+    "You crawl up the last few steps on the ladder until you reach the Maintenance Box."
+    scene a2_noel_spacewalk31_2 with dissolve
+    MC "{i}-bzzt- I'm here. What do you need?"
+    E "{i}-bzzt- Come in here and latch on. I got a little tangled up in our leash."
+    scene a2_noel_spacewalk31_3 with dissolve
+    "You squeeze in between her legs and into the tight shaft."
+    MC "{i}(Shit. She's tied up pretty good. It's wrapped up all around her thigh...and crotch.)"
+    MC "{i}-bzzt- You're in a really tough spot here. I might get a little handsy getting you out, so be warned."
+    E "{i}-bzzt- Do whatchu gotta do. I'm almost done here."
+    MC "{i}(Well. Here goes.)"
+    scene a2_noel_spacewalk31_4 with dissolve
+    E "{i}-bzzt- Ah-"
+    "You push her buttcheek with one hand and pull up on the wire tangled up around her crotch with the other."
+    MC "{i}-bzzt- I just need a little more slack, and I'll get your leg free!"
+    scene black with Dissolve(1.5)
+    "After a bit more BDSM-inspired rope wrestling, you finally get her free..."
+    scene a2_noel_spacewalk31_5 with Dissolve(1.5)
+    E "{i}-bzzt- All fixed up! We're good to head back."
+    MC "{i}-bzzt- Whew. Good work."
+    scene a2_noel_spacewalk30 with fade
+    "You finish your work and start the descent."
+    scene black with fade
+    "The way back was much more comfortable, yet the fear, of slipping and floating off into the deep galaxy, still rests in your mind."
+    scene a2_noel_spacewalk32 with dissolve
+    "You and Noel both release your face shields after a successful mission."
+    E "You good?"
+    MC "Yeah."
+    scene a2_noel_spacewalk33 with dissolve
+    MC "You know...after I got over my fear. It's actually kinda nice...kinda..."
+    MC "Would I do it again? Pfft. There better be a damn good reason."
+    scene a2_noel_spacewalk34 with dissolve
+    E "Ya did good today, Cap'n. Especially with savin' me from my predicament."
+    E "Maybe ya got a future in this if the whole Cap'n thing don't work out!"
+    MC "Haha. If you say so."
+label noel_spacewalk_replay:
+    if _in_replay:
+        call replayNames from _call_replayNames_32
+    stop music fadeout 4
+    scene black with fade
+    "You go back over to change back into your casual clothes."
+    "But even after all the stress of the spacewalk, the only thing on your mind is the image of Noel's sweet butt in her tight thong."
+    "You can't help yourself. You have to sneak a quick peek at her."
+    play music "audio/noel/hard_metal.mp3" fadein 2
+    show noel_airlock1 with dissolve
+    MC "Ah..."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "Noel is shaking her nude butt in the air in front of you."
+    E "Cap'n...?"
+    "She calls out to get your attention, but little did she know your eyes were already on her."
+    E "Oh? You were already looking? I thought I could feel those dirty eyes peering at me..."
+    MC "Can you blame me..? Your body is all I can think about..."
+    scene a2_noel_spacewalk35 with dissolve
+    E "Hmph. What are you waiting for? Aren't you going to claim your reward...?"
+    menu:
+        "Claim your reward.":
+            scene a2_noel_spacewalk36 with fade
+        "Fight the urge and continue getting changed.":
+            stop music fadeout 2
+            scene a2_noel_spacewalk16 with fade
+            MC "{i}(Ignore pussy. Acquire money! The true Chad lifestyle.)"
+
+            $ noel_spacewalk_sex = True
+            $ noel_spacewalk_sex_deny = True
+            "You get changed then head out back to the hallway."
+            call ship_music from _call_ship_music_22
+            $ renpy.end_replay()
+            jump a2_stairsup_evening
+
+    "You slip your boxers off and walk over to her."
+    MC "What a nice ass, and such beautiful tanlines..."
+    E "Tell me more about how much you like my body..."
+    scene a2_noel_spacewalk37 with dissolve
+    MC "Oh? You like it when I compliment your body, then?"
+    E "No...I just love knowing that your eyes are on me. It turns me on hearing you describe all the dirty details of my body."
+    MC "And what about when I feel all those places?"
+    scene a2_noel_spacewalk37_1 with dissolve
+    E "That's even better."
+    MC "These sharp lines around your butt...How many hours did it take you?"
+    "Your fingertips trace the outlines of the tanlines along her thighs."
+    MC "This smooth pale skin, hidden from the world...but I get to see it. I get to feel all your sexy curves."
+    scene a2_noel_spacewalk37_2 with dissolve
+    E "Haah- Keep up those magic words..."
+    "Your other hand slides up around her hip, while you continue to vocalize your suave compliments that drive her wild."
+    MC "Your toned hips and back...Don't think all the work you put into them goes unnoticed..."
+    MC "All the way to your tight shoulder blades. Much like your inventions, you've taken the time and effort to craft the perfect body."
+    scene a2_noel_spacewalk38 with dissolve
+    E "Nggh-"
+    "She shoves her hips back in pure horny desperation, and the tip of your cock kisses her sticky entrance."
+    E "I can't take it anymore. Stick it inside..."
+    scene a2_noel_spacewalk39 with dissolve
+    "Giving in to her pleas, you push your rock-hard cock into her."
+    E "Haaah...Fuck, Cap...Just the tip and it's so big..."
+    MC "You're so wet, though. It won't be a problem."
+    show noel_airlock2 with d3
+    E "Ah--"
+    "In a sudden, swift movement, you start thrusting your hard cock inside her slippery cunt."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    E "Ffff-uck...I-it's so big..."
+    "Overwhelmed by your size, all she can do is wince and moan. You ponder stopping for a moment, yet you continue your slow, steady rhythm."
+    E "I-it feels good, though...Just a f-fucking lot."
+    "She must have felt your hesitation. Her words open the doors for you to enjoy her body fully."
+    MC "It feels amazing for me, too...and I love seeing your butt bounce."
+    pause
+    E "Y-you can go faster...I'm all right now."
+    show noel_airlock3 with d3
+    hide noel_airlock2
+    E "Hgh-"
+    "The green flag waves, and you're off to the races. Your hips pound into hers; driving your dick deep inside of her."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    E "Haa- It's feelin' good now...Keep filling me up."
+    "You don't have to be goaded on to do that. You continue thrusting deep inside her."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    E "Cap'n...harder...I want to feel even closer..."
+    scene a2_noel_spacewalk39_1 with dissolve
+    E "Haah?!"
+    "You pull her arms away from the wall and hold them by the wrists."
+    MC "I'm gonna use your sexy body how I want."
+    show noel_airlock4 with d3
+    hide noel_airlock3
+    E "Ngh{font=Meiryo.ttf}♥{/font}-"
+    "With your newfound handles, you use the leverage to slide the entire length of your member in and out of her twitching pussy."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    E "Ah! Fuck...Right there, Cap'n...Don't stop."
+    "You pound into her with rough thrust after rough thrust. Your mind is rapidly getting drunk off the feeling of her tight cunt."
+    MC "Ah- Fuck, Noel. It feels so fucking good."
+    E "Haah...Cap'n...I-I'm gonna cum. D-don't stop...Ah-"
+    "Those words almost push you over the edge."
+    $ persistent.a2_noel_spacewalk = True
+    $ renpy.save_persistent()
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    menu:
+        "Cum inside.":
+
+            scene a2_noel_spacewalk40 with flash
+            E "Ngh{font=Meiryo.ttf}♥{/font}{font=Meiryo.ttf}♥{/font}!"
+            "You pull her arms back and bury your cock in her deepest regions, where you shoot a thick load of sperm inside her."
+            scene a2_noel_spacewalk41 with dissolve
+            pause 0.4
+            scene a2_noel_spacewalk42 with d3
+            pause 0.4
+
+            scene a2_noel_spacewalk42 with flash
+            "-splurt-"
+            E "Nnnggh!"
+            "Noel moans loudly, as you relentlessly unload in her sensitive pussy."
+            scene a2_noel_spacewalk43 at pan_down_up_2 with slowfade3
+            window hide
+            $ renpy.pause(delay=None, hard=False)
+            window auto
+            "She spreads her butt cheeks and lets your sperm leak out of her."
+            E "You really filled me up Cap'n. Hope you enjoyed your little reward. I know I did..."
+            $ noel_lust += 3
+            window hide
+            show lust_gain_text "Noel lust +3" with dissolve
+            pause (0.5)
+            hide lust_gain_text "Noel lust +3" with dissolve
+            window auto
+            stop music fadeout 2
+            scene black with fade
+            $ renpy.end_replay()
+            $ noel_spacewalk_sex = True
+            "You get changed then head out back to the hallway."
+            call ship_music from _call_ship_music_23
+            jump a2_stairsup_evening
+        "Cum outside.":
+            scene a2_noel_spacewalk40 with dissolve
+            E "Ngh{font=Meiryo.ttf}♥{/font}{font=Meiryo.ttf}♥{/font}!"
+            scene a2_noel_spacewalk44 with flash
+            MC "..gh..."
+            "You pull out and cum ropes between Noel's tight butt cheeks."
+            scene a2_noel_spacewalk45 with flash
+            "-splurt- Another load shoots from your cock and onto her back and butt."
+            E "Haah...haaah..."
+            scene a2_noel_spacewalk46 at pan_down_up_2 with slowfade3
+            window hide
+            $ renpy.pause(delay=None, hard=False)
+            window auto
+            E "Haah...You really made a mess there Cap'n. Hope you enjoyed your little reward. I know I did..."
+            $ noel_lust += 3
+            window hide
+            show lust_gain_text "Noel lust +3" with dissolve
+            pause (0.5)
+            hide lust_gain_text "Noel lust +3" with dissolve
+            window auto
+            stop music fadeout 2
+            scene black with fade
+            $ renpy.end_replay()
+            $ noel_spacewalk_sex = True
+            "You get changed then head out back to the hallway."
+            call ship_music from _call_ship_music_24
+            jump a2_stairsup_evening
+
+label a2_dr_morning_concern_nav:
+    show screen a2_dr_morning_concern with d3
+    scene a1_dr_medbay1
+    $ renpy.pause(delay=None, hard=False)
+
+label a2_dr_morning_concern_idle:
+    scene dr_agni_prologue1 with dissolve
+    DR "Hi, [name]. Feeling okay today?"
+    MC "I sure do."
+    DR "Make sure to get enough sleep, okay?"
+    MC "Okay."
+    jump a2_dr_morning_concern_nav
+
+label a2_dr_morning_concern1:
+    hide screen a2_dr_morning_concern
+    if idris and not a3_dr_jelly1:
+        jump a3_dr_jelly1
+    if a2_dr_concern2 :
+        jump a2_dr_morning_concern_idle
+    if a2_dr_concern1 :
+        jump a2_dr_morning_concern2
+    scene dr_agni_prologue1 with dissolve
+    DR "Hello, [name]. I was meaning to speak with you. Got a minute?"
+    MC "Okay."
+    scene dr_agni_prologue22 with dissolve
+    DR "Come with me, then."
+    play sound "audio/effect/doorpump.wav" volume 0.2
+    scene black with fade
+    "You follow Dr. Clermont inside the observation room."
+    scene a2_dr_morning_concern1 with dissolve
+    MC "What's wrong?"
+    DR "It's about Miss Nyx. I did a preliminary physical exam on her."
+    scene a2_dr_morning_concern2 with dissolve
+    DR "And the results were...odd."
+    MC "And?"
+    DR "It's just that her body is like nothing I've seen before."
+    scene a2_dr_morning_concern3 with dissolve
+    DR "She has thousands of foreign bodies along her nerve endings and her blood is nothing like ours."
+    MC "Well...She's not human. That's to be expected, right?"
+    scene a2_dr_morning_concern1 with dissolve
+    DR "Yes...but now her health is my responsibility...and I don't feel fully confident in treating her."
+    MC "Hmm...Have you brought any of your concerns up with her yet?"
+    scene a2_dr_morning_concern2 with dissolve
+    DR "No. Not yet."
+    MC "You should. I'm sure you can figure something out. You might even surprise yourself. There's a reason why we all trust you so much."
+    if dr_control_nyx:
+        MC "I asked you to help control her because I trust you. Don't forget that."
+    else:
+        MC "Don't forget that."
+    DR "Right."
+    scene a2_dr_morning_concern1 with dissolve
+    DR "Thank you, [name]."
+    if not a2_dr_concern1 :
+        $ dr_affection += 3
+        window hide
+        show affection_gain_text_dr "Dr. Clermont affection +3" with dissolve
+        pause (0.5)
+        hide affection_gain_text_dr "Dr. Clermont affection +3" with dissolve
+        window auto
+    $ a2_dr_concern1 = True
+    jump a2_main_midday
+
+label a2_dr_morning_concern2:
+
+    scene dr_agni_prologue1 with dissolve
+    MC "Hey, Dr. Clermont. Talk to Nyx yet?"
+    DR "Ah. Good Morning, [name]. I did. Thank you for pushing me to consult her on the results."
+    DR "We were able to work something out. As you would say."
+    MC "Great. I always believed in you."
+    scene a2_dr_morning_concern4 with dissolve
+    "She stands up in front of you."
+    DR "-clears throat- Every day I'm on the ship I'm grateful that I came here."
+    scene a2_dr_morning_concern5 with dissolve
+    DR "It's a new experience every day, where I learn something fun and new about myself."
+    DR "And I owe a huge part of that to you."
+    scene a2_dr_morning_concern7 with dissolve
+    DR "So...-cough- Thank you."
+    MC "Aw. Don't get all sappy like that on me. It doesn't suit you."
+    scene a2_dr_morning_concern6 with dissolve
+    DR "What? I'm not allowed to tell you how happy you've made me? That's not fair."
+    MC "Fine. I'll accept your gratitude...with both arms."
+    play sound "audio/effect/upclothing.mp3"
+    scene a2_dr_morning_concern8 with dissolve
+    "You reach out and embrace her tightly."
+    DR "Ah?! [name]. Unhand me right this instant."
+    MC "Shush. You can't start acting tough now."
+    play sound "audio/effect/clothing.mp3" volume 0.3
+    scene a2_dr_morning_concern9 with dissolve
+    DR "Hmph. Fine. Just this once."
+    "She leans in and relaxes in your arms."
+    "You hug her for a bit longer, then let her go."
+    scene a2_dr_morning_concern7 with dissolve
+    DR "Hmph. Now I'm going to smell like a sweaty man all day."
+    MC "Heh. I'm glad you're starting to believe in yourself again. Uncertainty doesn't suit you."
+    if not a2_dr_concern2 :
+        $ dr_affection += 3
+        window hide
+        show affection_gain_text_dr "Dr. Clermont affection +3" with dissolve
+        pause (0.5)
+        hide affection_gain_text_dr "Dr. Clermont affection +3" with dissolve
+        window auto
+    scene black with fade
+    $ a2_dr_concern2 = True
+    "You leave the medbay and head back to the hallway."
+    jump a2_main_midday
+
+label nyx_games_nav:
+    show screen a2_nyx_games with d3
+    scene nyx_games1
+    $ renpy.pause(delay=None, hard=False)
+    show screen a2_nyx_games
+    $ renpy.pause(delay=None, hard=False)
+
+label nyx_games_nava4:
+    show screen a4_nyx_games with d3
+
+    $ renpy.pause(delay=None, hard=False)
+    show screen a4_nyx_games
+    $ renpy.pause(delay=None, hard=False)
+
+
+label nyx_games1:
+    hide screen a2_nyx_games
+    $ renpy.hide_screen("ship_nav")
+    if nyx_games_sex and idris:
+        jump a3_nyx_games1
+    if nyx_games2 :
+        jump nyx_games3
+    if nyx_games1 :
+        jump nyx_games2
+    scene nyx_games2 with dissolve
+    "Nyx is sitting on the floor with a controller in her hand."
+    MC "What? No way. Is that an Xbone Series X?"
+    scene nyx_games3 with dissolve
+    N "Huh? Oh hi, [name]. You mean this?"
+    MC "Yeah."
+    N "That little sweetheart, Lym, let me borrow this since I was feeling bored."
+    scene nyx_games4 with dissolve
+    MC "Nice! What games do you have?"
+    "You take a seat on the floor next to her."
+    scene nyx_games5 with dissolve
+    N "Hmmm...I have two games here."
+    N "I haven't played either yet though."
+    scene nyx_games6 with dissolve
+    N "I got Bean Guys and Middle Girth: Shadow of Whoredor."
+    N "What a gross title."
+    MC "Huh. Not much choice there. How about Bean Guys so we can at least play together."
+    scene black with fade
+    "A few minutes later."
+    scene nyx_games7 with dissolve
+    MC "Jump!! We're almost there!"
+    N "Wah- What button is that!?"
+    MC "X! X!"
+    scene nyx_games8 with dissolve
+    N "Nooo! I pressed it!"
+    MC "It's okay. We'll get past it later."
+    scene nyx_games9 with dissolve
+    N "No! You aren't leaving yet!"
+    N "I can do this!"
+    scene black with fade
+    "A few more minutes later."
+    scene nyx_games10 with dissolve
+    N "Woo! I did it!"
+    MC "Woo! That was a fast round."
+    MC "You're a quick learner."
+    scene nyx_games11 with dissolve
+    N "Hmph. Shut up and let's get to the next level already."
+    MC "Fine, fine."
+    $ nyx_affection += 2
+    window hide
+    show affection_gain_text "Nyx affection +2" with dissolve
+    pause (0.5)
+    hide affection_gain_text "Nyx affection +2" with dissolve
+    window auto
+    scene black with fade
+    $ nyx_games1 = True
+    "A few levels later..."
+    MC "I got an idea...Be right back!"
+    jump nyx_games2_cont
+    jump a2_right_night
+
+label nyx_games2:
+    hide screen a2_nyx_games
+label nyx_games2_cont:
+    scene nyx_games12 with dissolve
+    N "Hmph. So what was your great idea? I've been waiting."
+    MC "So impatient..."
+    scene nyx_games13 with dissolve
+    MC "I got one of my favorites. Wanna give it a go?"
+    N "Oh? Your favorite? What's it called?"
+    MC "Street Kombat 7"
+    scene nyx_games14 with dissolve
+    N "Hmm...Sounds interesting. What do we do in this game?"
+    MC "It's a fighting game. So we pick a character then fight against each other."
+    scene nyx_games15 with dissolve
+    N "Against each other, hm?"
+    MC "Yep. It's called versus mode."
+    N "Okay, sure. Sounds intriguing."
+    scene nyx_games16 with fade
+    MC "Now we pick our fighters."
+    N "Okay."
+    scene nyx_games17 with dissolve
+    N "Hmm...Who to pick?"
+    N "There are so many choices."
+    scene nyx_games18 with dissolve
+    N "Oooooo...Baiken..."
+    N "She looks cool...And check out the tits on her. She's perfect."
+    MC "Errr. She's not really for new players..."
+    N "Are you doubting me?"
+    MC "No. Baiken it is."
+    scene nyx_games19 with dissolve
+    MC "I'll go with ole faithful Mai."
+    N "Oooh, a cute babe too."
+    MC "Of course. I can't let you out-boob me. You ready to fight?"
+    scene nyx_games15 with dissolve
+    N "Hmph. Why don't we make this a bit more interesting?"
+    MC "What do you mean?"
+    scene nyx_games20 with dissolve
+    N "Having something at stake always makes things more exciting. Don't you agree?"
+    MC "I suppose."
+    N "If you win..."
+    scene nyx_games21 at pan_up_down with dissolve
+    N "I'll let you see my tits."
+    MC "Wha-?"
+    window hide
+    pause
+    window auto
+    N "But if I win..."
+    scene nyx_games20 with dissolve
+    N "You'll have to do whatever I want for a whole hour."
+    MC "What? A whole hour? That's crazy."
+    N "Where's the confidence, boy? Isn't this your favorite game?"
+    MC "Ha! You're right. Let's do this!"
+label fightgame_start1:
+    scene fight1 with fade
+    show fight2
+    show fight_nyx100
+    show fight_mc100
+    N "You better not take it easy on me or you'll regret it."
+    hide fight2 with dissolve
+    MC "Pssh. I'm not a casual."
+    MC "{i}(She's just standing there waiting for my move. What should I do?)"
+    jump fightgame_menu2
+label fightgame_menu:
+
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+        hide fight_nyx100
+    if nyx_dmg ==2:
+        show fight_nyx50
+        hide fight_nyx75
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+        hide fight_mc100
+    if mc_dmg ==2:
+        show fight_mc60
+        hide fight_mc80
+
+    hide fight1
+    show fight_reset behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+label fightgame_menu2:
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+
+    hide fight_super1
+    hide fight_super_hit
+    hide fight_high_hit
+    hide fight_high_block
+    hide fight_low_block
+    hide fight_low_hit
+    hide fight_super_block
+    hide fight_counter
+    show fight1 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_reset
+    menu:
+        "All-out Special Attack":
+            jump fight_special
+        "Jump Attack":
+            jump fight_jump
+        "Low Attack":
+            jump fight_low
+label fight_special:
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_super1 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    "You enter in the special command and Mai makes a flaming flip attack."
+    if fight_special :
+
+        if nyx_dmg ==0:
+            show fight_nyx100
+        if nyx_dmg ==1:
+            show fight_nyx75
+        if nyx_dmg ==2:
+            show fight_nyx50
+        if mc_dmg ==0:
+            show fight_mc100
+        if mc_dmg ==1:
+            show fight_mc80
+        if mc_dmg ==2:
+            show fight_mc60
+        show fight_super_block behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+        "But she is ready for that attack and easily blocks it."
+        jump fight_counter
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_super_hit behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    "You land your flaming elbow against her face and take a big chunk of her health with it."
+    $ nyx_dmg += 1
+    $ fight_special = True
+    if nyx_dmg ==3:
+        jump fight_win
+    jump fightgame_menu
+
+label fight_jump:
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight1 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    MC "{i}(A jumping attack should catch her off guard.)"
+    if fight_jump :
+
+        if nyx_dmg ==0:
+            show fight_nyx100
+        if nyx_dmg ==1:
+            show fight_nyx75
+        if nyx_dmg ==2:
+            show fight_nyx50
+        if mc_dmg ==0:
+            show fight_mc100
+        if mc_dmg ==1:
+            show fight_mc80
+        if mc_dmg ==2:
+            show fight_mc60
+        show fight_high_block behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+        "But she is ready for that attack and easily blocks it."
+        jump fight_counter
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_high_hit behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    "Your jumping attack lands on the unsuspecting victim."
+    $ nyx_dmg += 1
+    $ fight_jump = True
+    if nyx_dmg ==3:
+        jump fight_win
+    jump fightgame_menu
+
+label fight_low:
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight1 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    MC "{i}(A low attack should catch her off guard.)"
+    if fight_low :
+
+        if nyx_dmg ==0:
+            show fight_nyx100
+        if nyx_dmg ==1:
+            show fight_nyx75
+        if nyx_dmg ==2:
+            show fight_nyx50
+        if mc_dmg ==0:
+            show fight_mc100
+        if mc_dmg ==1:
+            show fight_mc80
+        if mc_dmg ==2:
+            show fight_mc60
+        show fight_low_block behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+        "But she is ready for that attack and easily blocks it."
+        jump fight_counter
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_low_hit behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    "She misjudges your attack and blocks high as you attack low and inflict a good amount of damage."
+    $ nyx_dmg += 1
+    $ fight_low = True
+    if nyx_dmg ==3:
+        jump fight_win
+    jump fightgame_menu
+
+label fight_counter:
+
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_counter behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    "She deals a swift but powerful counter-attack after her successful block."
+    $ mc_dmg +=1
+    if mc_dmg ==3:
+        jump fight_lose
+    jump fightgame_menu
+
+label fight_win:
+    hide fight_nyx50
+    show fight_nyx25
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_win1 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_super1
+    hide fight_super_hit
+    hide fight_high_hit
+    MC "I'm not done yet!"
+    show fight_nyx25
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_win2 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_win1
+    MAI "Here we go!"
+    hide fight_nyx25
+    show fight_nyx0
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    show fight_win3 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_win2
+    "You summon the flames to finish off the match."
+    scene fight_win4 with fade
+    show fight_nyx0
+    if mc_dmg ==0:
+        show fight_mc100
+    if mc_dmg ==1:
+        show fight_mc80
+    if mc_dmg ==2:
+        show fight_mc60
+    MAI "Hehe. Is that all you got? Come back when you´re strong enough to matter!"
+    $ nyx_dmg = 0
+    $ mc_dmg = 0
+    MC "{i}(Ha. She never stood a chance. It was still fun though.)"
+    jump nyx_games_win
+
+label fight_lose:
+    pause (0.4)
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    show fight_mc40
+    hide fight_mc60
+    show fight_counter2 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_counter
+    N "Take this!"
+    pause (0.4)
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    show fight_mc0
+    hide fight_mc40
+    show fight_counter3 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_counter2
+    N "And THIS!!!"
+    "She continues her perfect combo with a powerful finishing blow!"
+    pause (0.4)
+    if nyx_dmg ==0:
+        show fight_nyx100
+    if nyx_dmg ==1:
+        show fight_nyx75
+    if nyx_dmg ==2:
+        show fight_nyx50
+    show fight_mc0
+    show fight_counter4 behind fight_nyx100, fight_nyx75, fight_nyx50, fight_mc100, fight_mc80, fight_mc60 with dissolve
+    hide fight_counter3
+    "You could barely even land a hit as she read all of your moves to perfection."
+    MC "{i}(Sigh...how could I lose at my favorite game?)"
+    $ nyx_dmg = 0
+    $ mc_dmg = 0
+    N "Hahaha!"
+
+    jump nyx_games_lose
+
+label nyx_games_win:
+    scene nyx_games22 with fade
+    MC "Whew. That was fun! Want a rematch?"
+    N "[name]. Don't act so cool. You only tried so hard to win our bet. Didn't you?"
+    MC "Uh...no it's okay. Let's just pla-"
+    play sound "audio/effect/upclothing.mp3"
+    scene nyx_games23 at pan_up_down with dissolve
+    N "I'm a woman of my word."
+    "She loosens her shirt and unleashes her breasts upon you."
+    N "Remember this sight because I won't lose again."
+    window hide
+    pause
+    window auto
+    N "Wipe that look off your face and leave my presence, you pervert."
+    scene black with fade
+    $ nyx_games2 = True
+    "You get up and leave Nyx. You hear the game start up again as you close the door."
+    if rescue_done:
+        scene black with Dissolve(0.1)
+        jump a4_right_night2
+    jump a2_right_night
+
+label nyx_games3:
+    hide screen a2_nyx_games
+    scene nyx_games12 with dissolve
+    N "Hello, [name]. Ready for our rematch? Same rules as before."
+    scene nyx_games14 with dissolve
+    MC "Sure. I'm always down for a challenge."
+
+    scene nyx_games19 with dissolve
+    "You both select the same characters as before."
+    jump fightgame_start1
+
+label nyx_games_lose:
+    scene nyx_games24 with dissolve
+    N "What happened to all your confidence, handsome? You know what your loss means. Don't you?"
+    MC "-sigh- What do you want me to do? Clean your room? Make you dinner?"
+    N "Oh, I can do all of those things myself."
+    scene nyx_games25 with dissolve
+    "She reaches for something under the table."
+    N "I have other plans for you."
+label nyx_games_replay:
+    if _in_replay:
+        call replayNames from _call_replayNames_33
+    scene nyx_games26 with dissolve
+    "She emerges with a pair of handcuffs."
+    N "Fuhuhu. Take off your clothes for me. I've been wanting to play with that cock of yours."
+    menu:
+        "Accept your punishment.":
+            MC "Tie me up and play with my cock? Do your worst."
+            jump nyx_games_punish
+        "Decline.":
+            scene nyx_games27 with dissolve
+    MC "This isn't what I signed up for. Something sexual like that is a bit much for a game. Isn't there something else I can do?"
+    N "Hmph. Fine. I'm feeling a little parched."
+    N "Fetch me some juice from the kitchen, and you're free to go."
+    scene black with fade
+    "You run to the kitchen, grab her a drink, then rush back."
+    N "Hmph. You're off the hook."
+    $ nyx_games_sex = True
+    if rescue_done:
+        scene black with Dissolve(0.1)
+        jump a4_right_night2
+    jump a2_right_night
+
+label nyx_games_punish:
+    stop music fadeout 1.5
+    scene black with fade
+    "You strip down and stand completely nude in front of Nyx."
+    play music "audio/nyx/beach.mp3" fadein 2
+    scene nyx_games28 with dissolve
+    N "Good boy. Heh. Now turn around for me."
+    MC "Uh..."
+    N "Nu-uh. Remember, you're mine for the whole hour."
+    scene nyx_games29 with dissolve
+    "You reluctantly agree and turn around to face the wall."
+    N "Fuhuhu. You should be more careful about the risk you take, even if you think it's a sure bet."
+    N "You are a Captain, after all."
+    scene nyx_games30 with dissolve
+    "-click-"
+    "The cold handcuffs tighten around your wrists."
+    play sound "audio/effect/chain.mp3"
+    scene nyx_games31 with dissolve
+    stop sound fadeout .5
+    "You flex your arms to test the strength of the restraints."
+    N "Oh, they're not just for show, honey."
+    N "You won't be getting free that easily."
+    scene nyx_games32 with dissolve
+    "She sits on the bed in front of you and lifts your soft dick with her finger. You finally felt the touch of her smooth skin..."
+    N "I can't have you touching this and ruining all the fun."
+    N "Heh. Squirm all you want, boy, but you aren't allowed to leave."
+    scene nyx_games33 with dissolve
+    N "Oh...but you don't want to leave, do you?"
+    N "You love it when I make you my plaything. You little pervert."
+    show nyx_games_punish1 with dissolve
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "You're already getting hard just from this?"
+    N "Does being helpless really turn you on that much?"
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "Fuhuhu. I can feel it getting harder."
+    show nyx_games_punish2 with dissolve
+    hide nyx_games_punish1
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She speeds up as you become fully erect, and expertly strokes your cock as she massages every part of it."
+    N "Huhuh, I can feel you already reaching your limit."
+    N "Do you want to cum from my hand already? But I haven't said you can cum yet."
+    MC "Ah-"
+    "Her smooth hands milk your cock, and there's nothing you can do to stop the imminent ejaculation."
+    MC "{i}(Cumming-)"
+    scene nyx_games34 with dissolve
+    N "Ah!"
+    "She stops stroking your dick right before you explode. You're helplessly blue-balled by Nyx."
+    scene nyx_games35 with dissolve
+    N "Heh. It won't stop twitching."
+    N "I bet you want to cum so bad."
+    show nyx_games_punish3 with dissolve
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "Aw. What a naughty boy you are. Were you about to cum without permission?"
+    N "Perverts like that deserve to be punished."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "Beg for it and I'll make you cum."
+label nyx_games_cum_menu:
+    menu:
+        "Beg her to finish you off.":
+            jump nyx_games_cum
+        "Resist.":
+            window hide
+            $ renpy.pause(delay=None, hard=False)
+            window auto
+            N "Heh. Acting tough again?"
+            N "I guess you won't get to cum today."
+            jump nyx_games_cum_menu
+label nyx_games_cum:
+    MC "Make me cum, please!"
+    N "Ohh? Good boy. What an earnest reply."
+    show nyx_games_punish4 with dissolve
+    hide nyx_games_punish3
+    "She grabs your dick with both hands and begins to milk you dry."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "Ngh...what a beautiful reaction."
+    N "How's it feel? Going to cum soon? Moan for me. Beg me to make you cum."
+
+label nyx_games_cum_repeat:
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    menu:
+        "Cum.":
+            scene nyx_games36 with flash
+        "Beg her.":
+            MC "Don't stop..ngh...Milk me dry!"
+            if not nyx_games_sex :
+                $ nyx_lust += 1
+                $ nyx_dom += 1
+                window hide
+                show dom_gain_text "Nyx dominance +1" with dissolve
+                pause (0.5)
+                hide dom_gain_text "Nyx dominance +1" with dissolve
+                window auto
+            N "Ah-- Such a good boy..."
+            N "Cum. Cum for me."
+
+    scene nyx_games36 with flash
+    MC "Nggh."
+    "She milks you to completion, but she doesn't stop stroking you."
+    scene nyx_games37 with flash
+    "You cum once more from her attack."
+    N "Fuhuhu. What a dirty dick."
+    stop music fadeout 3
+    scene nyx_games38 with dissolve
+    N "You got so much of your smelly juice all over my hand..."
+    N "-sigh- What a waste."
+    if not nyx_games_sex :
+        $ nyx_lust += 1
+        $ nyx_dom += 1
+        window hide
+        show dom_gain_text "Nyx dominance +1" with dissolve
+        pause (0.5)
+        hide dom_gain_text "Nyx dominance +1" with dissolve
+        window auto
+    scene black with fade
+    $ renpy.end_replay()
+    $ nyx_games_sex = True
+    $ persistent.a2_nyx_games = True
+    $ renpy.save_persistent()
+    "You're released and head back to the hallway."
+    call ship_music from _call_ship_music_25
+    if rescue_done:
+        scene black with Dissolve(0.1)
+        jump a4_right_night2
+    jump a2_right_night
+
+label nyx_shoot1_nav:
+    show screen nyx_shoot1 with d3
+    scene nyx_shoot1
+    $ renpy.pause(delay=None, hard=False)
+    show screen nyx_shoot1
+    $ renpy.pause(delay=None, hard=False)
+label nyx_shoot1_idle:
+    scene nyx_shoot5 with dissolve
+    N "Hey, [name]. You here to admire my skills?"
+    MC "Ha. I think I've seen enough already. We all know you're a badass."
+    N "Pfft. Suit yourself."
+    jump nyx_shoot1_nav
+label nyx_shoot1:
+    hide screen nyx_shoot1
+    if nyx_shoot1 :
+        jump nyx_shoot1_idle
+    stop music fadeout 2
+    scene nyx_shoot2 with dissolve
+    "You quietly walk up behind Nyx."
+    "-Fssh-"
+    play music "audio/nyx/shopping.mp3" fadein 2
+    "A low fizzing sound fills the room, as a purple crest begins rotating around her wrist."
+    scene nyx_shoot3 with dissolve
+    "A loud crack of thunder rings out, and a purple lightning bolt rains down on the target."
+    N "Mwhaha...Still got it."
+    MC "Oh my. What a creepy laugh."
+    scene nyx_shoot4 with dissolve
+    N "Hmm? What was that?"
+    MC "Oh, nothing...."
+    MC "Whatcha doing here?"
+    scene nyx_shoot5 with dissolve
+    N "Mmm, just practicing a few of my offensive crests someplace that I don't have to worry about holding back."
+    N "I heard about it from our cute little crewmate."
+    MC "Oh? Are you expecting to see some combat soon?"
+    scene nyx_shoot6 with dissolve
+    N "Hopefully not, but it doesn't hurt to be prepared, wouldn't you say?"
+    MC "Yeah, I see your point. Having someone with your skills on board might prove to be crucial at some point."
+    scene nyx_shoot5 with dissolve
+    N "Hahaha. \"Might be crucial,\" he says."
+    N "Don't you underestimate me."
+    MC "Oh, I look forward to seeing your true power for myself."
+    scene nyx_shoot8 with dissolve
+    N "Huuuuuh? You lookin for a fight?"
+    MC "N-no no....I mean. Why don't you join us on the next mission?"
+    scene nyx_shoot9 with dissolve
+    N "Hmm...Sounds interesting. I'll join you."
+    MC "Really? Great. I'll make sure you're included in our plans."
+    N "Hmph. Very well."
+    if mc_spec == "tech":
+        play sound "audio/effect/special.mp3" volume 0.6 fadein .5
+        show tech_usage
+        pause 0.9
+        MC "Ah. One more thing. If you want an extra challenge, try setting the targets to oscillating mode."
+        N "Hmph. Good idea."
+        $ nyx_affection += 1
+        window hide
+        show affection_gain_text "nyx affection +1" with dissolve
+        pause (0.2)
+        hide affection_gain_text "nyx affection +1" with dissolve
+        window auto
+    if mc_spec == "war":
+        play sound "audio/effect/special.mp3" volume 0.6 fadein .5
+        show war_usage
+        pause 0.9
+        MC "Ah. One more thing. If you want an extra challenge, try having those targets move. Attacking a stationary object will only get you so far."
+        N "Hmph. Good idea."
+        $ nyx_affection += 1
+        window hide
+        show affection_gain_text "nyx affection +1" with dissolve
+        pause (0.2)
+        hide affection_gain_text "nyx affection +1" with dissolve
+        window auto
+
+    stop music fadeout 2
+    scene black with fade
+    $ nyx_shoot1 = True
+    "You let Nyx practice some more and head back out to the hallway."
+    call ship_music from _call_ship_music_26
+    jump a2_main_midday
+
+
+label nyx_scan1_nav:
+    if a3_idris and not a3_nyx_nav2:
+        show screen a3_nyx_nav1 with d3
+        scene a3_nyx_nav0
+        $ renpy.pause(delay=None, hard=False)
+    show screen nyx_scan1 with d3
+    scene nyx_scan1
+    $ renpy.pause(delay=None, hard=False)
+label nyx_scan1:
+    hide screen nyx_scan1
+    if nyx_scan1 :
+        jump nyx_scan_idle
+    scene nyx_scan2 with dissolve
+    "You approach Nyx who is standing at the Nav control desk."
+    MC "Hey Nyx. What's up?"
+    scene nyx_scan5 with dissolve
+    N "Morning, [name]. I'm just scanning the feeds for anything useful for getting back to Eldar."
+    N "But the tech on the ship is quite sub-optimal."
+    MC "Really? Our communication relay system is top of the line. We can send and receive messages from Earth with hardly any delay."
+    scene nyx_scan3 with dissolve
+    N "I'm sorry. I didn't mean it that way."
+    N "I am very grateful to be here."
+    scene nyx_scan4 with dissolve
+    N "But sending messages to Earth is very different from sending something thousands of lightyears away to Eldar."
+    MC "Thousands? Wow. So how long would it take you to get home if you had Eldar tech?"
+    scene nyx_scan6 with dissolve
+    N "Hm. How long? Two, maybe three days, depending on my mental state."
+    MC "Your mental state? What does that have to do with anything?"
+    scene nyx_scan4 with dissolve
+    N "How can I explain it..."
+    N "Warping between sub-sectors of the galaxy puts enormous strain on the body and mind."
+    MC "I see. Why's that?"
+    scene nyx_scan6 with dissolve
+    N "Hmm. I'd rather not get into the details. But I can show you sometime...once I find a way back, that is."
+    MC "Oh! That sounds like an invitation! I can't wait to see this wonderful Eldar you speak of so much."
+    scene nyx_scan4 with dissolve
+    N "Wh- I didn't mean...fine."
+    N "Keep your promise and I will take you home one day. It's the least I can do anyway."
+    scene black with fade
+    $ nyx_scan1 = True
+    "You chat a bit more then head back to the hallway."
+    jump a2_longhall_midday2
+
+label nyx_scan_idle:
+    scene nyx_scan2 with dissolve
+    MC "Hey, Nyx. Find anything yet?"
+    scene nyx_scan5 with dissolve
+    N "Nothing yet. I'll tell you when I find something, though."
+    MC "Okay. Keep at it."
+    jump nyx_scan1_nav
+
+label dr_tea1_nav:
+    show screen dr_tea1 with d3
+    scene dr_tea1
+    $ renpy.pause(delay=None, hard=False)
+    show screen dr_tea1 with d3
+    $ renpy.pause(delay=None, hard=False)
+label dr_tea1:
+    hide screen dr_tea1
+    if dr_tea1 :
+        jump dr_tea_idle
+    scene dr_tea2 with dissolve
+    MC "Hi, Dr. Clermont."
+    DR "Ah. Good afternoon, [name]. Care for some tea?"
+    MC "That's not really my style, but I'll chat for a while if you would have me."
+    DR "Most certainly."
+    scene dr_tea3 with dissolve
+    "You step around the bar across from her."
+    DR "So what did you want to talk to me about?"
+    MC "Oh, nothing important. I just realized that I don't know much about the real you."
+    scene dr_tea4 with dissolve
+    DR "What do you mean? I think you know quite a lot about me."
+    DR "We share quite a few secrets between us too, don't we?"
+    MC "Wow, that's not like you to dodge a question like that. I guess we aren't there yet. Sorry for prying."
+    scene dr_tea5 with dissolve
+    DR "Aw jeez, [name]. Don't say it like that. Go ahead. Ask away. I'll try to be as open with you as I can."
+    MC "Okay! We'll keep it simple then."
+    scene dr_tea6 with dissolve
+    MC "Do you have anyone waiting for you back home? Family, friends...boyfriend?"
+    DR "Goodness no! What kind of woman do you take me for?!"
+    MC "Haha! Sorry. It was a joke."
+    scene dr_tea5 with dissolve
+    DR "Hmph...As for family. My mother and father weren't ready for kids when I was born, so I was raised mostly by my Grandmother."
+    DR "She died a few years ago, though. So nobody is really waiting for me."
+    scene dr_tea4 with dissolve
+    MC "I'm sorry to hear that. What about friends?"
+    DR "Well, Jessica and I would go out for dinner and drinks sometimes after work."
+    DR "But I'm technically her boss, so I wouldn't count her as my friend."
+    scene dr_tea6 with dissolve
+    DR "Guess I was just too busy with work to make friends."
+    DR "I'm just a lonely woman, overly invested in my career."
+    MC "But now you've got us right?"
+    scene dr_tea3 with dissolve
+    DR "Yes, you all are more than I could ask for."
+    if not dr_tea1 :
+        $ dr_affection += 3
+        window hide
+        show affection_gain_text_dr "Dr. Clermont affection +3" with dissolve
+        pause (0.5)
+        hide affection_gain_text_dr "Dr. Clermont affection +3" with dissolve
+        window auto
+    scene black with fade
+    $ dr_tea1 = True
+    "You chat with her for a while longer then head out to the hallway."
+    jump a2_main_evening2
+label dr_tea_idle:
+    scene dr_tea2 with dissolve
+    DR "Good afternoon, [name]."
+    MC "Hi Dr. Clermont. Got any more stories for me?"
+    DR "Ha. Maybe next time. I'm not feeling like opening up just yet."
+    jump dr_tea1_nav
+
+label noel_drink1_nav:
+    show screen noel_drink1 with d3
+    scene noel_drink1
+    $ renpy.pause(delay=None, hard=False)
+    show screen noel_drink1
+    $ renpy.pause(delay=None, hard=False)
+label noel_drink1:
+    hide screen noel_drink1
+    if idris and noel_drink1 and not a3_noel_drink1:
+        jump a3_noel_drink1
+    if a3_noel_drink1:
+        scene noel_drink2 with dissolve
+        MC "{i}(Let's leave her to drink in peace.)"
+        jump noel_drink1_nav
+    scene noel_drink2 with dissolve
+    "You approach Noel, who is deep down the hole to drunkenness."
+    "Do you sit down next to her?"
+    menu:
+        "Yes.":
+            scene noel_drink3 with dissolve
+        "No.":
+            jump noel_drink1_nav
+    stop music fadeout 2
+    E "Hey there, Cap'n. Come to join my sadness party?"
+    MC "Sadness party? Why what's wrong?"
+    play sound "audio/effect/drinktable.mp3" volume 0.5
+    scene noel_drink4 with dissolve
+    play music "audio/drflute.mp3" fadein 2
+    E "Here ya go. I can't be the only one drinkin'."
+    "She sets down the shot glass in front of you."
+    play sound "audio/effect/pour.mp3" volume 0.5
+    scene noel_drink5 with dissolve
+    "And pours herself another drink."
+    menu:
+        "Drink.":
+            scene noel_drink6 with dissolve
+            "You join Noel and gulp down the shot."
+            "It burns your throat as it goes down."
+            scene noel_drink7 with dissolve
+            MC "{i}(Damn, she drinks the hard stuff.)"
+            "She downs her drink and gives a satisfied sigh."
+            play sound "audio/effect/drinktable.mp3" volume 0.5
+            scene noel_drink8 with dissolve
+            E "Haaah. That's more like it."
+            play sound "audio/effect/pour.mp3" volume 0.5
+            scene noel_drink18 with dissolve
+            MC "So, are you going to keep me in the dark, or are you going to tell me what's wrong?"
+            E "Oh come on. You don't want to hear about my problems. Let's just drink and forget all about 'em."
+            scene noel_drink17 with dissolve
+        "Don't drink.":
+            MC "I'm alright. Not really in the mood to drink."
+            E "Okay. More for me."
+            scene noel_drink7 with dissolve
+            "She downs her drink and gives a satisfied sigh."
+            play sound "audio/effect/drinktable.mp3" volume 0.5
+            scene noel_drink8 with dissolve
+            E "Haaah. That's more like it."
+            MC "So, are you going to keep me in the dark, or are you going to tell me what's wrong?"
+            E "Oh come on. You don't want to hear about my problems. Let's just drink and forget all about 'em."
+            scene noel_drink17 with dissolve
+    E "That's for the best, right?"
+    MC "Hardly. Come on. Let me in. Tell me what's got you down."
+    scene noel_drink16 with dissolve
+    E "Hah. Well, you asked for it. Once the gates are open, it won't stop flowing."
+    MC "Then it's on me if it gets weird. I can handle it."
+    scene noel_drink15 with dissolve
+    E "Haha. Sure you can."
+    "She grabs the bottle and takes a big swig from it."
+    scene noel_drink14 with dissolve
+    E "Haah."
+    E "My momma's sick, and my paycheck's the only thing keeping a roof over her head."
+    MC "Oh..."
+    E "And my two brothers are actin' up."
+    scene noel_drink13 with dissolve
+    E "Jus' last night. They were brought home in the back of a cop car."
+    E "I'm not there to smack them back in line. Ya know?"
+    scene noel_drink12 with dissolve
+    E "-sigh-"
+    E "I'm just worried, Cap'n..."
+    menu:
+        "Toast \"To family\"":
+            scene noel_drink10 with dissolve
+            MC "To family."
+            E "Hm?"
+            play sound "audio/effect/clink.mp3" volume 0.5
+            scene noel_drink9 with dissolve
+            "-clink-"
+            "Her face lights up as she toasts."
+            E "To family."
+        "Give her some encouraging words.":
+            scene noel_drink11 with dissolve
+            MC "I'm sure your mom's a strong lady just like you. And she will get those boys in check."
+            MC "And if there's anything I can do for you or them. Just let me know."
+            scene noel_drink12 with dissolve
+            E "You're right. Thanks."
+    if not noel_drink1:
+        $ noel_affection += 4
+        window hide
+        show affection_gain_text "Noel affection +4" with dissolve
+        pause (0.5)
+        hide affection_gain_text "Noel affection +4" with dissolve
+        window auto
+    scene black with fade
+    stop music fadeout 1
+    $ noel_drink1 = True
+    "You keep Noel company for a bit then head to bed."
+    call ship_music from _call_ship_music_27
+    jump a2_mc_night
+
+label lym_yoori1_nav:
+    if lym_yoori1 :
+        jump lym_yoori2_nav
+    show screen lym_yoori1 with d3
+    scene lym_yoori1
+    $ renpy.pause(delay=None, hard=False)
+
+label lym_yoori1:
+    hide screen lym_yoori1
+    scene lym_yoori2 with dissolve
+    "Lym is speaking to the crew of the Bellona on the communication monitor."
+    "You step up next to her and join the conversation."
+    scene lym_yoori7 with dissolve
+    R "Hey! Is that [name] I see there?"
+    MC "Yep. It's me. Hi Yoo-ri, Sybil."
+    scene lym_yoori6 with dissolve
+    SK "H-hi..."
+    "She cowers behind Yoo-ri in a cute attempt to hide from the spotlight."
+    scene lym_yoori3 with dissolve
+    R "I was just telling Lym that we were about to head off on our new mission."
+    R "We just entered orbit and are making landfall in a few hours."
+    MC "Nice. What are you expecting to find there?"
+    scene lym_yoori4 with dissolve
+    R "Don't know yet. The atmosphere's too dense for our scanners."
+    MC "Ah. Just like us. Going in blind this time. Be safe."
+    scene lym_yoori7 with dissolve
+    R "We got our hands full. That's for sure."
+    R "But nothing we can't handle."
+    scene lym_yoori5 with dissolve
+    R "Right Sybil?"
+    SK "Y-yes..."
+    SK "G-good luck on your mission, [name]."
+    scene lym_yoori4 with dissolve
+    MC "You too. I'll let you continue your conversation with Lym then."
+    R "Heh. Don't die out there, [name]."
+    scene black with fade
+    $ lym_yoori1 = True
+    "You leave Lym and head back to the hallway."
+    jump a2_longhall_evening2
+
+label lym_yoori2_nav:
+    show screen lym_yoori2 with d3
+    scene lym_yoori8
+    $ renpy.pause(delay=None, hard=False)
+
+label lym_yoori2:
+    hide screen lym_yoori2
+    if a3_idris and not a3_yoori_lili1:
+        jump a3_yoori_lili1
+    if a3_yoori_lili1:
+        scene a3_yoori1 with fade
+        MC "Need any help, Lym?"
+        L "No...just relaxing. You're welcome to join me though."
+        MC "I'll pass for now. Have some stuff to take care of."
+        L "Aw. Okay, [name]."
+        scene lym_yoori8 with d3
+        jump lym_yoori2_nav
+    scene lym_yoori9 with dissolve
+    MC "Hey, Lym. Got a minute?"
+    MG "Mhm. Come, sit."
+    scene lym_yoori10 with dissolve
+    "You sit down next to her on the railing."
+    MC "Well I was just thinking. You remember that room in the cave back on Xerxes?"
+    MG "Hmm. Yeah. Of course I do, but whatever experiment that was going on is finished now."
+    scene lym_yoori12 with dissolve
+    MC "Sure. I'm not concerned about that though. I'm worried about why it was there."
+    MC "And more importantly, why we haven't heard anything about it from HQ."
+    scene lym_yoori13 with dissolve
+    MG "Huh? What are you saying? That HQ is hiding it from us?"
+    MG "Don't be crazy."
+    scene lym_yoori12 with dissolve
+    MC "You're probably right, but hear me out."
+    MC "Mars glossed over it, barely even acknowledging the danger we were in."
+    MC "No news about finding humans...no warning bulletins about the peril that could be there..."
+    MC "Wouldn't it be in everyone's best interest to know about that?"
+    scene lym_yoori13 with dissolve
+    MG "Hmm...I guess I see your point."
+    MG "Even if you're right. What could we do?"
+    scene lym_yoori12 with dissolve
+    MC "Nothing by ourselves, at least. We need some help or allies in high places."
+    MC "But first we need to find out if my suspicions are true."
+    scene lym_yoori14 with dissolve
+    MG "Oh jeez, [name]. You're taking this way too far."
+    MC "I'm just covering all the loose ends just to be sure!"
+    MG "-sigh-...It couldn't hurt, I guess."
+    scene lym_yoori13 with dissolve
+    MG "Where do we start?"
+    MC "Yes! Let the investigation begin!"
+    scene black with fade
+    "You and Lym start going through the computer records to find anything useful..."
+    scene lym_yoori15 with dissolve
+    MG "Gah! There's so much red tape for every one of these reports..."
+    MG "Even our own report is classified..."
+    scene lym_yoori16 with dissolve
+    MG "I think you may actually be on to something."
+    MC "Really? You're with me on this one?"
+    scene lym_yoori17 with dissolve
+    MG "Yes. But that doesn't mean we have any proof at all."
+    MC "Hm. So what's our next move then?"
+    scene lym_yoori18 with dissolve
+    MG "Ahh...[name]. I don't like doing this!"
+    MG "It's really starting to scare me."
+    MC "Come on, Lym. You're the only one I trust with this."
+    scene lym_yoori19 with dissolve
+    MG "Hmph. Fine."
+    MG "We need to find an ally that we can trust. Someone that's close to the situation."
+    MC "Uh...Hey! What about Yoo-ri?"
+    scene lym_yoori21 with dissolve
+    MG "Hmm...Yoo-ri..."
+    MG "She might just be the perfect person to bring this up with."
+    scene lym_yoori20 with dissolve
+    MG "Think about it."
+    MG "She's in our exact same position, and she has no ties to the higher ups, so we can trust her."
+    scene lym_yoori22 with dissolve
+    MG "Of course, we could be looking into something that isn't even there."
+    MG "So we gotta choose our words carefully."
+    MC "Right! Let's give her a call then."
+    scene lym_yoori23 with dissolve
+    MG "W-w-wait. I'm not ready!"
+    MC "Relax. I'll handle it. I'm just going to be asking some probing questions. Trust me."
+    MG "Okay. I'll just listen then."
+    scene lym_yoori32 with dissolve
+    "-ring ring-"
+    "You pick up your phone and call Yoo-ri's personal line."
+    scene lym_yoori25 with dissolve
+    R "Ngh..Hey [name]. Whatcha need?"
+    MC "Oh my god. What happened? Are you okay?"
+    scene lym_yoori26 with dissolve
+    R "Heh. This? I'll be fine."
+    R "We got ambushed on the planet by some aggressive animals."
+    scene lym_yoori27 with dissolve
+    R "One nicked me up when we were retreating back to the ship."
+    R "But, yeah. What did ya need? I don't get calls from you very often."
+    scene lym_yoori28 with dissolve
+    MC "I was just wondering if you've noticed anything weird happening in your missions."
+    R "Yeah actually. Both of our missions have been hampered by extremely hostile populations."
+    scene lym_yoori29 with dissolve
+    R "We could hardly get any of our scientific work done."
+    MC "Same here! Weren't these target planets supposed to be mostly barren...with a slight chance of any forms of life?"
+    scene lym_yoori30 with dissolve
+    MC "It could just be a coincidence though, I suppose."
+    MC "Keep an eye out for anything odd. And let me know if you find anything."
+    scene lym_yoori31 with dissolve
+    R "You got it, [name]. Be safe out there."
+    R "I'm going to finish getting patched up."
+    MC "Thanks, Yoo-ri."
+    scene lym_yoori33 with dissolve
+    "-beep-"
+    MC "Hmm. So, it looks like it isn't just us having problems on our missions."
+    MC "I think I set it up pretty well though, I didn't want to say too much."
+    scene lym_yoori34 with dissolve
+    MG "I think you did great. Just...promise me you'll be careful, okay?"
+    MC "I will, partner..."
+    scene black with fade
+    $ lym_yoori2 = True
+    "You leave Lym and head back out to the hallway."
+    jump a2_longhall_evening2
+
+
+
+label dr_secretary1:
+    scene dr_secretary1 with dissolve
+    "You enter the communication room and see a new message available."
+    MC "{i}(Huh? I wonder who it's for?)"
+    scene dr_secretary2 with dissolve
+    "-beep-"
+    "This message is for Captain [lastname]. Please enter your authorization code."
+    MC "{i}(6969. Heh.)"
+    scene dr_secretary3 with dissolve
+    "-Foom-"
+    "The holoboard screen lights up with the message."
+    scene dr_secretary4 with pixellate
+    AM "-cough cough-"
+    AM "In light recent actions, the Admirality Board and I have determined that a tighter leash is required for you and your crew."
+    AM "From now on, I expect daily status, expenses, and inventory reports."
+    scene dr_secretary5 with dissolve
+    AM "If you want to keep your position of Captain, it would be wise of you to take these reports seriously."
+    AM "If you have any comments or concerns... Do reach out."
+    AM "Until next time."
+    scene dr_secretary6 with pixellate
+    MC "{i}(Ugh...Does she even know how long these reports will take to do every day?)"
+    MC "{i}(Of course she does. This must be her way of punishment.)"
+    scene dr_secretary7 with fade
+    MC "{i}(Well. Nothing I can do about it now besides getting to work.)"
+    MG "[name]!"
+    scene dr_secretary8 with dissolve
+    MG "Hey, care to co-...Uh?"
+    DR "[name]. Are you feeling well? You look like your soul has been sucked right out of your body."
+    MC "Yeah. Mars just gave me a huge load of paperwork to do. It's going to keep me swamped for hours every day."
+    scene dr_secretary9 with dissolve
+    MG "That does sound tough."
+    MC "Yeah. It's her form of punishment for last mission."
+    MC "Lym...could you ple-"
+    scene dr_secretary10 with dissolve
+    MG "Nope! Don't even ask! It was your idea to bring Nyx along."
+    MC "But-"
+    MG "No buts. You dug your own grave on this one."
+    scene dr_secretary11 with dissolve
+    MC "-sigh- She can be harsh sometimes."
+    DR "True. But it's tough love."
+    scene dr_secretary12 with dissolve
+    DR "What kind of reports is she having you do?"
+    MC "Oh...some expense and inventory entries for the day. Basically useless busywork."
+    scene dr_secretary13 with dissolve
+    DR "Let me take care of that for you, okay? Being a Captain in charge of so many lives must be hard work."
+    DR "Let me ease that burden for you."
+    MC "If you don't mind. The help would be appreciated."
+    scene dr_secretary14 with dissolve
+    DR "Besides. There's hardly any work to keep me busy through these long days."
+    DR "Send me the details and I'll take care of it for you."
+    scene dr_secretary15 with dissolve
+    DR "And maybe swing by my office later to discuss if I'm doing it correctly."
+    MC "Are you sure this isn't too much?"
+    DR "I wouldn't offer if I didn't want to do it."
+    MC "Thank you..."
+    scene black with fade
+    $ dr_secretary1 = True
+    "You leave Dr. Clermont and head back to the hallway."
+    jump a2_longhall_evening
+
+label dr_secretary1_nav:
+    show screen dr_secretary1_nav with d3
+    scene dr_secretaryidle16
+    $ renpy.pause(delay=None, hard=False)
+
+label dr_secretary1_idle:
+    hide screen dr_secretary1_nav
+    scene dr_secretary18 with dissolve
+    MC "Hi, Dr. Clermont. How is the paperwork going?"
+    scene dr_secretary33 with dissolve
+    DR "It's going fine. Nothing odd to report for now."
+    MC "Thanks. Keep up the good work."
+    jump dr_secretary1_nav
+
+
+label dr_secretary2:
+    scene dr_secretary16 with fade
+    "You walk into the medbay looking at your phone."
+    stop music fadeout 2
+    "You received a few emails about the recent status reports Dr. Clermont was sending in for you."
+    MC "{i}(-sigh- It looks like she isn't doing a very good job with these...)"
+    play music "audio/doc/bad_self.mp3" volume 0.8 fadein 3
+    scene dr_secretary17 at pan_down_up with dissolve
+    "You look up from your phone to see Dr. Clermont in the sexiest office wear you've ever seen."
+    window hide
+    pause
+    window auto
+    MC "-gulp- I-I need to speak to you about something."
+    DR "Hehe. I've been waiting on you to show up."
+    MC "You have?"
+    DR "Mhm. I've been working for quite a while for you, and you never even came to say \"thank you.\" Is that how you treat all of your assistants?"
+    scene dr_secretary18 with dissolve
+    MC "..gh..."
+    MC "Actually that's why I'm here. I've gotten a few error reports from the documents you sent in for me."
+    MC "Thankfully they were small errors, and the system caught them first. So it's not that big of a deal, really."
+    scene dr_secretary19 with dissolve
+    DR "{i}I'm really really sorry, Mr. [name]! Please don't fire me!"
+    DR "{i}I need this job!"
+    MC "What?!"
+    scene dr_secretary20 with dissolve
+    DR "{i}Isn't there something I could do to make it up to you?"
+    MC "{i}(What the fuck is going on? Is this some sort of roleplay?)"
+label dr_secretary_sex1_replay:
+    scene dr_secretary21 with dissolve
+    if _in_replay:
+        call replayNames from _call_replayNames_9
+    DR "{i}Would you forget about it if I sucked your dick?"
+    menu:
+        "Get into character and roleplay with her.":
+            MC "-cough cough-"
+
+    scene dr_secretary22 with dissolve
+    MC "I don't know...These errors could bankrupt me. I'm going to have to ask you for more if you want me to sweep this under the rug."
+    DR "Ah! More? What do you mean?"
+    MC "It means you have to give me a little of-"
+    scene dr_secretary24 with dissolve
+    MC "This."
+    scene dr_secretary23 with dissolve
+    DR "Ah!"
+    "She lets out a surprised moan as you grab her ass."
+    play sound "audio/effect/upclothing.mp3"
+    scene dr_secretary25 with vpunch
+    "You spin her around and ram your pelvis against her butt. You rip her shirt off and fondle her exposed breast with your right hand."
+    "And place your left hand firmly around her neck."
+    DR "M-Mr. [name]. What are you doing?!"
+    "You whisper in her ear."
+    MC "I'm going to fuck your tight cunt as punishment."
+    scene dr_secretary26 with dissolve
+    "You release your grip and thrust your hips forward."
+    DR "{i}Nhh~"
+    "She falls forward in an exaggerated movement."
+    scene dr_secretary28 with dissolve
+    play sound "audio/effect/drinktable.mp3"
+    "And falls against the table, knocking over her things in the process."
+    DR "{i}Ahh!"
+
+    scene dr_secretary29 with dissolve
+    "You step behind her and pull up on her skirt."
+    play sound "audio/effect/clothing.mp3"
+    scene dr_secretary29_1 with dissolve
+    DR "Nngh...Mr. [name]."
+    MC "Three, no four million dollars this error could have cost me! Is your ass worth that much?!"
+    show spec with vpunch
+    DR "Ah-"
+    "You squeeze her fat buttcheek between your fingers."
+    MC "No. Of course, it's not. You need some extra punishment first, so you'll pay more attention next time. Rip off those pantyhose, you need to be taught a real lesson."
+    play sound "audio/effect/rip.mp3"
+    scene dr_spank1_still with slowfade3
+    pause
+    MC "What do you have to say for yourself?"
+    DR "I-I'm sorry Mr. [name]! I didn't mean to!"
+    MC "Your apologies aren't enough!"
+    show dr_spankanim1
+    play sound "audio/effect/spank.mp3"
+    pause 0.7
+    DR "Ah-"
+    MC "What would you have done if I lost all those clients?!"
+    scene dr_spank1_still
+    DR "I-I don't know..."
+    show dr_spankanim1
+    play sound "audio/effect/spank.mp3"
+    pause 0.7
+    DR "Ngh-"
+    MC "Of course, you don't. {b}I'm{/b} the one that makes all the decisions around here."
+    DR "I-I know that, sir!"
+    scene dr_spank1_still
+    MC "And what if you don't know what the answer is? What do you do?"
+    DR "A-Ask you, sir..."
+    show dr_spankanim1
+    play sound "audio/effect/spank.mp3"
+    pause 0.7
+    DR "Ahh-"
+    MC "Wrong. I'm too busy for trivial matters like that, you big-titted bimbo."
+    MC "You should know that, but I guess you need more training."
+    scene black with fade
+    "You strip down out of your clothes..."
+    scene dr_secretary30 with dissolve
+    MC "I'm gonna fuck you until I think you've made it up to me. You understand?"
+    DR "W-wait. I learned my lesson!"
+    MC "Hmph. I don't think you have!"
+    show drdesk1 with dissolve
+    DR "Ah-"
+    window hide
+    pause
+    window auto
+    MC "Day after day, I'm cleaning up your messes. The only reason I keep you around is because you're such a good lay."
+    DR "Hah?"
+    MC "Big fuckin' tits. Huge plump ass. And horny as fuck. Your pussy is basically begging my cock to fuck your brains out."
+    "You don't give her a moment to catch her breath, as you slam your hips against her fat ass."
+    DR "Ha...Ha...Ha..."
+    "She gasps with each of your thrusts."
+    DR "Ngh..Mr. [name]. You're being so rough."
+    menu:
+        "Tell her to shut up.":
+            MC "Shut up. Don't tell me how to fuck you. I'm the one in charge. Remember?"
+            window hide
+            pause
+            window auto
+        "Say nothing.":
+            window hide
+            pause
+            window auto
+
+    show drdesk2 with dissolve
+    hide drdesk1
+    MC "Hmph. How does my cock feel? Don't you love it?"
+    DR "N-no...H-how could I love being taken advantage of by my boss?!"
+    "You can feel a bit of truth behind impish words."
+    MC "When are you going to stop lying to me? I can hear all your slutty noises, I know you're getting off to this."
+    DR "Ah{font=Meiryo.ttf}♥{/font}-"
+    window hide
+    pause
+    window auto
+    DR "Ha...Please hurry, Mr. [name]. Y-you have an appointment soon."
+    MC "Again, you're telling me how I should fuck you. You need to remember your place!"
+    show drdesk3 with dissolve
+    hide drdesk2
+    DR "Ah--"
+    "You grab her arm and push her head against the desk."
+    window hide
+    pause
+    window auto
+    DR "Hah. Hah. Hah."
+    "She goes silent aside from her heavy breathing, as you use her body for your enjoyment. Her body is slipping further and further into ecstasy."
+    "Each time you slam your hips hard against her butt you can feel her ass jiggle against your love juice-soaked thighs."
+    MC "Heh. You've finally accepted where you're supposed to be. Keep quiet while I pump you full of my hot cum."
+    DR "...gh..ahh{font=Meiryo.ttf}♥{/font}-"
+    "A guttural groan seeps from her lips. She's been completely defeated by your cock."
+    MC "Ah- F-fuck. I'm cumming! Take my cum, you slut!"
+    scene dr_secretary31 with flash
+    DR "Nggh--..aah{font=Meiryo.ttf}♥{/font}-"
+    "-splurt splurt- You fill her sloppy cunt full of your warm seed."
+    scene dr_secretary_inside at pan_down_up with dissolve
+    "You pull out and watch as the cum drools out from her exhausted body."
+    window hide
+    pause
+    window auto
+    $ dr_lust += 4
+    window hide
+    show lust_gain_text_dr "Dr. Clermont lust +4" with dissolve
+    pause (0.5)
+    hide lust_gain_text_dr "Dr. Clermont lust +4" with dissolve
+    window auto
+    scene black with fade
+    "You clean up and put your clothes back on."
+    scene dr_secretary32 with dissolve
+    DR "-clears throat- Are you satisfied now, sir?"
+    DR "Your appointment should be here soon."
+    stop music fadeout 5
+    scene dr_secretary33 with dissolve
+    MC "As much as I'd like to keep this little play going. I think we should get back to work."
+    $ persistent.dr_secretary_sex1 = True
+    $ renpy.save_persistent()
+    DR "Heh. I suppose you're right."
+    scene dr_secretary34 with dissolve
+    DR "I will try to keep the mistakes to a minimum."
+    DR "Although. I did enjoy being your plaything today...sir."
+    MC "Heh. Good girl."
+    $ renpy.end_replay()
+    scene black with fade
+    $ dr_secretary2 = True
+    "You depart from Dr. Clermont and head out to the hallway."
+    call ship_music from _call_ship_music_28
+    jump a2_main_evening
+
+label lym_maid1:
+    $ renpy.hide_screen("ship_nav")
+    $ renpy.hide_screen("return_map")
+    $ renpy.hide_screen("event_screen")
+    hide screen a2_mchall_morning
+    scene lym_maid1 with fade
+    "You enter the Navigation room and overhear Lym talking to somebody on the phone."
+    "You can't quite pick up what they are saying, but you don't want to interrupt."
+    MC "{i}(Guess I'll just wait for her to finish.)"
+    scene lym_maid2 with fade
+    MG "-groan- Miji!"
+    MG "Stop teasing me!"
+    scene lym_maid6 with dissolve
+    MO "What? He's cute, smart, and athletic. Plus, he's all you can talk about when we chat."
+    MO "It's clear you have the hots for him."
+    MG "Miji!"
+    scene lym_maid7 with dissolve
+    MO "I know we aren't as close as we used to be, but you used to tell me everything."
+    MO "What happened to that?"
+    MG "Miji..."
+    scene lym_maid8 with dissolve
+    MO "We're still sisters, you know?"
+    scene lym_maid3 with dissolve
+    MG "Oh fine. I like him."
+    MG "A lot."
+    scene lym_maid10 with dissolve
+    MO "Yes! I knew it!"
+    MO "Hahaha! Have you told him how you feel?"
+    scene lym_maid3 with dissolve
+    MG "Uh...m-maybe..."
+    MO "Hmm? And what did he say?"
+    scene lym_maid2 with dissolve
+    MG "I-I don't know. It feels like we just got caught up in the moment..."
+    L "W-we said...and did things that only lovers would do...yet..."
+    L "Now it's like we're just partners again...I..."
+    scene lym_maid6 with dissolve
+    MO "That only lovers would do, huh? Is my little sister growing up?!"
+    L "..ghnnn...fine I won't talk to you about it!"
+    scene lym_maid7 with dissolve
+    MO "Aw. I'll stop teasing. Promise."
+    MO "How are you feeling about him, right now?"
+    scene lym_maid2 with dissolve
+    MG "Our ship is full of beautiful women...a-and I feel like he barely notices me."
+    MG "And if he does, it's just friendly joking around, like nothing's changed..."
+    scene lym_maid2 with dissolve
+    L "I-I don't know...I just want him to see me as something more..."
+    L "To acknowledge what we did..."
+    scene lym_maid7 with dissolve
+    MO "True. You have a lot of competition now."
+    MO "If you want him to show his feelings to you, you have to make a unique effort to make sure his eyes stay on you."
+    scene lym_maid6 with dissolve
+    MO "Trust your big sis on this one okay?"
+    scene lym_maid2 with dissolve
+    MG "B-but I don't even know what that means."
+    MO "I have a few ideas to catch the eyes of clueless boys like him. I'll text you in just a bit. Bye, sis."
+    scene lym_maid4 with dissolve
+    MG "Bye."
+    "-beep-"
+    MG "Pssh. \"Make a unique effort to keep his eyes on you.\" What does that even mean?"
+    scene lym_maid12 with dissolve
+    "She puts her phone away and walks in your direction."
+    MC "Hey, Lym!"
+    scene lym_maid13 with dissolve
+    MC "I heard you talking on the phone, but I wanted to see if you're free for a bit."
+    MG "Y-y-you were listening?"
+    MC "Uhhh. Not really. I think I caught the tail end of it maybe."
+    scene lym_maid14 with dissolve
+    MG "Oh, thank goodness."
+    MC "Why? What's going on? My birthday's not for months. You can't be planning a surprise party already..."
+    MG "Oh...nothing. Just a little secret between my sister and I-"
+    play sound "audio/effect/phone.mp3" volume 0.5
+    "-bzzt-"
+    scene lym_maid15 with dissolve
+    MG "Huh?"
+    MO "{i}(Here's a few ideas I had in mind.)"
+    "Her eyes scan down the message."
+    scene lym_maid16 with dissolve
+    "And her face flushes a bright red shade."
+    MC "You okay, Lym?"
+    scene lym_maid17 with dissolve
+    MG "Y-y-yeah. I gotta go."
+    MG "Sorry, [name]."
+    MC "Uh. Okay."
+    $ lym_lust += 1
+    window hide
+    show lust_gain_text "lym lust +1" with dissolve
+    pause (0.5)
+    hide lust_gain_text "lym lust +1" with dissolve
+    window auto
+    scene black with fade
+    $ lym_maid1 = True
+    MC "{i}(I wonder what that message was about that could get her so worked up.)"
+    "You finish up your task then head back out to the hallway."
+    jump a2_longhall_midday
+
+label lym_maid2:
+    stop music fadeout 3
+    scene black with fade
+    "-fssh- -fssh- -fssh-"
+    MC "Ngh..?"
+    MC "{i}(What's that noise?)"
+    scene lym_maid18 with dissolve
+    play music "audio/lym/simple.mp3" fadein 4
+    MC "{i}(Lym? What is she doing here so early...?)"
+    show lymmaidscrub with dissolve
+    window hide
+    pause
+    window auto
+    "-scrifff- -scrifff-"
+    "She rubs a damp rag across your grimy, metallic dresser. Her butt bounces up and down as she scrubs it clean."
+    MC "Uhm. Lym?"
+    scene lym_maid19 with vpunch
+    MG "Ah!"
+    "Your sudden exclamation startles Lym."
+    MC "What are you doing here?"
+    scene lym_maid20 with dissolve
+    "She turns around and with a very embarrassed look, replies:"
+    MG "Y-y-your room is a mess! A-a-and if you aren't going to clean it."
+    MG "I'll do it myself."
+    scene lym_maid21 at pan_down_up_2 with dissolve
+    "A thousand questions fill your head as you sit on your bed in your underwear."
+    MC "{i}(My room's dirty? I just cleaned it yesterday. When did she get here? Why my room?)"
+    MC "{i}(Has she seen the rest of the ship. It's filthy. What is she wearing? Is that a maid outfit?)"
+    MC "{i}(Why would she wear something so nice, just to get dirty?)"
+    "-ding- The bells finally go off in your head."
+    MC "{i}(Is she doing this to impress me?)"
+    scene lym_maid22 with dissolve
+    MG "Uhm...S-should I leave?"
+    MC "No...I'd like it, if you stayed."
+    scene lym_maid23 with dissolve
+    $ lym_affection += 1
+    window hide
+    show affection_gain_text "lym affection +1" with dissolve
+    pause (0.5)
+    hide affection_gain_text "lym affection +1" with dissolve
+    window auto
+    MG "Really?!"
+    "Her eyes instantly light up with her reply."
+    scene lym_maid24 with dissolve
+    MG "Ok. I'll get to work right away!"
+    $ lym_relationship = "Personal maid"
+    scene lym_maid25 with dissolve
+    MC "{i}(She can be so damn cute sometimes.)"
+    MC "{i}(But that maid outfit...)"
+    scene lym_maid26 with dissolve
+    MC "-gulp-"
+    MC "{i}(Is really something else.)"
+    scene lym_maid27 with dissolve
+    MG "{i}Hmmm~ Hmm~ Hmmmmm~"
+    stop music fadeout 2
+    window hide
+    pause
+    window auto
+    scene black with slowfade3
+    $ lym_maid2 = True
+    "Lym cleans your room for a bit, as you get ready and changed for your day. Then you head out to the hallway."
+    call ship_music from _call_ship_music_29
+    jump a2_longhall_midday
+
+label lym_maid3:
+    stop music fadeout 1
+    scene black with fade
+    "-scrif- -scrif-"
+    play music "audio/lym/simple.mp3" fadein 4
+    scene lym_maid28 with dissolve
+    "You are awoken by the familiar sound of Lym's cleaning."
+    MC "{i}(Huh? She actually came back again. I guess she was serious about this.)"
+    scene lym_maid29 with dissolve
+    "She bends over to clean the bottom corner of the dresser and wiggles her cute butt in the air."
+    MC "{i}(If she's looking for my attention that much, I guess I should show her what she means to me.)"
+    scene lym_maid30 with dissolve
+    "You stand up quietly and move behind her without a sound."
+    "You don't think she noticed you...or did she?"
+    "Either way, she doesn't react to you at all."
+label lym_maid_grope1_replay:
+    scene lym_maid31 with dissolve
+    if _in_replay:
+        call replayNames from _call_replayNames_10
+    "You reach out and touch her hip."
+    MG "Ah..."
+    "She lets out a little gasp, as she reacts to your touch."
+    scene lym_maid32 with dissolve
+    L "W-what are you doing..? I'm trying to clean..."
+    "She attempts to feign ignorance, unconvincingly."
+    MC "Trying to clean? My dresser is already spotless."
+    "Your eyes drift down to her cute neck."
+    scene lym_maid33 with dissolve
+    "She tilts her head allowing you to kiss her neck."
+    MC "Mmmmwuah~"
+    MG "Nnah."
+    "Her body moans and squirms from the touch of your warm lips against her soft skin."
+    scene lym_maid34 with vpunch
+    L "Ah-"
+    "You spin her around and push her back against the dresser."
+    MC "What is this really about, Lym?"
+    L "I-I just wanted you to notice me..."
+    MC "I haven't forgotten about that night we shared together. I've never taken my eyes off you. Not for one second."
+    MC "But I've held back, since I don't want to lose you, as a friend..."
+    L "I-I want you..."
+    scene lym_maid35 with dissolve
+    "You reach up and tug on her blouse lightly."
+    MG "[name]..."
+    MC "I'll show you my true desires..."
+    play sound "audio/effect/clothing.mp3"
+    scene lym_maid36 with dissolve
+    L "Ah-"
+    MC "A cute pink bra? Heh. It matches your blushing face."
+    scene lym_maid37 with dissolve
+    "You slide your hand over her chest and dig your fingers under her bra strap."
+    MG "Nnuuh."
+    play sound "audio/effect/upclothing.mp3"
+    scene lym_maid38 with dissolve
+    MG "[name]...your hand is cold."
+    MC "They'll be warm before long."
+    show lym_maid_grope1 with dissolve
+    L "Ha-"
+    window hide
+    pause
+    window auto
+    "You massage her breast with her pink nipple tucked between your fingers."
+    MG "Do you like rubbing it that much..?"
+    MC "I do."
+    L "E-even if they aren't as big as all the other girls..?"
+    MC "{i}(She's jealous..? I see...)"
+    MC "Why are you thinking about other girls at a time like this?"
+    L "S-shouldn't I be..? I have nothing on their beauty..."
+    MC "They're the ones that should be jealous of your beauty..."
+    L "S-show me, then..."
+    show lym_maid_grope2 with dissolve
+    hide lym_maid_grope1
+    "She grabs your wrist and moves it to her breast."
+    window hide
+    pause
+    window auto
+    MG "Hah. Hah."
+    "She gasps slightly every time you brush against her sensitive nipple."
+    MC "Do you believe me now? That my eyes have always been on you."
+    L "Uh-huh..."
+    MC "Good girl. Now let me enjoy your perfect breasts."
+    show spec with vpunch
+    L "Ah-"
+    "You give her nipple a little tug."
+    MC "I want you to enjoy it, too."
+    L "Just your touch is enough..."
+    MC "But I want you to feel...{i}good{/i}.."
+    scene lym_maid39 with dissolve
+    "You release her breast and move your hand down to her skirt."
+    MC "...in all places..."
+    scene lym_maid40 with dissolve
+    "You lift up her skirt and move to rub her through her panties."
+    scene lym_maid41 with vpunch
+    MG "Wait..."
+    "She grabs your wrist and pulls your hand away from her special spot."
+    scene lym_maid42 with dissolve
+    MG "[name]..."
+    MG "Not right now...Please don't be upset...m-my head is so full of emotions..."
+    MC "Of course I'm not upset. Just remember, I meant every word I've said..."
+    stop music fadeout 2
+    MG "Mhm..."
+    $ lym_lust += 3
+    window hide
+    show lust_gain_text "lym lust +3" with dissolve
+    pause (0.5)
+    hide lust_gain_text "lym lust +3" with dissolve
+    window auto
+    scene black with fade
+    $ renpy.end_replay()
+    $ lym_maid3 = True
+    $ persistent.lym_maid_grope1 = True
+    $ renpy.save_persistent()
+    call ship_music from _call_ship_music_30
+    "You pull away from Lym and get ready for your day,, her hesitation is cute...yet you're left with blue balls."
+    jump a2_longhall_midday
+
+label a2_lym_night_hj:
+    stop music fadeout 2
+    MC "{i}(What a day...I'm beat.)"
+    scene black with slowfade3
+    MC "Zzzzzz..."
+    scene black with slowfade3
+    UK "Haah...haah."
+    play music "audio/sugar.mp3" fadein 1
+    "You are awakened by the sound of light breathing and a warm touch against your crotch."
+    scene a2_lym_night_hj1_still with slowfade3
+    MC "Lym..?"
+    L "Mhm..."
+    MC "What's going on?"
+    L "You showed me what I mean to you...now it's my turn."
+    show a2_lym_night_hj1
+    MG "Haah-..."
+    L "I-I just couldn't help myself after you said those things..."
+    L "If I want to be your woman...I need to take care of your needs..."
+    MC "Lym..."
+    L "Shhh...J-just let me do this..."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    L "E-every day...I'm jealous that you aren't looking at me..."
+    L "T-That you aren't holding me in your arms at all times..."
+    L "I-I have to be more...F-for someone as great as you..."
+    L "But that stops today...I'll give you everything you ever wanted..."
+    show a2_lym_night_hj2 with dissolve
+    hide a2_lym_night_hj1
+    "She quickens the pace after her heartfelt admission. Even with your rock-hard erection being stroked by her gentle tugs, all you can think of is what she just said."
+    MG "Ah-...but enough about that...I want to focus on you and sending you to heaven..."
+    show spec with vpunch
+    "She tightens her grip around your shaft and begins to earnestly milk you of all your worth."
+    MC "Ah-"
+    L "You like when I rub it like that?"
+    L "Ngh...Your big, manly cock feels so nice in my hands...And knowing that it's so hard...because of me..."
+    L "Haah{font=Meiryo.ttf}♥{/font}--"
+    L "I want you to cum while looking at my face and naked body..."
+    L "Cum for me...show me that you truly care!"
+    MC "Ah- Lym...I'm about to cum..."
+    "She isn't intimidated by your statement and continues to stroke your throbbing dick."
+    scene a2_lym_night_1 with flash
+    MG "Ahh{font=Meiryo.ttf}♥{/font}-"
+    "Her tight grip milked a thick strand from your inner depths."
+    scene a2_lym_night_2 with flash
+    "-splurt splurt- And another into her palm."
+    MG "Did it feel good?"
+    MC "Amazing..."
+    MG "I'm glad that I could make you so happy."
+    $ lym_affection += 1
+    $ lym_lust += 2
+    window hide
+    show lust_gain_text "lym lust +2" with dissolve
+    pause (0.5)
+    hide lust_gain_text "lym lust +2" with dissolve
+    window auto
+    scene black with Dissolve(1.5)
+    "She gets up to get changed and leave."
+    menu:
+        "Call her back to bed.":
+            MC "Don't go..."
+            L "Okay...I'll stay a few more minutes..."
+            $ a2_lym_night_hj = True
+            scene a2_lym_night_3 with d15
+            L "Hehe..."
+            pause
+        "Let her go.":
+            $ a2_lym_night_hj = True
+    stop music fadeout 2
+    scene black with slowfade3
+    $ renpy.end_replay()
+
+    $ a2_lym_night_hj2 = True
+    $ persistent.a2_lym_night_hj = True
+    $ renpy.save_persistent()
+
+    "Lym changes back into her clothes and leaves you to go back to sleep."
+    call ship_music from _call_ship_music_31
+    jump a2_mc_morning2
+
+label lym_maid_nav1:
+    show screen lym_maid_nav1 with d3
+    scene lym_maid_nav1
+    $ renpy.pause(delay=None, hard=False)
+    show screen lym_maid_nav1
+    $ renpy.pause(delay=None, hard=False)
+
+label lym_maid_idle1:
+    hide screen lym_maid_nav1
+    if idris and not a3_lym_maid1:
+        jump a3_lym_maid1
+    scene lym_maid_idle1 with dissolve
+    MC "Hi Lym. Thanks for cleaning up for me."
+    MG "No problem, [name]. If I don't do it. Nobody will."
+    menu:
+        "Compliment her work.":
+            MC "It looks great in here now. You're a natural."
+            MG "Hehe. Thanks, [name]."
+            jump lym_maid_nav1
+        "Compliment her outfit.":
+            MC "Wow that outfit looks really cute on you."
+            scene lym_maid_idle2 with dissolve
+            MG "W-what? You think so?"
+            MC "Yeah! You really pull off that look."
+            MG "T-thanks."
+            jump lym_maid_nav1
+label lym_maid_idle1_bed:
+    hide screen lym_maid_nav1
+    scene lym_maid_nav1
+    MC "{i}It's too early to go to bed."
+    scene lym_maid_nav1 with d1
+    show screen lym_maid_nav1
+
+    jump lym_maid_nav1
+
+label alex_cuck1_nav:
+    show screen alex_cuck1 with d3
+    scene alex_cuck1
+    $ renpy.pause(delay=None, hard=False)
+    show screen alex_cuck1
+    $ renpy.pause(delay=None, hard=False)
+label alex_cuck_idle:
+    scene alex_cuck2 with dissolve
+    MC "Hi, Lym. How are you today?"
+    scene alex_cuck3 with dissolve
+    MG "Good, [name]. Just shopping online."
+    MC "Still? You haven't found a present yet?"
+    MG "Aw. You can't rush a girl and her shopping, [name]."
+    jump alex_cuck1_nav
+label alex_cuck1:
+    hide screen alex_cuck1
+    if a3_miji_idris2 and not a3_lym_miji_call:
+        jump a3_lym_miji_cry1
+    if alex_cuck1 :
+        jump alex_cuck_idle
+    scene alex_cuck2 with dissolve
+    "You move over near Lym who is sitting on the couch using her phone."
+    MC "Hey, Lym, what's going on?"
+    scene alex_cuck3 with dissolve
+    MG "Hey, [name]. I was just doing some online shopping."
+    MC "What? How do you suppose it will get here? Haha."
+    scene alex_cuck4 with dissolve
+    MG "Haha. Very funny, [name]. I'm buying things for friends back home."
+    MC "Oh. Okay then."
+    MG "I did have something to tell you though."
+    scene alex_cuck5 with dissolve
+    MC "Yeah?"
+    MG "Mhm...Alex sent me some weird messages last night."
+    MC "Weird messages? What do you mean?"
+    scene alex_cuck7 with dissolve
+    MG "Uhh. Here. Just read them."
+    MG "I think they speak for themselves."
+    scene alex_cuck8 with dissolve
+    "You pull up the phone and read through the messages."
+    window hide
+    pause
+    window auto
+    scene alex_cuck9 with dissolve
+    "You swipe through to the next page."
+    window hide
+    pause
+    window auto
+    scene alex_cuck10 with dissolve
+    MC "Oh jeez...this is...something..."
+    MG "Heh. Yeah. I don't know what I even did."
+    MC "I don't think you did anything..."
+    scene alex_cuck11 with dissolve
+    MG "So, what do you think I should do?"
+    MC "This surprises me as much as you."
+    MC "Do you want me to talk to him about it?"
+    scene alex_cuck12 with dissolve
+    MG "Uhh...I'd rather you not. I'll just ignore it for now, I think. I just wanted you to know how uncomfortable he made me."
+    MC "Noted. I will keep that in mind. Especially when making teams."
+    MG "Thanks, [name]."
+    $ alex_cuck1 = True
+    scene black with fade
+    "You chat with Lym for a bit then head back to the hallway."
+    jump a2_mchall_night2
+
+label noel_nyx_alex1_nav:
+    show screen noel_nyx_alex1 with d3
+    scene noel_nyx_alex1
+    $ renpy.pause(delay=None, hard=False)
+    show screen noel_nyx_alex1
+    $ renpy.pause(delay=None, hard=False)
+label noel_nyx_alex1:
+    hide screen noel_nyx_alex1
+    if a2_noel_nyx_engine2 :
+        scene noel_nyx_alex2 with dissolve
+        E "Come to help out around here, Cap'n?"
+        MC "Yeah. If you need me."
+        scene noel_nyx_alex3 with dissolve
+        N "We got it under control here."
+        scene noel_nyx_alex4 with dissolve
+        E "Girl! What did I tell you?!"
+        jump noel_nyx_alex1_nav
+    scene noel_nyx_alex2 with dissolve
+    MC "Hey, guys. What's up?"
+    E "Hey, Cap'n. Nyx and I were just workin' on some upgrades for the ship."
+    MC "Ah. Upgrades, huh? Need any help?"
+    scene noel_nyx_alex3 with dissolve
+    N "Pfft, what could you possibly bring to the table?"
+    N "This takes a bit more finesse than a brute like you can muster."
+    scene noel_nyx_alex4 with dissolve
+    E "Come on, Nyx. Drop the hard-ass attitude."
+    E "He's just trying to help."
+    scene noel_nyx_alex5 with dissolve
+    E "Grab me that portable generator back there, would ya?"
+    E "I'll beat some respect into this girl while you're gone."
+    scene noel_nyx_alex6 with dissolve
+    N "Ah! W-wait."
+    "You head to the back to grab the tool she requested."
+    N "Okay! Okay! I get it!"
+    "-Fsssh-"
+    scene noel_nyx_alex7 with dissolve
+    "Alex loudly enters into engineering."
+    BR "Hello, ladies! What can I do for you today?!"
+    scene noel_nyx_alex8 with dissolve
+    N "Uh. Hi, Alex. I think we got it covered."
+    N "You can stick around to chat, though. If ya want."
+    E "'Sides we got Cap'n workin' up a sweat for us already! Hahah!"
+    scene noel_nyx_alex9 with dissolve
+    MC "Alex. It's been a while."
+    MC "You doin' alright?"
+    scene noel_nyx_alex10 with dissolve
+    BR "Uh..Hey..."
+    BR "I..uh..I didn't see you there..."
+    BR "I'm gonna go..."
+    scene noel_nyx_alex11 with dissolve
+    N "What? Already?"
+    E "Okay. See you around, Red."
+    scene noel_nyx_alex12 with dissolve
+    N "Well, that was awkward."
+    MC "Yeah. Now that I think about it...he's really been avoiding me.."
+    N "Hmm, really? He always seems to be around me asking if I need anything."
+    scene noel_nyx_alex13 with dissolve
+    E "Maybe, he's scared of Cap'n? Hahaha."
+    MC "Yeah. Weird..."
+    scene black with fade
+    $ a2_noel_nyx_engine2 = True
+    "You help Nyx and Noel for a bit then head out to the hallway."
+    jump a2_stairsup_evening2
+
+label nyx_interrogate_cap:
+    scene black with dissolve
+    MC "Zzzz..."
+    scene bednight_up with vpunch
+    "{b}-Bzzzzzz-{/b} You are awoken by the system alarm. It's your night to be on duty...so reluctantly you reply:"
+    MC "AHPS. What's the alarm?"
+    AHPS "Unauthorized initiation of simulation protocol in the rec room."
+    MC "{i}(Ugh...who forgot to turn it off when they left..?)"
+    scene black with dissolve
+    "You quickly throw on some clothes and head down the hallway to the rec room."
+    scene nyx_chase1 with dissolve
+    pause
+    scene nyx_interrogate1 with dissolve
+    MC "W-what..?"
+    scene act3_99 with dissolve
+    "Without hesitation, you move through the door into the unusual simulation."
+    MC "AHPS, who initiated the simulation?"
+    AHPS "..."
+    MC "{i}(Of course there's no answer at a time like this...)"
+    scene act3_100 with dissolve
+    MC "{i}(Hmm...if I'm gonna find out what's causing this, I'll have to continue on.)"
+    play sound "audio/effect/olddoor.mp3" volume 0.5
+    scene act3_101 with fade
+    MC "{i}(Some sort of shop..?)"
+    scene act3_102 with dissolve
+    MC "{i}(Potions, books, and sheets of papers..?)"
+    MC "{i}(What's written on them..?)"
+    UK "I was waiting for someone to show up..."
+    scene act3_103 with dissolve
+    "-click click-"
+    scene act3_109 with dissolve
+    N "Captain [name]? I guess you didn't get to see my shop when you were down on Xerxes."
+    N "Welcome to my apothecary."
+    MC "And why are you using the simulation right now? You don't have the permissio-"
+    scene act3_114 with dissolve
+    N "What's wrong with having a little fun?"
+    N "I didn't get to say a proper farewell to my precious shop..."
+    scene act3_116 with dissolve
+    N "My strongest potions would kill a dragon, traveler..."
+    N "But for you...just something to take the edge off."
+    MC "Uh..."
+    N "Perfectly safe. I promise."
+    scene act3_117 with dissolve
+    "You cautiously take the bottle from her."
+    N "I'll close the simulation off in just a bit. I've said my goodbyes."
+    MC "Hm...okay. Get permissions from Noel tomorrow so it doesn't set off the alarms. Goodnight."
+    N "{i}Sleep tight..."
+    scene act3_118 with dissolve
+    pause 0.5
+    scene act3_119 with dissolve
+    MC "{i}(W-what...my body feels so weak...)"
+    MC "{i}(So drowsy all the sudden...)"
+    play sound "audio/effect/bottlecrash.mp3" volume 0.8
+    "{b}-crash-"
+    scene act3_120 with dissolve
+    MC "{i}(Huh? What?)"
+    MC "{i}(When did I drop the potion...)"
+    MC "{i}(I-I can't feel my arms...)"
+    play music "audio/mission/hill.mp3" fadein 30
+    scene black with vpunch
+label xerxes1_replay:
+    if _in_replay:
+        call replayNames from _call_replayNames_7
+    scene act3_121 with slowfade3
+    MC "{i}(Why am I on the ground...)"
+    N "I don't like being lied to...And I won't be used."
+    scene act3_122 with dissolve
+    N "Hmph."
+    scene black with slowfade3
+    scene act3_123 with slowfade3
+    MC "Nngh."
+    MC "{i}(What happened...?)"
+    scene act3_124 with d7
+    MC "{i}(Nyx...dammit...)"
+    MC "{i}(What did she do...?)"
+    scene act3_125 with dissolve
+    scene act3_124 with d7
+    play music "audio/mission/hill.mp3" fadein 1
+    MC "{i}(It was that damn witch...)"
+    MC "{i}(What does she want from me?)"
+    scene act3_125 with dissolve
+    N "Ohh? You're finally awake?"
+    N "I have some questions for you, that only {i}you{/i} can answer."
+    scene act3_126 with vpunch
+    "You try to stand and rush toward her, but you're stopped in your tracks."
+    N "Nuh uh uh..."
+    N "Can't have you running around like a wild man."
+    scene act3_127 with dissolve
+    MC "What the..."
+    "You look down to see that you are stripped naked and bound to the chair."
+    scene act3_128 with dissolve
+    "Your ankles are held tightly to the legs of the chair. Along with your hands chained together behind your back by some supernatural power."
+    MC "Crestology?"
+    scene act3_130 with dissolve
+    N "Mhm..."
+    MC "What do you want from me?"
+    scene act3_131 with dissolve
+    N "The truth, of course."
+    N "I overheard your conversation with your superior."
+    scene act3_132 with dissolve
+    N "\"Your Eldarian passenger?\" Hmm?"
+    N "What did she want from me?"
+    MC "Admiral Mars..? Nothing..."
+    scene act3_133 with vpunch
+    MC "Ah-."
+    "The chains coil tighter around your wrists."
+    N "Don't take me for a fool."
+    N "You took me onboard to harvest my power."
+    MC "That's not it!"
+    scene act3_133 with vpunch
+    N "Then what does that woman want from me?!"
+    N "What is her goal?"
+    MC "We don't want anything from you..."
+    scene act3_134 with dissolve
+    N "Hmm...Pain won't be enough to make you talk?"
+    N "If you aren't willing to tell me. I'll wring the answers out of your filthy cock."
+    scene act3_135 with dissolve
+    "She raises her hand and conjures a floating, disembodied hand out of thin air."
+    N "But that disgusting thing won't be touching my fair skin."
+    scene act3_137 with dissolve
+    N "Go."
+    scene act3_136 with dissolve
+    "She sends the floating hand flying toward you."
+    scene act3_139 with vpunch
+    default nyx_ghostjob = False
+    "And effortlessly wraps around your cock. Its touch is warm like human skin, yet light, like a stream of water."
+    N "Now...Do you want to tell me exactly what she said? Or will I have to knead it out of you; one stroke at a time?"
+    menu:
+        "\"I have nothing to hide.\"":
+            MC "She wants me to keep you close, and keep you safe. You can be a valuable asset."
+            scene act3_140 with dissolve
+            N "My race is always regarded as a valuable asset."
+            N "She wants to take my body when I let my guard down. But I won't let that happen."
+            MC "I promised to do what I can to get you home. I won't break that promise."
+            scene act3_141 with dissolve
+            N "Hmph. I can tell that you aren't lying."
+            N "I'll release these binds and watch cautiously from afar..."
+            $ renpy.end_replay()
+            scene act3_152 with dissolve
+            "The chains around your wrist fade and release your arms from their crest prison."
+            scene act3_150 with dissolve
+            N "I knew that I would be fighting for my life the moment I came on board."
+            N "Keep your promise and prove that you're an ally worth keeping..."
+            scene act3_151 with dissolve
+            N "But as for the Admiral..."
+            N "Nothing you say can change my mind about her..."
+            jump nyx_interrogate_end
+        "Remain silent.":
+            scene act3_143 with dissolve
+            N "Still refusing to tell me? Heh...I'll enjoy milking it out of you..."
+            N "Ahhnn--"
+            $ nyx_ghostjob = True
+    scene act3_138 with dissolve
+    "The hand floats effortlessly around your dick to grip it from a different angle."
+    N "Even in this situation, you're getting hard?"
+    scene act3_140 with dissolve
+    N"You're quite the pervert."
+    N"It won't take me long to break your spirit."
+    scene act3_141 with dissolve
+    N "But I can't have you finishing before I'm done with you."
+    "She lifts her finger, and some a magical energy emits from it."
+    scene act3_142 with dissolve
+    MC "Nghh ahh!"
+    "A sharp sting travels up and down your penis."
+    N "Now you'll only cum when I allow it."
+    show xerxes_anim1 with dissolve
+    "The floating hand starts to move up and down stroking your dick."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "No use squirming boy. You aren't going anywhere. Not until you tell me what I want to know."
+    N "This filthy cock...throbbing without me even touching it...fuhuhuh."
+    N "Are you going to tell me what I want to know? Or am I going to have to wring every last drop of truth out of you?"
+    MC "Mmnngh..."
+    N "Good, good. The stubborn ones are the best."
+    show xerxes_anim2 with dissolve
+    hide xerxes_anim1
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    MC "Haah-"
+    N "Was that a moan? How disgusting."
+    N "You plan to get off from this feeling? Just like a pig being stroked for his seed..."
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    N "Fufu...seeing you squirm...Ah--Intoxicating..."
+    MC "Nnnghh..."
+    N "What's wrong? You're not moaning anymore. Is it not fast enough for you?"
+    N "I want to hear you beg me to speed up. Tell me that you want me to keep stroking your disgusting cock."
+    MC "..."
+    scene nyxghostjob_stop with dissolve
+    MC "Hah-"
+    scene act3_149 with dissolve
+    N "Stubborn..."
+    N "Do you think my words mean nothing?! Beg me."
+    scene nyxghostjob_start with dissolve
+    N "Tell me that you want these fingers wrapped around your dirty cock."
+    "Your rock-hard erection is pushing the words out of your mouth against your will..."
+    MC "Please...Keep going..."
+    N "Heh. Good boy..."
+    show xerxes_anim3
+    N "Just like this?"
+    show xerxes_anim4 with dissolve
+    hide xerxes_anim3
+    MC "..gh..."
+    "The rhythm of her spell matches that of the hand of the caster."
+    pause
+    show xerxes_anim3 with dissolve
+    hide xerxes_anim4
+    N "Heh. Are you imagining it as my hand? Up and down along your filthy dick."
+    pause
+    N "Tell me how much you'd love that."
+    MC "I-I want to feel your hand around my cock..."
+    show xerxes_anim4 with vpunch
+    hide xerxes_anim3
+    MC "-gh.."
+    N "Insolent swine. Are you saying I'm not good enough for you?"
+    "The hand tightens around your cock and presses your most sensitive areas."
+    N "I've just been toying with you, boy. I don't need any more than this to make you cum."
+    pause
+    N "Fufu...You can't even look me in the face anymore...You're about to cum already."
+    N "I can feel it throbbing from here..."
+    "It's true. You're pushed hopelessly against the wall. An explosive ejaculation is imminent."
+    menu:
+        "Cum.":
+            scene black
+            show xerxes_anim5 with dissolve
+    hide xerxes_anim4
+    MC "Nggggh!"
+    pause
+    "You tried to cum, but nothing happened."
+    N "Did I say you can cum? You're gonna be my toy until I say so."
+    MC "Please..."
+    N "Huhu...I'll let you cum if you tell me what that Admiral had to say about me."
+    MC "I have nothing to hide..."
+label nyx_come_deny:
+    show spec with vpunch
+    N "Lies will get you nowhere boy."
+    pause
+    "The constant spasms from your dick without any relief wreak havoc on your body."
+    N "Change your mind?"
+    MC "Haaa- S-She said you were a valuable asset...b-but I meant what I said. I will get you home...Nnnghh..."
+    W "Oh ho? You aren't lying. That wasn't so hard."
+    W "Now. Take your reward."
+    show xerxes_anim6 with dissolve
+    hide xerxes_anim5
+    window hide
+    $ renpy.pause(delay=None, hard=False)
+    window auto
+    "She pushes the attack even faster, and your mind falls into a lust-driven haze."
+    N "You like that, boy?"
+    MC "-gh..."
+    "The only thing you can do is moan a pitiful sound."
+    N "Cum for me. I want to see that face of pure, disgusting ecstasy."
+    scene act3_143 with dissolve
+    hide xerxes_anim6
+    N "Now."
+    scene act3_144 with vpunch
+    "-snap-"
+    scene act3_145 with flash
+    MC "Haaah..."
+    scene act3_146 with flash
+    "You shoot a huge load all over the floor."
+    scene act3_147 with dissolve
+    "And the cum dribbles down the underside of your cock."
+    scene act3_148 with d7
+    N "Oh? Finished already?"
+    scene act3_149 with fade
+    N "What a marvelous climax that was... and a wonderful face of anguish...aah-{font=Meiryo.ttf}♥{/font}"
+    N "{size=-15}You will do nicely."
+    $ renpy.end_replay()
+    $ xerxes_scene1 = True
+    $ persistent.xerxes1 = True
+    $ renpy.save_persistent()
+    scene act3_150 with dissolve
+    N "I knew that I would be fighting for my life the moment I came onboard."
+    N "Keep your promise and prove that you're an ally worth keeping..."
+    scene act3_151 with dissolve
+    N "But as for the Admiral..."
+    N "Nothing you say can change my mind about her..."
+    scene act3_152 with dissolve
+    "She releases the chains around your wrists as she walks down the stairs."
+    "And the overwhelming power she displayed left your heart racing..."
+    jump nyx_interrogate_end
+
+label nyx_interrogate_end:
+    scene black with pixellate
+    call ship_music from _call_ship_music_77
+    "The simulation fades with you seated in the middle of the rec room. Nyx had already fled the scene."
+    MC "{i}(Haah...A dangerous ally...but is she one that I should keep around..?)"
+    default nyx_interrogate_cap = False
+    $ nyx_interrogate_cap = True
+    "You shut off the alarm and head back to bed."
+    jump a2_mc_morning

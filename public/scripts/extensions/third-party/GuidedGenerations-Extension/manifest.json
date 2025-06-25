@@ -1,0 +1,13 @@
+{
+    "name": "GuidedGenerations",
+    "display_name": "Guided Generations Extension",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Samueras",
+    "description": "Adds various buttons to guide AI generation within SillyTavern, enhancing control over character portrayal, actions, and narrative flow.",
+    "version": "1.4.1",
+    "manifest_version": 3
+}

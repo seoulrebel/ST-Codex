@@ -1,0 +1,13 @@
+#custom_sliders_list .textAlignRight {
+    text-align: right;
+}
+
+#custom_sliders_list .empty-message {
+    text-align: center;
+    opacity: 0.8;
+    font-size: 0.9em;
+}
+
+.custom_sliders_container {
+    display: contents;
+}

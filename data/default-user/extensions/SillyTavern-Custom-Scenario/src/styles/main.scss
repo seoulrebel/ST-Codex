@@ -1,0 +1,342 @@
+.popup-content:has(#scenario-create-dialog) {
+    overflow-y: auto;
+}
+
+.popup-content:has(#scenario-play-dialog) {
+    overflow-y: auto;
+}
+
+#scenario-create-dialog {
+    .tab-navigation, .page-navigation {
+        gap: 5px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+
+        .flex-container:first-child {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 4px 6px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .page-navigation {
+        margin-top: 20px;
+        border-top: 1px solid var(--accent-color);
+        padding-top: 10px;
+
+        .button-group {
+            display: flex;
+            gap: 2px;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 4px;
+            border-radius: 6px;
+            margin-right: 8px;
+
+            .menu_button {
+                min-width: auto;
+                padding: 6px 12px;
+                font-size: 0.9em;
+                height: 32px;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                transition: all 0.2s ease;
+
+                i {
+                    font-size: 0.9em;
+                }
+
+                &:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                }
+
+                &.primary {
+                    background-color: var(--accent-color);
+                    border-color: var(--accent-color);
+                    color: var(--white-90);
+
+                    &:hover {
+                        background-color: var(--hover-color, #405060);
+                        border-color: var(--hover-color, #405060);
+                    }
+                }
+
+                &.danger {
+                    background-color: var(--error-color);
+                    border-color: var(--error-color);
+
+                    &:hover {
+                        background-color: var(--error-hover-color, #a00);
+                        border-color: var(--error-hover-color, #a00);
+                    }
+                }
+            }
+        }
+    }
+
+    .questions-container {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        .questions-tabs {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 2px;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 4px;
+            border-radius: 6px;
+            flex-direction: column;
+
+            .menu_button {
+                min-width: auto;
+                padding: 6px 12px;
+                font-size: 0.9em;
+                height: 32px;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                transition: all 0.2s ease;
+
+                i {
+                    font-size: 0.9em;
+                }
+
+                &:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+    .page-tab-buttons {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        position: relative;
+
+        .page-button-container {
+            display: flex;
+            gap: 2px;
+            position: relative;
+            transition: transform 0.3s ease;
+            will-change: transform;
+
+            &.moving-left {
+                animation: slideLeft 0.3s ease forwards;
+            }
+
+            &.moving-right {
+                animation: slideRight 0.3s ease forwards;
+            }
+
+            .page-button {
+                min-width: auto;
+                padding: 6px 12px;
+                font-size: 0.9em;
+                height: 32px;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                }
+
+                &.active {
+                    background-color: var(--accent-color);
+                    border-color: var(--accent-color);
+                    color: var(--white-90);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(0);
+            z-index: 1;
+        }
+        100% {
+            transform: translateX(-100%);
+            z-index: 1;
+        }
+    }
+
+    @keyframes slideRight {
+        0% {
+            transform: translateX(0);
+            z-index: 1;
+        }
+        100% {
+            transform: translateX(100%);
+            z-index: 1;
+        }
+    }
+
+    .tab-button {
+        min-width: auto;
+        padding: 6px 12px;
+        font-size: 0.9em;
+        height: 32px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        &.question {
+            height: 52px;
+            padding: 6px 16px;
+        }
+
+        &.active {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: var(--white-90);
+            font-weight: 500;
+
+            &:hover {
+                background-color: var(--hover-color, #405060);
+                border-color: var(--hover-color, #405060);
+            }
+        }
+    }
+
+    .add-question-btn {
+        margin-left: 8px;
+    }
+
+    .questions-tabs {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .tab-button-container {
+        display: flex;
+        gap: 2px;
+    }
+
+    .remove-input-btn {
+        height: fit-content;
+        padding: 3px 8px;
+        min-width: auto;
+        line-height: 1;
+        font-size: 16px;
+
+        &.danger {
+            background-color: var(--error-color);
+            border-color: var(--error-color);
+            color: var(--white-90);
+
+            &:hover {
+                background-color: var(--error-hover-color, #a00);
+                border-color: var(--error-hover-color, #a00);
+            }
+        }
+    }
+
+    .gap10 {
+        gap: 10px;
+    }
+
+    .marginLeft10 {
+        margin-left: 10px;
+    }
+
+    .marginBottom10 {
+        margin-bottom: 10px;
+    }
+
+    .accordion {
+        border: 1px solid var(--accent-color);
+        border-radius: 5px;
+    }
+
+    .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .accordion-toggle {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        flex: 1;
+        text-align: left;
+    }
+
+    .accordion-icon {
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+
+    .accordion-content {
+        padding: 10px;
+    }
+
+    .accordion.open .accordion-icon {
+        transform: rotate(180deg);
+    }
+
+    .script-input-group {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .script-input-group label {
+        min-width: 100px;
+    }
+
+    .script-input-group input:not([type="checkbox"]) {
+        flex: 1;
+    }
+
+    .script-input-group input[type="checkbox"] {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .flex2 {
+        flex: 2;
+    }
+
+    .code-highlight {
+        margin: 0;
+        background-color: var(--black30a);
+        text-align: left;
+        code {
+            background: 0;
+            border: 0;
+        }
+    }
+}

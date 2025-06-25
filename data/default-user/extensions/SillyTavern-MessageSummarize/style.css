@@ -1,0 +1,247 @@
+:root {
+    --qvink_short: #2E8B57;
+    --qvink_long: #4682B4;
+    --qvink_old: #8B0000;
+    --qvink_excluded: #555;
+    --qvink_redundant_opacity: 50%;
+}
+
+#drawer_content > hr {
+    margin-top: 10px;
+}
+
+.disabled_hint {
+    margin-left: 2px;
+}
+
+/* disabled buttons aren't properly styled by default */
+.settings_input:disabled, #qvink_memory_state_interface *:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* tables for formatting settings */
+.qvink_memory_settings_content table {
+    width: 100%;
+}
+
+/* add a scrollbar to the popout */
+#qmExtensionPopout {
+    overflow: auto;
+}
+
+/* Dropdowns in a line of text */
+select.inline_setting {
+    margin: 0;
+    padding: 0 5px;
+    width: unset !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    height: 1.2em;
+    line-height: 1em;
+}
+/* text input in a line of text */
+input.inline_setting     {
+    margin: 0;
+    padding: 0 0 0 5px;
+    width: unset !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    height: 1em;
+}
+
+/* buttons that need to grab your attention (Like the save button when there are unsaved changes) */
+.button_highlight {
+    color: var(--active);
+}
+
+/*
+Div displaying the memory on a message.
+By default, text is greyed to indicate that is it not injected.
+*/
+.qvink_memory_display {
+    margin: 0 0 5px 0;
+    font-size: small;
+    font-style: italic;
+    color: grey;
+}
+
+/* to style short-term memories. */
+.qvink_short_memory {
+    color: var(--qvink_short);
+}
+.qvink_short_memory.qvink_lagging_memory {
+    color: rgba(from var(--qvink_short) r g b / var(--qvink_redundant_opacity));
+    text-shadow: none;
+}
+/* to style long-term memories. */
+.qvink_long_memory {
+    color: var(--qvink_long);
+}
+.qvink_long_memory.qvink_lagging_memory {
+    color: rgba(from var(--qvink_long) r g b / var(--qvink_redundant_opacity));
+    text-shadow: none;
+}
+/* to style memories marked for long-term, but are past the context limit */
+.qvink_old_memory {
+    color: var(--qvink_old)
+}
+.qvink_old_memory.qvink_lagging_memory {
+    color: rgba(from var(--qvink_old) r g b / var(--qvink_redundant_opacity));
+    text-shadow: none;
+}
+/* to style memories that are force-excluded */
+.qvink_exclude_memory {
+    color: var(--qvink_excluded)
+}
+
+/* Style the message buttons, separating them from the rest */
+.qvink_memory_button_separator {
+    margin: 0 1em;
+}
+
+/* memory edit text area needs a bit of negative top margin to fit right */
+.qvink_memory_edit_textarea {
+    margin-top: -6px;
+}
+
+/* on small screens, remove the button separator */
+@media all and (max-width: 600px) {
+    .qvink_memory_button_separator {
+        display: none;
+    }
+}
+
+/* make the ST extra button divs flex-wrap */
+.extraMesButtons {
+    flex-wrap: wrap;
+}
+
+/* the progress bar, mimicking the width of the main chat area */
+#sheld .qvink_progress_bar {
+    top: var(--topBarBlockSize);
+    width: var(--sheldWidth);
+    position: fixed;
+    z-index: 999999;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+/* the progres bar when placed in the memory edit interface */
+#qvink_memory_state_interface #progress_bar .qvink_progress_bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#qvink_memory_state_interface #progress_bar {
+    position: relative;
+}
+
+/* in the group member selection, the buttons that toggle summarization */
+.qvink_memory_group_member_enable {
+    transition: all 0.2s ease-in-out;
+}
+.qvink_memory_group_member_enable:not(.qvink_memory_group_member_enabled) {
+    opacity: 0.4;
+    filter: brightness(0.5);
+}
+.qvink_memory_group_member_enable.qvink_memory_group_member_enabled {
+    filter: drop-shadow(0px 0px 5px rgb(65, 210, 243));
+}
+.qvink_memory_group_member_enable:hover {
+    opacity: inherit;
+    filter: drop-shadow(0px 0px 5px rgb(65, 210, 243));
+}
+
+/* Memory state interface */
+dialog:has(#qvink_memory_state_interface) {
+    height: 90vh;  /* make the memory edit dialog always full height */
+}
+#qvink_memory_state_interface {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#qvink_memory_state_interface #filter_bar {
+    margin: 1em 0;  /* Filter bar vertical margins */
+}
+#qvink_memory_state_interface #filter_bar .filter_box {
+    margin: 0 0.5em;
+    padding: 0.2em 0.5em;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+#qvink_memory_state_interface #filter_bar .filter_box button {
+    width: 100%;
+}
+#qvink_memory_state_interface #filter_bar .filter_box label {
+    width: fit-content;
+    margin: auto;
+}
+
+#qvink_memory_state_interface table {
+    overflow-y: auto;
+    display: block;
+}
+#qvink_memory_state_interface button.menu_button i {
+    margin-right: 1em;  /* buttons with icon before text needs margin after the icon */
+}
+#qvink_memory_state_interface #bulk_regex, #qvink_memory_state_interface #bulk_delete, #qvink_memory_state_interface #bulk_summarize  {
+    color: red;
+}
+#qvink_memory_state_interface #regex_selector  {
+    margin: 0;
+}
+#qvink_memory_state_interface table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;  /* to be above the body when scrolling */
+    background: var(--SmartThemeBlurTintColor)
+}
+#qvink_memory_state_interface table {
+    border-collapse: collapse;  /* needed to have borders around cells */
+}
+#qvink_memory_state_interface table tr.last_in_context_top {
+    border-top: 3px dotted var(--SmartThemeQuoteColor) !important;
+}
+#qvink_memory_state_interface table tr.last_in_context_bottom {
+    border-bottom: 3px dotted var(--SmartThemeQuoteColor) !important;
+}
+#qvink_memory_state_interface table tbody td {
+    position: relative;  /* to be under the head when scrolling */
+}
+#qvink_memory_state_interface table td.interface_summary {
+    width: 100%;
+}
+#qvink_memory_state_interface table td.interface_summary textarea {
+    margin: 0;
+    overflow-y: hidden;
+}
+#qvink_memory_state_interface table td.interface_summary textarea span.memory_edit_regex_match {
+    color: red;
+}
+#qvink_memory_state_interface table tr:has(input.interface_message_select:checked, textarea:focus) {
+    background-color: var(--white30a);  /* highlight selected rows */
+}
+#qvink_memory_state_interface table td.interface_summary i {  /* edit icon */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.2em;
+    scale: 0.6;
+    color: var(--white20a);
+}
+#qvink_memory_state_interface table td div.interface_actions {
+    display: flex;
+    margin: 2px;
+}
+
+#qvink_memory_state_interface #selected_count {
+    font-weight: bold;
+}
+
+
+

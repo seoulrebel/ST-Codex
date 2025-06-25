@@ -1,0 +1,12 @@
+{
+    "story_string": "{{#if system}}{{system}}\n{{/if}}\n\n{{#if description}}Description:\n{{description}}\n{{/if}}\n\n{{#if personality}}Personality:\n{{personality}}\n{{/if}}\n\n{{#if persona}}Additional Persona:\n{{persona}}\n{{/if}}\n\n{{#if scenario}}Scenario:\n{{scenario}}\n{{/if}}\n\n{{#if mes_example}}Sample Dialogue:\n{{mes_example}}\n{{/if}}\n\n<START>\n{{user}}:",
+    "example_separator": "",
+    "chat_start": "",
+    "use_stop_strings": false,
+    "allow_jailbreak": true,
+    "names_as_stop_strings": false,
+    "always_force_name2": true,
+    "trim_sentences": true,
+    "single_line": true,
+    "name": "Celestia"
+}

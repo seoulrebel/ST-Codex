@@ -1,0 +1,242 @@
+```js
+// ==UserScript==
+// @name Adult Site Enhancer - PH & SB
+// @namespace brazenvoid
+// @version 1.0.0
+// @author brazenvoid (merged by Coding Sensei)
+// @license GPL-3.0-only
+// @description Combined search filters and UI enhancers for adult sites
+// @match https://.pornhub.com/
+// @match https://.pornhub.org/
+// @match https://.pornhubpremium.com/
+// @match https://.pornhubpremium.org/
+// @match https://spankbang.com/*
+// @require https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+// @require https://update.greasyfork.org/scripts/375557/Base%20Brazen%20Resource.js
+// @require https://update.greasyfork.org/scripts/416104/Brazen%20UI%20Generator.js
+// @require https://update.greasyfork.org/scripts/418665/Brazen%20Configuration%20Manager.js
+// @require https://update.greasyfork.org/scripts/429587/Brazen%20Item%20Attributes%20Resolver.js
+// @require https://update.greasyfork.org/scripts/424516/Brazen%20Subscriptions%20Loader.js
+// @require https://update.greasyfork.org/scripts/416105/Brazen%20Base%20Search%20Enhancer.js
+// @grant GM_addStyle
+// @run-at document-end
+// ==/UserScript==
+// Site detection
+const SITE_TYPE = {
+PORNHUB: ' PORNHUB: 'pornhub',
+SPANKBANG: 'spankbang'
+};
+const CURRENT_SITE = window.location.hostname.includes('pornhub') ? SITE_TYPE.PORNHUB : SITE_TYPE.SPANKBANG;
+// Common CSS for both sites
+GM_addStyle(#bv-ui{min-width:390px;width:390px});
+// Site-specific CSS
+if (CURRENT_SITE === SITE_TYPE.SPANKBANG) {
+GM_addStyle(
+#bv-ui{font-size:max(16px, 0.8rem);min-width:max(25vw, 400px);width:max(25vw, 400px)}#bv-ui .bv-button{background-color:grey;border-radius:5px}#bv-ui .bv-button:hover{background-color:darkgrey}#bv-ui .bv-group{margin-bottom:5px}#bv-ui .bv-input{background-color:grey;border-radius:5px;padding:0.25rem 0.5rem}#bv-ui .bv-input:hover{background-color:darkgrey}#bv-ui .bv-tab-button{padding:0.25rem 0.75rem}.bv-section hr{margin:1rem 0;border:1px white solid});
+}
+// Environment variables
+const PAGE_PATH_NAME = window.location.pathname;
+const PAGE_PATH_FRAGMENTS = PAGE_PATH_NAME.split('/');
+// PornHub page detection
+const IS_PH_FEED_PAGE = CURRENT_SITE === SITE_TYPE.PORNHUB && PAGE_PATH_NAME.startsWith('/feeds');
+const IS_PH_PLAYLIST_PAGE = CURRENT_SITE === SITE_TYPE.PORNHUB && PAGE_PATH_NAME.startsWith('/playlist');
+const IS_PH_PROFILE_PAGE = CURRENT_SITE === SITE_TYPE.PORNHUB && (PAGE_PATH_NAME.startsWith('/model') || PAGE_PATH_NAME.startsWith('/channels') || PAGE_PATH_NAME.startsWith('/user') || PAGE_PATH_NAME.startsWith('/pornstar'));
+const IS_PH_VIDEO_PAGE = CURRENT_SITE === SITE_TYPE.PORNHUB && PAGE_PATH_NAME.startsWith('/view_video');
+const IS_PH_VIDEO _SEARCH_PAGE = CURRENT_SITE === SITE_TYPE.PORNHUB && (PAGE_PATH_NAME.startsWith('/video') || PAGE_PATH_NAME.startsWith('/categories'));
+// SpankBang page detection
+const IS_SB_HOME_PAGE = CURRENT_SITE === SITE_TYPE.SPANKBANG && PAGE_PATH_NAME === '/';
+const IS_SB_VIDEO_PAGE = CURRENT_SITE === SITE_TYPE.SPANKBANG && $('#video').length > 0;
+const IS_SB_PLAYLIST_PAGE = CURRENT_SITE === SITE_TYPE.SPANKBANG && !IS_SB_VIDEO_PAGE && PAGE_PATH_FRAGMENTS[2] === 'playlist';
+const IS_SB_PROFILE_PAGE = CURRENT_SITE === SITE_TYPE.SPANKBANG && PAGE_PATH_FRAGMENTS[1] === 'profile';
+const IS_SB_SEARCH_PAGE = CURRENT_SITE === SITE_TYPE.SPANKBANG && (PAGE_PATH_FRAGMENTS[1] === 's' || PAGE_PATH_FRAGMENTS[1] === 'tag');
+// Common filters
+const FILTER_TEXT_SEARCH = 'Text Search';
+const FILTER_TEXT_BLACKLIST = 'Text Blacklist';
+const FILTER_TEXT_WHITELIST = 'Text Whitelist';
+const FILTER_TEXT_SANITIZATION = 'Text Sanitization';
+const FILTER_VIDEOS_VIEWS = 'Views';
+const OPTION_DISABLE_COMPLIANCE_VALIDATION = 'Disable Compliance Validation';
+const OPTION_ALWAYS_SHOW_SETTINGS_PANE = 'Always Show Settings';
+// PornHub specific filters
+const FILTER_PAID_VIDEOS = 'Hide Paid Videos';
+const FILTER_PREMIUM_VIDEOS = 'Hide Premium Videos';
+const FILTER_PRO_CHANNEL_VIDEOS = 'Hide Pro Channel Videos';
+const FILTER_PRIVATE_VIDEOS = 'Hide Private Videos';
+const FILTER_RECOMMENDED_VIDEOS = 'Hide Recommended Videos';
+const FILTER_USER = 'User Blacklist';
+const FILTER_WATCHED_VIDEOS = 'Watched Filters';
+const FILTER_SUBSCRIBED_VIDEOS = 'Subscribed Videos';
+const FILTER_UNRATED = 'Unrated Videos';
+const FILTER_PERCENTAGE_RATING_RANGE = 'Rating Range'; ```js
+const FILTER_DURATION_RANGE = 'Duration Range';
+// SpankBang specific filters
+const FILTER_VIDEOS_RESOLUTION = 'Resolution';
+const FILTER_VIDEOS_DURATION = 'Duration';
+const FILTER_VIDEOS_LIKED = 'Liked';
+const FILTER_VIDEOS_RATED = 'Close Rated Videos';
+const FILTER_VIDEOS_MAXIMUM_AGE = 'Maximum Age';
+const FILTER_VIDEOS_MINIMUM_AGE = 'Minimum Age';
+const FILTER_VIDEOS_RATING = 'Rating';
+// PornHub UI options
+const LINK_DISABLE_PLAYLIST_CONTROLS = 'Disable Playlist Controls';
+const LINK_USER_PUBLIC_VIDEOS = 'User Public Videos';
+const UI_AUTO_NEXT = 'Auto Next';
+const UI_LARGE_PLAYER_ALWAYS = 'Always Enlarge Player';
+const UI_REMOVE_LIVE_MODELS_SECTIONS = 'Remove Live Models Sections';
+const UI_REMOVE_PORN_STAR_SECTIONS = 'Remove Porn Star Sections';
+// SpankBang UI options
+const UI_BYPASS_DOWNLOAD_REQUIREMENT = 'Enable Downloads Bypass';
+const UI_REMOVE_EMBED_VIDEO_SECTION = 'Remove Embed Video Section';
+const UI_REPOSITION_SCREENSHOTS = 'Reposition Video Screenshots';
+const UI_REPOSITION_VIDEO_DETAILS = 'Reposition Video Details';
+const UI_SWAP_RELATED_VIDEOS = 'Reposition Related Videos';
+// Item attributes
+const ITEM_DURATION = 'duration';
+const ITEM_LIKED = 'liked';
+const ITEM_RATING = 'rating';
+const ITEM_RESOLUTION = 'resolution';
+class AdultSiteEnhancer extends BrazenBaseSearchEnhancer {
+
+    ```js
+/**
+ * Setup configuration trigger button and keyboard shortcut
+ * @private
+ */
+_setupConfigTrigger() {
+  // Add floating button
+  const button = $('<button id="config-trigger-button">⚙</button>');
+  button.on('click', () => this.toggleUI());
+  $('body').append(button);
+
+  // Add keyboard shortcut (Ctrl+Shift+S or Cmd+Shift+S on Mac)
+  $(document).on('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'S') {
+      e.preventDefault();
+      this.toggleUI();
+    }
+  });
+}
+```
+	```js
+	// Add these functions to the AdultSiteEnhancer class
+
+	/**
+	 * Setup text filtering features
+	 * @private
+	 */
+	_addItemTextSearchFilter() {
+	  this._configurationManager.addTextField(
+	    FILTER_TEXT_SEARCH,
+	    'Search for videos containing specific text in their titles.'
+	  );
+
+	  this._addItemComplianceFilter(FILTER_TEXT_SEARCH, (item, searchText) => {
+	    if (!searchText || searchText.trim() === '') {
+	      return true;
+	    }
+
+	    const itemName = this._getItemName(item).toLowerCase();
+	    const searchTerms = searchText.toLowerCase().split(' ');
+
+	    return searchTerms.every(term => itemName.includes(term));
+	  });
+	}
+
+	/**
+	 * Setup text blacklist filtering
+	 * @private
+	 */
+	_addItemBlacklistFilter(description) {
+	  this._configurationManager.addTextAreaField(
+	    FILTER_TEXT_BLACKLIST,
+	    description
+	  );
+
+	  this._addItemComplianceFilter(FILTER_TEXT_BLACKLIST, (item, blacklistText) => {
+	    if (!blacklistText || blacklistText.trim() === '') {
+	      return true;
+	    }
+
+	    const itemName = this._getItemName(item).toLowerCase();
+	    const blacklistTerms = blacklistText.toLowerCase().split('\n').filter(term => term.trim() !== '');
+
+	    return !blacklistTerms.some(term => itemName.includes(term.trim()));
+	  });
+	}
+
+	/**
+	 * Setup text whitelist filtering
+	 * @private
+	 */
+	_addItemWhitelistFilter(description) {
+	  this._configurationManager.addTextAreaField(
+	    FILTER_TEXT_WHITELIST,
+	    description
+	  );
+
+	  this._addItemComplianceFilter(FILTER_TEXT_WHITELIST, (item, whitelistText) => {
+	    if (!whitelistText || whitelistText.trim() === '') {
+	      return true;
+	    }
+
+	    const itemName = this._getItemName(item).toLowerCase();
+	    const whitelistTerms = whitelistText.toLowerCase().split('\n').filter(term => term.trim() !== '');
+
+	    return whitelistTerms.some(term => itemName.includes(term.trim()));
+	  });
+	}
+
+	/**
+	 * Setup text sanitization
+	 * @private
+	 */
+	_addItemTextSanitizationFilter(description) {
+	  this._configurationManager.addTextAreaField(
+	    FILTER_TEXT_SANITIZATION,
+	    description,
+	    null,
+	    (value) => {
+	      let optimized = {};
+	      if (value) {
+	        let rules = value.split('\n');
+	        for (let rule of rules) {
+	          rule = rule.trim();
+	          if (rule) {
+	            let parts = rule.split('=');
+	            if (parts.length === 2) {
+	              let target = parts[0].trim();
+	              let replacements = parts[1].split(',').map(r => r.trim());
+	              optimized[target] = replacements;
+	            }
+	          }
+	        }
+	      }
+	      return {
+	        raw: value,
+	        optimized: optimized
+	      };
+	    }
+	  );
+	}
+	```
+constructor() {
+// Configure based on current site
+const config = CURRENT_SITE === SITE_TYPE.PORNHUB ? {
+isUserLoggedIn: $('#topRightProfileMenu').length > 0,
+itemDeepAnalysisSelector: '.video-wrapper',
+itemLinkSelector: '.title > a',
+itemListSelectors: 'ul.videos',
+itemNameSelector: '.title > a',
+itemSelectors: '.videoblock',
+requestDelay: 0,
+scriptPrefix: 'ph-sui-',
+} : {
+isUserLoggedIn: $('.links > .auth').length > 0,
+itemDeepAnalysisSelector: '.video_toolbar',
+itemLinkSelector: 'a.n,a.thumb',
+itemListSelectors: 'div.video-list',
+itemNameSelector: '.n',
+itemSelectors: 'div.video-item:not(.clear-fix)',
+requestDelay: 0,
+scriptPrefix: 'sb-sui-',
+};

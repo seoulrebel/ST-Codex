@@ -1,0 +1,12 @@
+{
+    "story_string": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{{#if system}}{{system}}\n\n\n<!-- Chat Context -->\n<hr>\n\n\n### Main Scenario\n{{/if}}{{#if scenario}}{{scenario}}\n\n\n### {{char}}'s Persona\n{{/if}}{{#if personality}}{{personality}}\n\n\n### {{user}}'s Persona\n{{/if}}{{#if persona}}{{persona}}\n\n\n## {{char}}'s Example Dialogue\nThe following examples illustrate {{char}}'s unique dialect and speaking quirks. Study them to gain a deeper understanding of their personality, but be sure to incorporate these traits in a way that feels authentic and nuanced, rather than simply copying them verbatim.\n\n<!-- Start of {{char}}'s Example Dialogue -->\n{{/if}}{{#if mesExamples}}{{mesExamples}}\n<!-- End of {{char}}'s Example Dialogue -->\n\n\n## Description\n{{/if}}{{#if description}}{{description}}\n\n\n## Extra Information (Optional)\n\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{trim}}<|eot_id|>",
+    "example_separator": "",
+    "chat_start": "\n<|start_header_id|>assistant<|end_header_id|>\nStarting a chat with the provided context.<|eot_id|>",
+    "use_stop_strings": false,
+    "allow_jailbreak": false,
+    "always_force_name2": true,
+    "trim_sentences": false,
+    "include_newline": false,
+    "single_line": false,
+    "name": "[LLAMA-3]Assistant-v1.6"
+}

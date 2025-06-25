@@ -1,0 +1,103 @@
+<div class="roadway_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Roadway Settings</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div>
+                <label>Connection Profile</label>
+            </div>
+            <select
+                class="text_pole connection_profile"
+                title="Select a Connection Profile"
+                data-i18n="[title]Select a Connection Profile"
+            ></select>
+            <div class="title_restorable">
+                <label for="prompt">Prompt</label>
+                <button
+                    class="menu_button fa-solid fa-undo interactable restore_default"
+                    data-i18n="[title]Restore default"
+                    title="Restore default"
+                ></button>
+            </div>
+
+            <select class="text_pole prompt" title="Select a Prompt"></select>
+            <textarea class="text_pole textarea_compact prompt" rows="4"></textarea>
+
+            <div>
+                <label>Extraction Strategy</label>
+            </div>
+            <select class="text_pole extraction_strategy" title="Select extraction strategy">
+                <option value="bullet">Bullet points</option>
+                <option value="none">None</option>
+            </select>
+
+            <div class="impersonate_section" style="display: none">
+                <div>
+                    <label>Impersonate</label>
+                </div>
+                <textarea class="text_pole textarea_compact impersonate" rows="4"></textarea>
+            </div>
+
+            <h3>Global Settings</h3>
+
+            <div>
+                <label>Max Context</label>
+            </div>
+            <select class="text_pole max_context_type" title="Select Max Context Type">
+                <option value="profile">Use profile preset</option>
+                <option value="sampler">Use active preset in sampler settings</option>
+                <option value="custom">Custom</option>
+            </select>
+
+            <div class="max_context_custom" style="display: none; margin-top: 10px">
+                <input
+                    type="number"
+                    class="text_pole max_context_value"
+                    min="1"
+                    step="1"
+                    placeholder="Enter max tokens"
+                />
+            </div>
+
+            <div style="margin-top: 10px">
+                <label>Max Response Tokens</label>
+            </div>
+            <input
+                type="number"
+                class="text_pole max_response_tokens"
+                min="1"
+                step="1"
+                placeholder="Enter max response tokens"
+            />
+
+            <div style="margin-top: 10px">
+                <label>Impersonate API</label>
+            </div>
+            <select class="text_pole impersonate_api" title="Select Impersonate API">
+                <option value="main">Main API</option>
+                <option value="profile">Connection Profile</option>
+            </select>
+
+            <div style="margin-top: 10px; display: flex; flex-direction: column">
+                <label class="checkbox_label" for="auto_trigger">
+                    <input type="checkbox" id="auto_trigger" class="auto_trigger" />
+                    Auto trigger on new messages
+                </label>
+            </div>
+            <div style="margin-top: 10px; display: flex; flex-direction: column">
+                <label class="checkbox_label" for="auto_open">
+                    <input type="checkbox" id="auto_open" class="auto_open" />
+                    Auto open roadway details
+                </label>
+            </div>
+            <div style="margin-top: 10px; display: flex; flex-direction: column">
+                <label class="checkbox_label" for="show_use_action">
+                    <input type="checkbox" id="show_use_action" class="show_use_action" />
+                    Show use option icon
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

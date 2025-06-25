@@ -1,0 +1,6 @@
+{
+  "type": "extension",
+  "display_name": "Boss-Mode Stage",
+  "version": "1.0.0",
+  "js": "boss-mode.js"
+}

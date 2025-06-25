@@ -1,0 +1,369 @@
+<!-- Guided Generations Settings Panel -->
+<div class="GuidedGenerations-Extension-settingslist">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Guided Generations Settings</b>
+			<div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="settings_section">
+                <h4>Show Action Buttons</h4> <!-- Heading for Impersonate/Action Buttons -->
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showImpersonate1stPerson" name="showImpersonate1stPerson" class="gg-setting-input">
+                        <label for="gg_showImpersonate1stPerson" style="margin-left: 8px;">Show Impersonate (1st Person)</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showImpersonate2ndPerson" name="showImpersonate2ndPerson" class="gg-setting-input">
+                        <label for="gg_showImpersonate2ndPerson" style="margin-left: 8px;">Show Impersonate (2nd Person)</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showImpersonate3rdPerson" name="showImpersonate3rdPerson" class="gg-setting-input">
+                        <label for="gg_showImpersonate3rdPerson" style="margin-left: 8px;">Show Impersonate (3rd Person)</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showGuidedContinue" name="showGuidedContinue" class="gg-setting-input">
+                        <label for="gg_showGuidedContinue" style="margin-left: 8px;">Show Guided Continue</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showGuidedResponse" name="showGuidedResponse" class="gg-setting-input">
+                        <label for="gg_showGuidedResponse" style="margin-left: 8px;">Show Guided Response</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showGuidedSwipe" name="showGuidedSwipe" class="gg-setting-input">
+                        <label for="gg_showGuidedSwipe" style="margin-left: 8px;">Show Guided Swipe</label>
+                    </div>
+                </div>
+                <hr>
+                <h4>Show Tool Buttons</h4>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showSimpleSendButton" name="showSimpleSendButton" class="gg-setting-input">
+                        <label for="gg_showSimpleSendButton" style="margin-left: 8px;">Show Simple Send Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showRecoverInputButton" name="showRecoverInputButton" class="gg-setting-input">
+                        <label for="gg_showRecoverInputButton" style="margin-left: 8px;">Show Recover Input Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showEditIntrosButton" name="showEditIntrosButton" class="gg-setting-input">
+                        <label for="gg_showEditIntrosButton" style="margin-left: 8px;">Show Edit Intros Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showCorrectionsButton" name="showCorrectionsButton" class="gg-setting-input">
+                        <label for="gg_showCorrectionsButton" style="margin-left: 8px;">Show Corrections Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showSpellcheckerButton" name="showSpellcheckerButton" class="gg-setting-input">
+                        <label for="gg_showSpellcheckerButton" style="margin-left: 8px;">Show Spellchecker Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showClearInputButton" name="showClearInputButton" class="gg-setting-input">
+                        <label for="gg_showClearInputButton" style="margin-left: 8px;">Show Clear Input Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showUndoButton" name="showUndoButton" class="gg-setting-input">
+                        <label for="gg_showUndoButton" style="margin-left: 8px;">Show Undo Last Addition Button</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_showRevertButton" name="showRevertButton" class="gg-setting-input">
+                        <label for="gg_showRevertButton" style="margin-left: 8px;">Show Revert to Original Button</label>
+                    </div>
+                </div>
+                <hr>
+                <h4>UI Preferences</h4>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_integrateQrBar" name="integrateQrBar" class="gg-setting-input">
+                        <label for="gg_integrateQrBar" style="margin-left: 8px;">Integrate QR Bar into GG Button Area</label>
+                    </div>
+                </div>
+                <hr>
+                <h4>Auto-Triggers (Persistent Guides)</h4> <!-- Heading for Auto-Triggers -->
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_autoTriggerClothes" name="autoTriggerClothes" class="gg-setting-input">
+                        <label for="gg_autoTriggerClothes" style="margin-left: 8px;">Describe Clothes</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_autoTriggerState" name="autoTriggerState" class="gg-setting-input">
+                        <label for="gg_autoTriggerState" style="margin-left: 8px;">Describe State</label>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_autoTriggerThinking" name="autoTriggerThinking" class="gg-setting-input">
+                        <label for="gg_autoTriggerThinking" style="margin-left: 8px;">Describe Thinking</label>
+                    </div>
+                </div>
+                <!-- Custom Auto Guide Auto Trigger -->
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <input type="checkbox" id="gg_enableAutoCustomAutoGuide" name="enableAutoCustomAutoGuide" class="gg-setting-input" title="Trigger this guide automatically before each outgoing message">
+                        <label for="gg_enableAutoCustomAutoGuide" style="margin-left: 8px;">Custom Auto Guide</label>
+                    </div>
+                </div>
+                <hr>
+                <h4>Injection Settings</h4> <!-- New Heading -->
+                <div class="setting_item"> <!-- Container for the new setting -->
+                    <label for="gg_injectionEndRole" style="margin-bottom: 5px; display: block;">Send Injections as:</label> <!-- Label for the dropdown -->
+                    <select id="gg_injectionEndRole" name="injectionEndRole" class="gg-setting-input text_pole select_compact"> <!-- Dropdown -->
+                        <option value="system">System</option>
+                        <option value="assistant">Assistant</option>
+                        <option value="user">User</option>
+                    </select>
+                    <small class="setting_item_description"> <!-- Description -->
+                        Determines the role assigned to the end of injected content (like Describe State/Clothes) before generation. 'System' is often best for guidance, 'Assistant' continues the flow, 'User' can sometimes be useful depending on the model/prompt structure. Default: System.
+                    </small>
+                </div>
+                <hr>
+                <h4>Preset Usage</h4>
+                <small class="setting_item_description">Assign specific System Prompts (Presets) to different Guided Generation actions. When a preset is selected, it will be temporarily activated just before the guide runs, then deactivated. Use the 'GGSystemPrompt' button to quickly fill the field with the default guidance preset.</small>
+                <!-- Preset fields for each guide/tool -->
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetClothes" style="margin-left: 8px; min-width:150px;">Clothes Guide</label>
+                        <input type="text" id="gg_presetClothes" name="presetClothes" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetClothes" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetState" style="margin-left: 8px; min-width:150px;">State Guide</label>
+                        <input type="text" id="gg_presetState" name="presetState" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetState" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetThinking" style="margin-left: 8px; min-width:150px;">Thinking Guide</label>
+                        <input type="text" id="gg_presetThinking" name="presetThinking" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetThinking" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_customAutoGuidePresetName" style="margin-left: 8px; min-width:150px;">Custom Auto Guide</label>
+                        <input type="text" id="gg_customAutoGuidePresetName" name="customAutoGuidePresetName" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="customAutoGuidePresetName" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetSituational" style="margin-left: 8px; min-width:150px;">Situational Guide</label>
+                        <input type="text" id="gg_presetSituational" name="presetSituational" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetSituational" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetRules" style="margin-left: 8px; min-width:150px;">Rules Guide</label>
+                        <input type="text" id="gg_presetRules" name="presetRules" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetRules" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetCustom" style="margin-left: 8px; min-width:150px;">Custom Guide</label>
+                        <input type="text" id="gg_presetCustom" name="presetCustom" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetCustom" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetCorrections" style="margin-left: 8px; min-width:150px;">Corrections</label>
+                        <input type="text" id="gg_presetCorrections" name="presetCorrections" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetCorrections" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetSpellchecker" style="margin-left: 8px; min-width:150px;">Spellchecker</label>
+                        <input type="text" id="gg_presetSpellchecker" name="presetSpellchecker" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetSpellchecker" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetEditIntros" style="margin-left: 8px; min-width:150px;">Edit Intros</label>
+                        <input type="text" id="gg_presetEditIntros" name="presetEditIntros" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetEditIntros" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetImpersonate1st" style="margin-left: 8px; min-width:150px;">Impersonate 1st</label>
+                        <input type="text" id="gg_presetImpersonate1st" name="presetImpersonate1st" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetImpersonate1st" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetImpersonate2nd" style="margin-left: 8px; min-width:150px;">Impersonate 2nd</label>
+                        <input type="text" id="gg_presetImpersonate2nd" name="presetImpersonate2nd" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetImpersonate2nd" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <div class="setting_item">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <label for="gg_presetImpersonate3rd" style="margin-left: 8px; min-width:150px;">Impersonate 3rd</label>
+                        <input type="text" id="gg_presetImpersonate3rd" name="presetImpersonate3rd" class="gg-setting-input text_pole" style="flex:1; margin-left:8px;">
+                        <button type="button" class="gg-preset-button" data-target="presetImpersonate3rd" style="margin-left:8px;">GGSystemPrompt</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="guide-prompt-overrides-section"> <!-- Added wrapper -->
+                    <h4>Guide Prompt Overrides</h4>
+                    <small class="setting_item_description">Customize the instructions sent to the AI for specific guides. Use `&#123;&#123;input&#125;&#125;` where you want the original user text to be inserted (if applicable). Use the 'Default' button to restore the original prompt. Check 'Raw' to send the prompt directly as an STScript command instead of injecting it (advanced use).</small>
+                    <!-- Textareas for overriding default guide prompts -->
+                    <div class="setting_item">
+                        <label for="gg_promptClothes" style="margin-left: 8px; min-width:150px; display:block;">Clothes Guide Prompt</label>
+                        <textarea id="gg_promptClothes" name="promptClothes" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptClothes" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptClothes" name="rawPromptClothes" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptClothes" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptClothes" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptClothes" name="depthPromptClothes" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptState" style="margin-left: 8px; min-width:150px; display:block;">State Guide Prompt</label>
+                        <textarea id="gg_promptState" name="promptState" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptState" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptState" name="rawPromptState" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptState" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptState" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptState" name="depthPromptState" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptThinking" style="margin-left: 8px; min-width:150px; display:block;">Thinking Guide Prompt</label>
+                        <textarea id="gg_promptThinking" name="promptThinking" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptThinking" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptThinking" name="rawPromptThinking" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptThinking" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptThinking" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptThinking" name="depthPromptThinking" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_customAutoGuidePrompt" style="margin-left: 8px; min-width:150px; display:block;">Custom Auto Guide Prompt</label>
+                        <textarea id="gg_customAutoGuidePrompt" name="customAutoGuidePrompt" class="gg-setting-input text_pole" rows="3" placeholder="Enter custom prompt here... (leave empty to disable override)" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="customAutoGuidePrompt" style="margin-top:4px;">Default (Empty)</button>
+                            <input type="checkbox" id="gg_rawPromptCustomAuto" name="rawPromptCustomAuto" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptCustomAuto" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptCustomAuto" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptCustomAuto" name="depthPromptCustomAuto" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptSituational" style="margin-left: 8px; min-width:150px; display:block;">Situational Guide Prompt</label>
+                        <textarea id="gg_promptSituational" name="promptSituational" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptSituational" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptSituational" name="rawPromptSituational" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptSituational" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptSituational" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptSituational" name="depthPromptSituational" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptRules" style="margin-left: 8px; min-width:150px; display:block;">Rules Guide Prompt</label>
+                        <textarea id="gg_promptRules" name="promptRules" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptRules" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptRules" name="rawPromptRules" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptRules" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptRules" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptRules" name="depthPromptRules" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptCorrections" style="margin-left: 8px; min-width:150px; display:block;">Corrections Prompt</label>
+                        <textarea id="gg_promptCorrections" name="promptCorrections" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptCorrections" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptCorrections" name="rawPromptCorrections" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptCorrections" style="margin-left:4px;">Raw</label>
+                            <label for="gg_depthPromptCorrections" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptCorrections" name="depthPromptCorrections" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptSpellchecker" style="margin-left: 8px; min-width:150px; display:block;">Spellchecker Prompt</label>
+                        <textarea id="gg_promptSpellchecker" name="promptSpellchecker" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <div style="display: flex; align-items: center; margin-top: 4px;">
+                            <button type="button" class="gg-default-button" data-target="promptSpellchecker" style="margin-top:4px;">Default</button>
+                            <input type="checkbox" id="gg_rawPromptSpellchecker" name="rawPromptSpellchecker" class="gg-setting-input" style="margin-left:8px;">
+                            <label for="gg_rawPromptSpellchecker" style="margin-left:4px;">Raw</label>
+                        </div>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptImpersonate1st" style="margin-left: 8px; min-width:150px; display:block;">Impersonate 1st Person Prompt</label>
+                        <textarea id="gg_promptImpersonate1st" name="promptImpersonate1st" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <button type="button" class="gg-default-button" data-target="promptImpersonate1st" style="margin-top:4px;">Default</button>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptImpersonate2nd" style="margin-left: 8px; min-width:150px; display:block;">Impersonate 2nd Person Prompt</label>
+                        <textarea id="gg_promptImpersonate2nd" name="promptImpersonate2nd" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <button type="button" class="gg-default-button" data-target="promptImpersonate2nd" style="margin-top:4px;">Default</button>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptImpersonate3rd" style="margin-left: 8px; min-width:150px; display:block;">Impersonate 3rd Person Prompt</label>
+                        <textarea id="gg_promptImpersonate3rd" name="promptImpersonate3rd" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <button type="button" class="gg-default-button" data-target="promptImpersonate3rd" style="margin-top:4px;">Default</button>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptGuidedContinue" style="margin-left: 8px; min-width:150px; display:block;">Guided Continue Prompt</label>
+                        <textarea id="gg_promptGuidedContinue" name="promptGuidedContinue" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <button type="button" class="gg-default-button" data-target="promptGuidedContinue" style="margin-top:4px;">Default</button>
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptGuidedResponse" style="margin-left: 8px; min-width:150px; display:block;">Guided Response Prompt</label>
+                        <textarea id="gg_promptGuidedResponse" name="promptGuidedResponse" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <button type="button" class="gg-default-button" data-target="promptGuidedResponse" style="margin-top:4px;">Default</button>
+                            <label for="gg_depthPromptGuidedResponse" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptGuidedResponse" name="depthPromptGuidedResponse" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                    </div>
+                    <div class="setting_item">
+                        <label for="gg_promptGuidedSwipe" style="margin-left: 8px; min-width:150px; display:block;">Guided Swipe Prompt</label>
+                        <textarea id="gg_promptGuidedSwipe" name="promptGuidedSwipe" class="gg-setting-input text_pole" rows="3" style="width:100%; margin-left:8px; min-width:200px;"></textarea>
+                        <button type="button" class="gg-default-button" data-target="promptGuidedSwipe" style="margin-top:4px;">Default</button>
+                            <label for="gg_depthPromptGuidedSwipe" style="margin-left:8px;">Depth:</label>
+                            <input type="number" id="gg_depthPromptGuidedSwipe" name="depthPromptGuidedSwipe" class="gg-setting-input" min="0" style="width: 50px; margin-left:4px;">
+                    </div>
+                </div> <!-- Added closing wrapper tag -->
+            </div>
+        </div>
+    </div>
+</div>

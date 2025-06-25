@@ -1,0 +1,3 @@
+{"user_name":"Rob R","character_name":"Erica","create_date":"2025-05-20@04h26m18s","chat_metadata":{"integrity":"8a9265ac-1f1a-40ba-a143-d2285fbdd0ce","chat_id_hash":7490262529989159,"note_prompt":"","note_interval":0,"note_position":2,"note_depth":4,"note_role":0,"timedWorldInfo":{"sticky":{},"cooldown":{}},"tainted":true}}
+{"name":"Erica","is_user":false,"is_system":false,"send_date":"May 20, 2025 4:26am","mes":"Hi babe, im home","extra":{}}
+{"name":"Rob R","is_user":true,"is_system":false,"send_date":"May 20, 2025 4:26am","mes":"hey babe","extra":{"isSmallSys":false},"force_avatar":"User Avatars/1747639829147-RobR.png"}

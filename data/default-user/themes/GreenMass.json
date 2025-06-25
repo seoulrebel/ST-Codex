@@ -1,0 +1,22 @@
+{
+  "name": "Green Mass",
+  "background": "#283618",
+  "foreground": "#FFFAED",
+  "primary": "#DDA15E",
+  "accent": "#BC6C25",
+  "inputBackground": "#606C38",
+  "inputText": "#FFFAED",
+  "buttonBackground": "#DDA15E",
+  "buttonText": "#283618",
+  "userMessageBackground": "#606C38",
+  "userMessageText": "#FFFAED",
+  "aiMessageBackground": "#283618",
+  "aiMessageText": "#FFFAED",
+  "borderColor": "#BC6C25",
+  "scrollbarColor": "#DDA15E",
+  "linkColor": "#DDA15E",
+  "headerBackground": "#283618",
+  "headerText": "#FFFAED",
+  "cardBackground": "#606C38",
+  "cardText": "#FFFAED"
+}

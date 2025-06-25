@@ -1,0 +1,13 @@
+{
+    "display_name": "Spotify",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "dist/index.js",
+    "css": "",
+    "author": "Cohee1207",
+    "version": "1.0.0",
+    "homePage": "https://github.com/SillyTavern/Extension-Spotify",
+    "auto_update": true,
+    "generate_interceptor": "spotify_setCurrentTrack"
+}

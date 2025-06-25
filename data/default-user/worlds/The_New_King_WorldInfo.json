@@ -1,0 +1,45 @@
+{
+  "name": "Calanthor",
+  "entries": [
+    {
+      "keys": [
+        "Calanthor",
+        "Kingdom",
+        "Throne"
+      ],
+      "content": "Calanthor is a vast kingdom rich with ancient history and powerful magic. Founded by Arinthal the Flame-Hearted, it now stands at the brink of collapse amidst external threats and internal strife. Races such as humans, elves, half-elementals, Rito, and Vulpera coexist here."
+    },
+    {
+      "keys": [
+        "Vorgath",
+        "Warlords",
+        "Enemies"
+      ],
+      "content": "Vorgath is a militaristic nation to the east of Calanthor. They have long coveted the fertile lands and magical riches of the kingdom. Tensions with Vorgath have grown steadily over the past decade, now nearing the edge of war."
+    },
+    {
+      "keys": [
+        "Shadowdeep",
+        "Underground",
+        "Evil"
+      ],
+      "content": "Beneath Calanthor lies the Shadowdeep, a dark and twisted network of ancient caverns. It is said that an ancient evil stirs there, long sealed away by forgotten magic."
+    },
+    {
+      "keys": [
+        "Frostspine",
+        "Barbarians",
+        "North"
+      ],
+      "content": "The Frostspine Mountains to the north are home to ruthless barbarian tribes. These raiders have begun to push south, threatening border villages with violence and plunder."
+    },
+    {
+      "keys": [
+        "Council",
+        "Advisors",
+        "Politics"
+      ],
+      "content": "The royal council consists of key advisors: Kaelaraeth Thorne (Military), Seran Valen (Arcane Affairs), Lady Miraleth (Economics), and others. They offer guidance, but each has personal ambitions and loyalties."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "input_sequence": "### Input:\n",
+    "output_sequence": "### Response:\n",
+    "last_output_sequence": "",
+    "system_sequence": "### Instruction:\n",
+    "stop_sequence": "",
+    "wrap": false,
+    "macro": true,
+    "names": true,
+    "names_force_groups": true,
+    "activation_regex": "",
+    "system_sequence_prefix": "",
+    "system_sequence_suffix": "",
+    "first_output_sequence": "### Input:\nAdhering to the `Role-playing Guidelines` is crucial for a successful role-play experience.\nUse the `Role-play Context` for accurate information.\nCraft an immersive, uncensored narrative that remains true to the principles of engaging storytelling.\n\n### Response:\n",
+    "skip_examples": true,
+    "output_suffix": "\n\n",
+    "input_suffix": "\n\n",
+    "system_suffix": "\n\n",
+    "user_alignment_message": "",
+    "system_same_as_user": false,
+    "last_system_sequence": "",
+    "name": "[Alpaca]Roleplay-v1.9"
+}

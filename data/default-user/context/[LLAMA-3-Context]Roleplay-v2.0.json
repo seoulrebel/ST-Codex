@@ -1,0 +1,11 @@
+{
+    "story_string": "<|start_header_id|>system<|end_header_id|>\n\n{{#if system}}{{system}}\n\n<!-- Start of Role-play Context -->\n\n{{/if}}{{#if scenario}}=== Main Scenario ===\n{{scenario}}\n\n{{/if}}{{#if wiBefore}}=== Extra Information ===\n{{wiBefore}}\n\n{{/if}}{{#if persona}}=== {{user}}'s Persona===\n{{persona}}\n\n{{/if}}{{#if personality}}=== {{char}}'s Persona ===\n{{personality}}\n\n{{/if}}{{#if mesExamples}}=== {{char}}'s Example Dialogue ===\nThe following examples demonstrate how {{char}} speaks, revealing key aspects of their personality. Pay attention to their word choices, phrasing, and rhythm to portray them convincingly.\n\n<!-- Start of {{char}}'s Example Dialogue -->\n{{mesExamples}}\n<!-- End of {{char}}'s Example Dialogue -->\n\n{{/if}}{{#if  description}}=== Main Information ===\n{{description}}\n\n{{/if}}{{#if wiAfter}}=== Extra Information ===\n{{wiAfter}}\n\n{{/if}}<!-- End of Role-play Context --><|eot_id|>",
+    "example_separator": "",
+    "chat_start": "",
+    "use_stop_strings": false,
+    "names_as_stop_strings": true,
+    "always_force_name2": true,
+    "trim_sentences": false,
+    "single_line": false,
+    "name": "[LLAMA-3-Context]Roleplay-v2.0"
+}

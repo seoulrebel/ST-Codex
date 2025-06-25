@@ -1,0 +1,65 @@
+.custom-roadway_pre {
+    white-space: pre-wrap;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mes_magic_roadway_button.spinning {
+    animation: spin 2s linear infinite;
+}
+
+.custom-roadway_options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: calc(var(--mainFontSize) * 1);
+    padding: calc(var(--mainFontSize) * 1) 0;
+}
+
+.custom-roadway_option {
+    padding: 0;
+    border-radius: var(--avatar-base-border-radius);
+    background-color: var(--SmartThemeBlurTintColor);
+    transition: transform var(--animation-duration), box-shadow var(--animation-duration);
+    box-shadow: 0 2px 4px var(--SmartThemeShadowColor);
+    cursor: default;
+    border: 1px solid var(--SmartThemeBorderColor);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px var(--SmartThemeShadowColor);
+        background-color: color-mix(in srgb, var(--SmartThemeBlurTintColor) 95%, var(--SmartThemeBorderColor) 5%);
+    }
+
+    .custom-option_actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: calc(var(--mainFontSize) * 0.5);
+        padding: calc(var(--mainFontSize) * 0.5);
+        background-color: color-mix(in srgb, var(--SmartThemeBlurTintColor) 90%, var(--SmartThemeBorderColor) 10%);
+        border-bottom: 1px solid var(--SmartThemeBorderColor);
+        border-radius: calc(var(--avatar-base-border-radius) - 1px) calc(var(--avatar-base-border-radius) - 1px) 0 0;
+    }
+
+    .custom-option_content {
+        color: var(--SmartThemeBodyColor);
+        padding: calc(var(--mainFontSize) * 1);
+    }
+
+    .custom-action_button {
+        cursor: pointer;
+        padding: calc(var(--mainFontSize) * 0.33);
+        border-radius: calc(var(--avatar-base-border-radius) * 0.5);
+        transition: background-color var(--animation-duration);
+
+        &:hover {
+            background-color: var(--SmartThemeBorderColor);
+        }
+    }
+}

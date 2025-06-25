@@ -1,0 +1,9 @@
+#dupeFinderPanel.open {
+    display: flex;
+    height: 100vh;
+    height: 100svh;
+}
+
+#dupeFinderPanel {
+    display: none;
+}

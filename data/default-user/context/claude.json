@@ -1,0 +1,11 @@
+{
+    "story_string": "<character_description>\n{{CHARACTER_DESCRIPTION}}\n</character_description>\n{{system}}\n{{scenario}}\n{{wiBefore}}\n{{personality}}\n{{persona}}\n{{mesExamples}}\n{{description}}\n{{wiAfter}}",
+    "example_separator": "",
+    "chat_start": "",
+    "use_stop_strings": false,
+    "names_as_stop_strings": true,
+    "always_force_name2": true,
+    "trim_sentences": false,
+    "single_line": false,
+    "name": "claude"
+}

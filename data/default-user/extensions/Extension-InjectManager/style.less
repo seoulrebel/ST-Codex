@@ -1,0 +1,319 @@
+.injectsElement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    width: fit-content;
+
+    background-color: var(--SmartThemeBlurTintColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 10px;
+    color: var(--SmartThemeBodyColor);
+    opacity: 0.7;
+
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &.small {
+        padding: 2px 5px;
+        font-size: 0.8em;
+    }
+
+    &.normal {
+        font-size: 1em;
+    }
+
+    &.large {
+        font-size: 1.2em;
+    }
+
+    &.parentChat {
+        position: sticky;
+        z-index: 50;
+
+        &.topLeft {
+            top: 5px;
+            bottom: 100%;
+            left: 5px;
+            right: 100%;
+        }
+
+        &.topRight {
+            top: 5px;
+            bottom: 100%;
+            left: 100%;
+            right: 5px;
+        }
+
+        &.topCenter {
+            top: 5px;
+            bottom: 100%;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        &.bottomLeft {
+            top: 100%;
+            bottom: 5px;
+            left: 5px;
+            right: 100%;
+        }
+
+        &.bottomRight {
+            top: 100%;
+            bottom: 5px;
+            left: 100%;
+            right: 5px;
+        }
+
+        &.bottomCenter {
+            top: 100%;
+            bottom: 5px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &.parentBody {
+        position: fixed;
+
+        &.belowPanels {
+            z-index: 25;
+        }
+
+        &.abovePanels {
+            z-index: 3010;
+        }
+
+        &.topLeft {
+            top: 5px;
+            left: 5px;
+        }
+
+        &.topRight {
+            top: 5px;
+            right: 5px;
+        }
+
+        &.topCenter {
+            top: 5px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        &.bottomLeft {
+            bottom: 5px;
+            left: 5px;
+        }
+
+        &.bottomRight {
+            bottom: 5px;
+            right: 5px;
+        }
+
+        &.bottomCenter {
+            bottom: 5px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .injectsCount.injectsCountEmpty {
+        filter: brightness(0.5);
+    }
+}
+
+#injectManagerSideBar {
+    --transition-duration: 0.2s;
+    display: none;
+    opacity: 0;
+    top: 0;
+    transition: opacity var(--transition-duration) ease, display var(--transition-duration) ease allow-discrete;
+
+    &.visible {
+        display: flex;
+        opacity: 1;
+    }
+
+    body.reduced-motion & {
+        --transition-duration: 0s;
+    }
+
+    #injectManagerSideBarContainer {
+        flex: 1;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2px;
+        margin-top: 1.5em;
+        gap: 2px;
+    }
+
+    .sideBarNoInjects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        padding: 10px;
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--SmartThemeBodyColor);
+        height: 100%;
+        width: 100%;
+    }
+
+    .sideBarInjectContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid var(--SmartThemeBorderColor);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--white30a);
+        }
+
+        .sideBarInjectInfoContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sideBarInjectScan,
+        .sideBarInjectRole,
+        .sideBarInjectDepth,
+        .sideBarInjectPosition {
+            font-size: 0.8em;
+        }
+
+        .sideBarInjectInfoTopRow {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 2px;
+        }
+
+        .sideBarInjectId {
+            flex-grow: 1;
+            font-size: 0.9em;
+            font-weight: bold;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .sideBarInjectValue {
+            font-size: 0.85em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .sideBarInjectActions {
+            display: flex;
+            gap: 5px;
+        }
+    }
+}
+
+.injectManagerViewTextArea {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    field-sizing: content;
+}
+
+.injectManagerForm {
+    --gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    .injectFormHeader {
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+    }
+
+    .injectFormGroup {
+        .checkboxGroup {
+            margin-top: -0.5rem;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95em;
+        }
+    }
+    .injectFormPosition {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .injectPositionOption {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.3rem 0;
+
+            input[type="radio"] {
+                margin: 0;
+            }
+        }
+
+        .injectPositionText {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95em;
+        }
+
+        .injectPositionInChat {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .injectInChatGroup {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .injectInChatDepth {
+            width: 3.5rem;
+            padding: 0.2rem 0.3rem;
+        }
+        
+        .injectInChatRole {
+            width: 10rem;
+            padding: 0.2rem 0.3rem;
+        }
+    }
+}
+
+
+@starting-style {
+    #injectManagerSideBar.visible {
+        opacity: 0;
+    }
+}

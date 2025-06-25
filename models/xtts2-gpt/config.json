@@ -1,0 +1,44 @@
+{
+  "activation_function": "gelu_new",
+  "architectures": [
+    "XttsGPT"
+  ],
+  "attn_pdrop": 0.1,
+  "audio_config": {
+    "mel_channels": 80,
+    "output_sample_rate": 24000,
+    "sample_rate": 22050
+  },
+  "auto_map": {
+    "AutoConfig": "AstraMindAI/xtts2-gpt--gpt_config.XTTSGPTConfig",
+    "AutoModelForCausalLM": "AstraMindAI/xtts2-gpt--xtts2_gpt_modeling.XttsGPT",
+    "AutoTokenizer": "AstraMindAI/xtts2-gpt--tokenizer.XTTSTokenizerFast"
+  },
+  "decoder_input_dim": 1024,
+  "enable_redaction": false,
+  "gpt_batch_size": 1,
+  "gpt_max_audio_tokens": 605,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "kv_cache": true,
+  "layer_norm_epsilon": 1e-05,
+  "max_audio_tokens": 605,
+  "max_prompt_tokens": 70,
+  "max_text_tokens": 402,
+  "model_type": "xtts_gpt",
+  "n_inner": 4096,
+  "num_attention_heads": 16,
+  "num_audio_tokens": 1026,
+  "num_hidden_layers": 30,
+  "number_text_tokens": 6681,
+  "reorder_and_upcast_attn": false,
+  "scale_attn_by_inverse_layer_idx": false,
+  "start_audio_token": 1024,
+  "start_text_token": null,
+  "stop_audio_token": 1025,
+  "stop_text_token": null,
+  "transformers_version": "4.46.0",
+  "use_masking_gt_prompt_approach": true,
+  "use_perceiver_resampler": true,
+  "vocab_size": 6681
+}

@@ -1,0 +1,96 @@
+dialog.popup:has(.codemirror-host) {
+    width: unset;
+}
+
+.codemirror-host {
+    text-align: initial;
+    color: var(--SmartThemeBodyColor);
+    background-color: var(--black30a);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.codemirror-host .cm-editor .cm-activeLine {
+    background-color: rgba(200, 200, 200, 0.05);
+}
+
+.codemirror-host .cm-editor {
+    height: 100%;
+}
+
+.codemirror-host .cm-editor .cm-content {
+    font-family: var(--monoFontFamily);
+}
+
+.codemirror-host .cm-editor.cm-focused  .cm-selectionLayer .cm-selectionBackground,
+.codemirror-host .cm-editor .cm-selectionBackground  {
+    background: rgba(200, 200, 200, 0.15);
+}
+
+.codemirror-host .cm-editor .cm-cursor {
+    border-left-color: var(--SmartThemeBodyColor);
+}
+
+.codemirror-host .cm-editor input[type="checkbox"] {
+    display: inline-flex;
+}
+
+.codemirror-host .cm-editor .cm-panels {
+    background-color: var(--SmartThemeBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+}
+
+.codemirror-host .cm-editor .cm-textfield {
+    background-color: var(--black30a);
+    color: var(--SmartThemeBodyColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    font-family: var(--mainFontFamily);
+    padding: 3px 5px;
+    margin: 5px 0;
+    height: fit-content;
+}
+
+.codemirror-host .cm-editor .cm-button {
+    color: var(--SmartThemeBodyColor);
+    background-color: var(--SmartThemeBlurTintColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 3px 5px;
+    width: min-content;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    background-image: none;
+}
+
+.codemirror-host .cm-search-button {
+    color: var(--SmartThemeBodyColor);
+    background-color: var(--SmartThemeBlurTintColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 3px 5px;
+    width: min-content;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    background-image: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+}

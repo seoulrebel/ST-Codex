@@ -1,0 +1,44 @@
+<div id="custom_sliders_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>
+                <span>Custom Sliders</span>
+            </b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div id="custom_sliders_hint" class="info-block hint">
+                Select Custom (OpenAI-compatible) as a Chat Completion Source to use this extension.
+            </div>
+            <div class="flex-container">
+                <input type="file" id="custom_sliders_import_file" hidden accept=".json">
+                <select class="text_pole flex1" id="custom_sliders_collections"></select>
+                <div id="custom_sliders_create_collection" class="menu_button menu_button_icon" title="Create New Collection">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                </div>
+                <div id="custom_sliders_bind_to_preset" class="menu_button menu_button_icon" title="Bind collection to Preset">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <div id="custom_sliders_import_collection" class="menu_button menu_button_icon" title="Import Collection">
+                    <i class="fa-solid fa-file-import"></i>
+                </div>
+                <div id="custom_sliders_export_collection" class="menu_button menu_button_icon" title="Export Collection">
+                    <i class="fa-solid fa-file-export"></i>
+                </div>
+                <div id="custom_sliders_delete_collection" class="menu_button menu_button_icon" title="Delete Collection">
+                    <i class="fa-solid fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div id="custom_sliders_create" class="menu_button menu_button_icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <span data-i18n="Create Slider">
+                        Create Slider
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div id="custom_sliders_list"></div>
+        </div>
+    </div>
+</div>

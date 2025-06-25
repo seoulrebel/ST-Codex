@@ -1,0 +1,17 @@
+{
+  "scenarioName": "My RP Vision Scenario",
+  "model": "koboldcpp/RP_Vision_7B.Q4_K_M",
+  "placeholderTags": {
+    "System Start": "<|system|>\n",
+    "System End": "\n",
+    "User Start": "<|user|>\n",
+    "User End": "\n",
+    "Assistant Start": "<|assistant|>\n",
+    "Assistant End": "\n",
+    "Image Start": "<|image|>\n",
+    "Image End": "\n"
+  },
+  "parameters": {
+    …  
+  }
+}

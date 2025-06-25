@@ -1,0 +1,107 @@
+<div id="spotify_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>
+                <span>Spotify</span>
+            </b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div>
+                <label for="spotify_client_id">Client ID</label>
+                <input type="text" id="spotify_client_id" class="text_pole" placeholder="Spotify Client ID" />
+            </div>
+            <div>
+                <span>Logged in as:</span>
+                <b id="spotify_user_name"></b>
+            </div>
+            <div class="flex-container">
+                <div id="spotify_auth" class="menu_button menu_button_icon">
+                    <div class="fa-brands fa-spotify"></div>
+                    <span data-i18n="Authenticate">Authenticate</span>
+                </div>
+                <div id="spotify_logout" class="menu_button menu_button_icon">
+                    <div class="fa-solid fa-right-from-bracket"></div>
+                    <span data-i18n="Logout">Logout</span>
+                </div>
+            </div>
+            <div>
+                <label for="spotify_template">Injection Template</label>
+                <textarea id="spotify_template" class="text_pole textarea_compact" rows="2"></textarea>
+            </div>
+            <div>
+                <label class="checkbox_label" for="spotify_scan">
+                    <input id="spotify_scan" type="checkbox" />
+                    <span>Include in World Info Scanning</span>
+                </label>
+            </div>
+            <div>
+                <label for="spotify_position">Injection Position</label>
+                <div class="radio_group">
+                    <label>
+                        <input type="radio" name="spotify_position" value="-1" />
+                        <span data-i18n="None (not injected)">None (not injected)</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="spotify_position" value="2" />
+                        <span data-i18n="Before Main Prompt / Story String">Before Main Prompt / Story String</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="spotify_position" value="0" />
+                        <span data-i18n="After Main Prompt / Story String">After Main Prompt / Story String</span>
+                    </label>
+                    <label class="flex-container alignItemsCenter" title="How many messages before the current end of the chat." data-i18n="[title]How many messages before the current end of the chat.">
+                        <input type="radio" name="spotify_position" value="1" />
+                        <span data-i18n="In-chat @ Depth">In-chat @ Depth</span> <input id="spotify_depth" class="text_pole widthUnset" type="number" min="0" max="999" />
+                        <span data-i18n="as">as</span>
+                        <select id="spotify_role" class="text_pole widthNatural">
+                            <option value="0" data-i18n="System">System</option>
+                            <option value="1" data-i18n="User">User</option>
+                            <option value="2" data-i18n="Assistant">Assistant</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <b>Function tools:</b>
+                <label class="checkbox_label" for="spotify_tool_search_tracks">
+                    <input id="spotify_tool_search_tracks" type="checkbox" />
+                    <span>Search Tracks</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_play_item">
+                    <input id="spotify_tool_play_item" type="checkbox" />
+                    <span>Play Item</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_queue_track">
+                    <input id="spotify_tool_queue_track" type="checkbox" />
+                    <span>Queue Track</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_control_playback">
+                    <input id="spotify_tool_control_playback" type="checkbox" />
+                    <span>Control Playback</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_get_current_track">
+                    <input id="spotify_tool_get_current_track" type="checkbox" />
+                    <span>Get Current Track</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_get_top_tracks">
+                    <input id="spotify_tool_get_top_tracks" type="checkbox" />
+                    <span>Get Top Tracks</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_get_recent_tracks">
+                    <input id="spotify_tool_get_recent_tracks" type="checkbox" />
+                    <span>Get Recent Tracks</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_get_playlists">
+                    <input id="spotify_tool_get_playlists" type="checkbox" />
+                    <span>Get User Playlists</span>
+                </label>
+                <label class="checkbox_label" for="spotify_tool_get_playlist_tracks">
+                    <input id="spotify_tool_get_playlist_tracks" type="checkbox" />
+                    <span>Get Playlist Tracks</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

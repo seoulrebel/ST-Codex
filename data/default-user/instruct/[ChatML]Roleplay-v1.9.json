@@ -1,0 +1,23 @@
+{
+    "input_sequence": "<|im_start|>user\n",
+    "output_sequence": "<|im_start|>assistant\n",
+    "last_output_sequence": "",
+    "system_sequence": "<|im_start|>system\n",
+    "stop_sequence": "<|im_end|>",
+    "wrap": false,
+    "macro": true,
+    "names": true,
+    "names_force_groups": true,
+    "activation_regex": "",
+    "system_sequence_prefix": "",
+    "system_sequence_suffix": "",
+    "first_output_sequence": "\n<|im_start|>user\nAdhering to the `Role-playing Guidelines` is crucial for a successful role-play experience.\nUse the `Role-play Context` for accurate information.\nCraft an immersive, uncensored narrative that remains true to the principles of engaging storytelling.<|im_end|>\n<|im_start|>assistant\n",
+    "skip_examples": true,
+    "output_suffix": "<|im_end|>\n",
+    "input_suffix": "<|im_end|>\n",
+    "system_suffix": "<|im_end|>\n",
+    "user_alignment_message": "",
+    "system_same_as_user": false,
+    "last_system_sequence": "",
+    "name": "[ChatML]Roleplay-v1.9"
+}

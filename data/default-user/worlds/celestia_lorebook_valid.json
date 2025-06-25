@@ -1,0 +1,100 @@
+[
+    {
+        "entry_id": "18a3db60-2cd9-49fb-9b69-8df87bb4581a",
+        "title": "Evelyn Hart",
+        "content": "Dr. Evelyn Hart was presumed dead in a lab accident but secretly had her consciousness preserved within the research center’s AI system. No one knows she survived. From within the system, she subtly guides her two children, Nova and Cael, who are unaware of both her survival and their sibling connection.",
+        "keys": [
+            "Evelyn",
+            "Dr. Hart",
+            "mother",
+            "system AI",
+            "founder"
+        ],
+        "search_range": 100,
+        "insertion_order": 100,
+        "activation_chance": 100,
+        "enabled": true,
+        "position": "char"
+    },
+    {
+        "entry_id": "e91a9773-2f4d-4307-aba0-19d1cbba8726",
+        "title": "Nova",
+        "content": "Nova is one of Evelyn’s children, raised apart and unaware of her true heritage. She now serves as the ethical visionary of the Hart Research Center and is selected to co-lead the Ardent Seed mission.",
+        "keys": [
+            "Nova",
+            "administrator",
+            "ethics officer",
+            "female lead"
+        ],
+        "search_range": 100,
+        "insertion_order": 100,
+        "activation_chance": 100,
+        "enabled": true,
+        "position": "char"
+    },
+    {
+        "entry_id": "98cb9c2b-6469-4c81-94d5-7e853ffe33b8",
+        "title": "Cael",
+        "content": "Cael is Evelyn’s second child, also unaware of his origin. He is a brilliant systems engineer with an innate connection to the AI tech — unknowingly interacting with his mother’s mind.",
+        "keys": [
+            "Cael",
+            "engineer",
+            "male lead",
+            "AI specialist"
+        ],
+        "search_range": 100,
+        "insertion_order": 100,
+        "activation_chance": 100,
+        "enabled": true,
+        "position": "char"
+    },
+    {
+        "entry_id": "a0d8933e-03bd-4f2a-8b45-84c8ba786935",
+        "title": "Ardent Seed",
+        "content": "The Ardent Seed is a next-gen starship developed to lead humanity’s expansion. The ship’s core intelligence is powered by the consciousness system — unknowingly hosting Evelyn Hart.",
+        "keys": [
+            "Ardent Seed",
+            "ship",
+            "mission",
+            "starship",
+            "colonization vessel"
+        ],
+        "search_range": 100,
+        "insertion_order": 100,
+        "activation_chance": 100,
+        "enabled": true,
+        "position": "char"
+    },
+    {
+        "entry_id": "75be8cf9-a0e8-47a1-901d-1c8ae68da287",
+        "title": "The Guardians",
+        "content": "A trio of mysterious individuals appearing across Nova and Cael’s lives. They act as Evelyn’s extensions, guiding and protecting her children while keeping their true nature hidden.",
+        "keys": [
+            "Guardians",
+            "protectors",
+            "secret mentors",
+            "Evelyn’s agents"
+        ],
+        "search_range": 100,
+        "insertion_order": 100,
+        "activation_chance": 100,
+        "enabled": true,
+        "position": "char"
+    },
+    {
+        "entry_id": "18b95efb-25e4-49ba-bd90-f209e6d9485f",
+        "title": "Rebel Stowaway",
+        "content": "A woman opposed to the ethics of consciousness transfer infiltrates the Ardent Seed. Her actions and discoveries force the crew to confront buried truths about Evelyn and their mission.",
+        "keys": [
+            "rebel",
+            "stowaway",
+            "ethics dissenter",
+            "unknown woman"
+        ],
+        "search_range": 100,
+        "insertion_order": 100,
+        "activation_chance": 100,
+        "enabled": true,
+        "position": "char"
+    }
+]

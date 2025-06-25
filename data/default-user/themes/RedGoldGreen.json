@@ -1,0 +1,22 @@
+{
+  "name": "Red Gold Green",
+  "background": "#064E41",
+  "foreground": "#FEC201",
+  "primary": "#DA9101",
+  "accent": "#8B0001",
+  "inputBackground": "#006A4F",
+  "inputText": "#FEC201",
+  "buttonBackground": "#DA9101",
+  "buttonText": "#FFFFFF",
+  "userMessageBackground": "#006A4F",
+  "userMessageText": "#FEC201",
+  "aiMessageBackground": "#064E41",
+  "aiMessageText": "#FEC201",
+  "borderColor": "#DA9101",
+  "scrollbarColor": "#DA9101",
+  "linkColor": "#FEC201",
+  "headerBackground": "#8B0001",
+  "headerText": "#FEC201",
+  "cardBackground": "#006A4F",
+  "cardText": "#FEC201"
+}

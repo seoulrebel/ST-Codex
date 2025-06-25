@@ -1,0 +1,6 @@
+{
+  "type": "extension",
+  "display_name": "Relationship Preset",
+  "version": "1.0.0",
+  "js": "index.js"
+}

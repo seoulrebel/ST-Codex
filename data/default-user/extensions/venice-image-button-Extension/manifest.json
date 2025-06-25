@@ -1,0 +1,10 @@
+{
+  "display_name": "Venice Image Button",
+  "loading_order": 10,
+  "requires": [],
+  "optional": [],
+  "js": "extension.js",
+  "author": "Rob",
+  "version": "1.2.2",
+  "auto_update": false
+}

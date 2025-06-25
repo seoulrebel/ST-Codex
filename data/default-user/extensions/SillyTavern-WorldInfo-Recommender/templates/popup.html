@@ -1,0 +1,187 @@
+<div id="worldInfoRecommenderPopup">
+    <h2>World Info Recommender</h2>
+    <div class="container">
+        <div class="column">
+            <div class="card">
+                <h3>Connection Profile</h3>
+                <select
+                    id="worldInfoRecommend_connectionProfile"
+                    class="text_pole"
+                    title="Select a Connection Profile"
+                    data-i18n="[title]Select a Connection Profile"
+                ></select>
+            </div>
+
+            <div class="card">
+                <h3>Context to Send</h3>
+                <div style="display: flex; flex-direction: column">
+                    <label class="checkbox_label" for="worldInfoRecommend_stDescription">
+                        <input type="checkbox" id="worldInfoRecommend_stDescription" />
+                        Description of SillyTavern and Lorebook
+                    </label>
+                    <div class="message-options">
+                        <h4>Messages to Include</h4>
+                        <select id="messageType" class="text_pole">
+                            <option value="none">None</option>
+                            <option value="all">All Messages</option>
+                            <option value="first">First X Messages</option>
+                            <option value="last">Last X Messages</option>
+                            <option value="range">Range</option>
+                        </select>
+
+                        <div id="firstX" style="display: none; margin-top: 10px">
+                            <label
+                                >First
+                                <input
+                                    type="number"
+                                    class="text_pole small message-input"
+                                    id="firstXMessages"
+                                    min="1"
+                                    placeholder="X"
+                                />
+                                Messages
+                            </label>
+                        </div>
+
+                        <div id="lastX" style="display: none; margin-top: 10px">
+                            <label
+                                >Last
+                                <input
+                                    type="number"
+                                    class="text_pole small message-input"
+                                    id="lastXMessages"
+                                    min="1"
+                                    placeholder="X"
+                                />
+                                Messages
+                            </label>
+                        </div>
+
+                        <div id="rangeX" style="display: none; margin-top: 10px">
+                            <label
+                                >Range:
+                                <input
+                                    type="number"
+                                    class="text_pole small message-input"
+                                    id="rangeStart"
+                                    min="0"
+                                    placeholder="Start"
+                                />
+                                to
+                                <input
+                                    type="number"
+                                    class="text_pole small message-input"
+                                    id="rangeEnd"
+                                    min="1"
+                                    placeholder="End"
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <label style="margin-top: 10px" class="checkbox_label" for="worldInfoRecommend_charCard">
+                        <input type="checkbox" id="worldInfoRecommend_charCard" />
+                        Char Card
+                    </label>
+                    <div id="worldInfoRecommend_charCardContainer" style="display: none; margin-bottom: 10px">
+                        <h4>Select Character</h4>
+                        <select
+                            id="worldInfoRecommend_charCardSelect"
+                            class="text_pole"
+                            title="Select character for your group. It'll only be used for the Char Card"
+                        ></select>
+                    </div>
+                    <label class="checkbox_label" for="worldInfoRecommend_authorNote">
+                        <input type="checkbox" id="worldInfoRecommend_authorNote" />
+                        Author Note
+                    </label>
+                    <label class="checkbox_label" for="worldInfoRecommend_worldInfo">
+                        <input type="checkbox" id="worldInfoRecommend_worldInfo" />
+                        World Info
+                    </label>
+                    <div>
+                        <h4>Lorebooks to Include</h4>
+                        <div id="worldInfoRecommend_worldInfoContainer"></div>
+                    </div>
+                    <label class="checkbox_label" for="worldInfoRecommend_includeSuggestedEntries">
+                        <input type="checkbox" id="worldInfoRecommend_includeSuggestedEntries" />
+                        Existing Suggestions
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <label>
+                    Max Context
+                    <select id="worldInfoRecommend_maxContextType" class="text_pole" title="Select Max Context Type">
+                        <option value="profile">Use profile preset</option>
+                        <option value="sampler">Use active preset in sampler settings</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </label>
+
+                <label id="worldInfoRecommend_maxTokens_container" style="display: none; margin-top: 10px">
+                    <input
+                        id="worldInfoRecommend_maxTokens"
+                        type="number"
+                        class="text_pole"
+                        min="1"
+                        step="1"
+                        placeholder="Enter max tokens"
+                    />
+                </label>
+
+                <label
+                    >Max Response Tokens
+                    <input
+                        id="worldInfoRecommend_maxResponseTokens"
+                        type="number"
+                        class="text_pole"
+                        min="1"
+                        step="1"
+                        placeholder="Enter max response tokens"
+                    />
+                </label>
+            </div>
+
+            <div class="card">
+                <h3>Your Prompt</h3>
+                <select id="worldInfoRecommend_promptPreset" class="text_pole" title="Select a Prompt Preset"></select>
+                <textarea
+                    id="worldInfoRecommend_prompt"
+                    class="text_pole textarea_compact"
+                    placeholder="e.g., 'Suggest entries for places {{user}} visited.' or 'Edit the coffee shop entry...'"
+                    rows="4"
+                ></textarea>
+                <button id="worldInfoRecommend_sendPrompt" class="menu_button interactable">Send Prompt</button>
+            </div>
+        </div>
+
+        <div class="wide-column">
+            <div class="card">
+                <h3>Suggested Entries</h3>
+                <div class="actions">
+                    <button id="worldInfoRecommend_addAll" class="menu_button interactable">Add All</button>
+                    <button id="worldInfoRecommend_reset" class="menu_button interactable">Reset</button>
+                </div>
+                <div id="worldInfoRecommend_suggestedEntries"></div>
+            </div>
+        </div>
+    </div>
+
+    <template id="worldInfoRecommend_entryTemplate">
+        <div class="entry">
+            <div class="menu">
+                <select class="world-select text_pole"></select>
+                <button class="menu_button interactable add">Add</button>
+                <button class="menu_button interactable continue">Continue</button>
+                <button class="menu_button interactable edit">Edit</button>
+                <button class="menu_button interactable compare" style="display: none">Compare</button>
+                <button class="menu_button interactable blacklist">Blacklist</button>
+                <button class="menu_button interactable remove">Remove</button>
+            </div>
+            <h4 class="comment">{{comment}}</h4>
+            <div class="key">{{key}}</div>
+            <p class="content">{{content}}</p>
+        </div>
+    </template>
+</div>

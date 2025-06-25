@@ -1,0 +1,22 @@
+{
+  "name": "12bit",
+  "background": "#233D4D",
+  "foreground": "#FFFAED",
+  "primary": "#FE7F2D",
+  "accent": "#FCCA46",
+  "inputBackground": "#A1C181",
+  "inputText": "#233D4D",
+  "buttonBackground": "#FCCA46",
+  "buttonText": "#233D4D",
+  "userMessageBackground": "#A1C181",
+  "userMessageText": "#233D4D",
+  "aiMessageBackground": "#619B8A",
+  "aiMessageText": "#233D4D",
+  "borderColor": "#FE7F2D",
+  "scrollbarColor": "#FCCA46",
+  "linkColor": "#FE7F2D",
+  "headerBackground": "#233D4D",
+  "headerText": "#FFFAED",
+  "cardBackground": "#A1C181",
+  "cardText": "#233D4D"
+}

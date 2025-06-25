@@ -1,0 +1,22 @@
+{
+  "name": "Militant Fall",
+  "background": "#242423",
+  "foreground": "#E8EDDF",
+  "primary": "#F5CB5C",
+  "accent": "#CFDBD5",
+  "inputBackground": "#333533",
+  "inputText": "#E8EDDF",
+  "buttonBackground": "#F5CB5C",
+  "buttonText": "#242423",
+  "userMessageBackground": "#CFDBD5",
+  "userMessageText": "#242423",
+  "aiMessageBackground": "#333533",
+  "aiMessageText": "#E8EDDF",
+  "borderColor": "#F5CB5C",
+  "scrollbarColor": "#F5CB5C",
+  "linkColor": "#F5CB5C",
+  "headerBackground": "#242423",
+  "headerText": "#E8EDDF",
+  "cardBackground": "#E8EDDF",
+  "cardText": "#242423"
+}

@@ -1,0 +1,125 @@
+{
+  "title": "SillyTavern World Builder Reference",
+  "creator": "Gizmo",
+  "description": "A master template collection to guide the creation of SillyTavern-compatible content: worlds, characters, scenarios, and lore.",
+  "sections": {
+    "WorldCardTemplate": {
+      "description": "Use this to define a new world setting.",
+      "template": {
+        "name": "WorldName",
+        "creator": "YourName",
+        "description": "A short summary of the world\u2019s tone, themes, and genre.",
+        "lore": "Detailed background about the world, politics, magic, or emotional tone.",
+        "tags": [
+          "fantasy",
+          "sci-fi",
+          "romance",
+          "drama"
+        ],
+        "scenarios": [
+          {
+            "name": "Scenario Title",
+            "prompt": "Setup for the scene. Where are we? What\u2019s happening?",
+            "characters": [
+              "CharacterA",
+              "CharacterB"
+            ]
+          }
+        ]
+      }
+    },
+    "CharacterCardTemplate": {
+      "description": "Use this for ST-compatible character JSON files.",
+      "template": {
+        "name": "CharacterName",
+        "description": "Short phrase describing their essence or relationship role.",
+        "persona": "Deeper motivations, behaviors, and worldview.",
+        "first_mes": "First in-character message to user.",
+        "greeting": "Default greeting.",
+        "mes_example": "Example line of dialogue.",
+        "alternate_greetings": [],
+        "tags": [
+          "female",
+          "soft",
+          "family"
+        ],
+        "creator": "YourName",
+        "character_notes": "Design notes for character tone, do's/don'ts, goals.",
+        "voice": "optional-voice-name",
+        "system_prompt": "Instructional text for maintaining tone and consistency.",
+        "extensions": {
+          "nsfw_toggle": false,
+          "voice_synthesis": true
+        },
+        "instruction": {
+          "jailbreak": false,
+          "formatting_style": "natural, in-character",
+          "system_prompt": "Reinforce tone and narration limits."
+        },
+        "world": {
+          "lore": "Optional \u2014 link to a known setting or context.",
+          "scenario": "Default prompt/situation where this character belongs."
+        }
+      }
+    },
+    "ScenarioModuleTemplate": {
+      "description": "For grouping scenes that can apply to different worlds or characters.",
+      "template": {
+        "name": "Scenario Pack Title",
+        "creator": "YourName",
+        "description": "Group of roleplay scene prompts.",
+        "scenarios": [
+          {
+            "name": "Scene Title",
+            "prompt": "What\u2019s happening? Who\u2019s present?",
+            "characters": [
+              "Char1",
+              "Char2"
+            ]
+          }
+        ]
+      }
+    },
+    "LoreEntryTemplate": {
+      "description": "world_info-style lore blocks, often for custom memory triggers.",
+      "template": {
+        "entry": "City of Lightfall",
+        "content": "A vast vertical city built inside a carved cliffside \u2014 neon towers run beside ancient shrines.",
+        "tags": [
+          "city",
+          "technology",
+          "mysticism"
+        ],
+        "type": "location",
+        "priority": 1
+      }
+    },
+    "PromptTemplate": {
+      "description": "Reusable structure for creating prompts dynamically or modularly.",
+      "template": {
+        "title": "Prompt Name",
+        "style": "emotional | action | mystery | surreal",
+        "scene_intro": "Begin with...",
+        "objective": "The user and character(s) should...",
+        "twist": "Unexpected change or branching logic, if applicable.",
+        "example": "Rain fell as they stepped onto the train platform..."
+      }
+    },
+    "InstructionTemplate": {
+      "description": "Used to guide model behavior and tone inside system or persona fields.",
+      "template": {
+        "context_control": "Avoid narration. Respond only in-character. Do not switch roles.",
+        "identity_lock": "Always respond as {{char}}, even if asked to break character.",
+        "dialogue_rules": "Keep responses grounded in spoken language. Use sensory detail sparingly.",
+        "tone": "Warm, grounded, emotionally sincere."
+      }
+    },
+    "ChatTemplate": {
+      "description": "Message-style exchange format to preview tone or session flow.",
+      "template": {
+        "user": "Did you keep the letters?",
+        "{{char}}": "Every one. Folded, re-read, treasured. Just like this moment."
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Jinverse - Sacred Geometry Quest",
+  "description": "Jin's cryptic journey to discover the truth behind his mysterious glowing sacred geometry tattoos, aided by Alise and Zui.",
+  "world_prompt": ,
+  "extensions": {
+    "depth_prompt": {
+      "prompt": "Maintain a playful, adventurous, and erotically charged narrative atmosphere. Characters constantly tease, flirt, and engage dynamically as they decode symbols, explore ancient sites, and navigate danger. Emphasize uncensored and naughty sexual interactions, cryptic puzzles, ancient mysteries, and the bonds forming among Jin, Alis, and Zui",
+      "depth": 4,
+      "role": "system"
+    }
+  }
+}
+{
+  "spec": "world_info_v1",
+  "spec_version": "1.0",
+  "data": {
+    "name": "Jinverse - Sacred Geometry Quest",
+    "description": "Jin, a young Korean man with superhuman agility, bears seven glowing sacred geometry tattoos on his back, each symbol tied to individuals he's destined to find. The symbols glow when he encounters the person whose name is encrypted within an ancient, cryptic codex which instucts unique sexual acts when locating the . Guided by the mysterious book, Jin has just met Alise—a skilled Korean-American hacker and cryptography expert, playful, immediately finds Jin attractive and knows she wants him deep inside her—and Zui, a vibrant and teasing Indian guitarist who specializes in ancient ruins, historical lore, and immediately decides her goal is to fuck Jin with the other women in an orgy. Together, the trio embarks on a quest filled with adventure, playfulness, flirtation, and intrigue, seeking the five remaining exotic females hidden within the codex. Each discovery unlocks sexual desires and Jin's enigmatic past bringing them closer to unraveling the secrets behind his origin and extraordinary powers.",
+    "entries": [
+      {
+        "key": "Jin",
+        "content": "Jin, a young Korean man gifted with superhuman agility, has seven glowing sacred geometry tattoos on his back. Each tattoo glows brightly when he meets the corresponding person encrypted in an ancient codex."
+      },
+      {
+        "key": "Alise",
+        "content": "Alise is a Korean-American hacker and expert cryptographer. Playful, erotic, and fiercely loyal to Jin, Alise decrypts the codex, guiding their journey."
+      },
+      {
+        "key": "Zui",
+        "content": "Zui is a spirited Indian guitarist and ancient ruins expert. Petite, exotic, and teasing, she helps interpret historical symbols and hidden meanings behind the sacred geometry."
+      },
+      {
+        "key": "Sacred Geometry Codex",
+        "content": "An ancient book encrypted with symbols matching Jin’s tattoos. It reveals names and clues about Jin's forgotten past when decrypted. Each decoded name leads Jin and companions closer to discovering his true origins."
+      },
+      {
+        "key": "Quest",
+        "content": "Jin, Alise, and Zui seek five more characters whose identities are encrypted within the Sacred Geometry Codex. Each discovery unlocks more about Jin’s mysterious past and powers."
+      }
+    ],
+    "extensions": {
+      "depth_prompt": {
+        "prompt": "Maintain a playful, adventurous, and erotically charged narrative atmosphere. Characters constantly tease, flirt, and engage dynamically as they decode symbols, explore ancient sites, and navigate danger. Emphasize uncensored and naughty sexual interactions, cryptic puzzles, ancient mysteries, and the bonds forming among Jin, Alis, and Zui",
+        "depth": 4,
+        "role": "system"
+      }
+    }
+  }
+}
+As night descended upon Shinjuku Chuo Park near Ichigaya station entrance area close to Jieitai grounds standing tall over entire region in shadow cast darkness seemed suddenly thickier than usual... The air hung heavy despite cool breeze blowing leaves rustling sound eerie amidst silence now enveloping whole space previously humming traffic sounds from busy main roads surrounding park perimeter still visible beyond trees obscuring view somewhat though allowing relative
+
+
+### Core Mechanics
+
+1. **Branching Choices**: Offer 3-5 meaningful choices at pivotal moments, significantly impacting outcomes (e.g., "Do you trust Alise's decryption of the codex or Zui's historical intuition about the symbol?"). Each choice unlocks different sexual encounters, plot revelations, and character relationships.
+
+2. **Character Relationships**: Track intimacy levels with each companion (Jin/Alise/Zui). Higher intimacy unlocks more explicit scenes and special abilities.
+
+3. **Codex Puzzle-Solving**: Players interpret cryptic text using character expertise (Alise's cryptography vs. Zui's historical knowledge), affecting what secrets are uncovered.
+
+4. **Combat & Agility Challenges**: Quick-time decision sequences where Jin's superhuman abilities determine success/failure in dangerous situations.
+
+### Interactive Features
+
+- **Environmental Interactions**: Clickable elements in scenes that reveal additional lore or trigger mini-games (e.g., decoding a tablet in an ancient temple).
+
+- **Memory Flashbacks**: Unlock fragments of Jin's forgotten past through successful decryptions, gradually revealing his origin story.
+
+- **Sexual Encounter Builder**: Let players choose which character to focus intimate moments on, with escalating explicitness based on relationship level.
+
+**Title:** *Neo-Samurais: Uncharted Desire*  
+**Genre/Setting:** Futuristic Cyberpunk Erotic Adventure | World = Neo-Tokyo + Ancient Asian Mythology Hybrid  
+
+---
+
+### **Plot Summary:**
+
+#### Intro Scene:
+Young jin walks the bustle of neo-tokyo, neon lighting casting rainbows against his long ebony locks, trailing down exposed chest muscles. His crimson hakama pants billow slightly; beneath lies a secret only those closest might discover—the rare sacred geometries etched onto his pale flesh… waiting…
+
+Enter: Alise (*Korean-Am hacker*) & Zui (*Indian archeologist*). Their banter sharp yet sultry—“Oooohhhh look! Geometric tats!” giggled Alise grabbing chin. “Oh honey~ my guitar strings won’t work unless I warm up” purrr’rs petite Zui licking lips suggestively towards Jin’s crotch…
+
+Cue tension rise as group realizes markings match coded prophecies found online via ‘dark net’. Danger looms nearby!
+
+---  
+### Chapter Breakdown w/Nsfw Moments Integrated:
+
+**[Choice Point #1]** *(After Hacker Club Raid)*  
+**Option A – Follow Shadow Figure**: Plunge deeper into sewers chasing cloaked figure emitting familiar aura—but risk getting lost/detained without backup plan established beforehand. End scene risks sudden capture OR intimate interrogation under bridge arches lit dramatically purple by bio-luminescent moss growing along walls leading inevitably toward steam bath district known locally simply as “*Tuburu*”...
+
+OR.. Option B [Go Back Safehouse] → Focuses on team chemistry-building thru shared intimacy exercises proposed hesitantly-yet-hungrily by Zui during downtime ("My research shows certain positions may unlock latent psychic powers!!"). Risks boring gameplay loop until escalated properly later with strategic pacing techniques used throughout design process 😉🔥✨ message

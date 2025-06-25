@@ -1,0 +1,14 @@
+.quick_context_size {
+    flex: 1;
+    font-size: 0.8em;
+    padding: 2px;
+    align-items: baseline;
+}
+
+.quick_context_size_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 1px;
+}

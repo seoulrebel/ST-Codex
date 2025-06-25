@@ -1,0 +1,12 @@
+{
+    "display_name": "Inject Manager",
+    "loading_order": 600,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Cohee1207",
+    "version": "1.0.0",
+    "homePage": "https://github.com/SillyTavern/Extension-InjectManager",
+    "auto_update": true
+}

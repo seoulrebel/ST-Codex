@@ -1,0 +1,12 @@
+{
+    "display_name": "Quick Context Size",
+    "loading_order": 400,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Cohee1207",
+    "version": "1.0.0",
+    "homePage": "https://github.com/SillyTavern/Extension-QuickContextSize",
+    "auto_update": true
+}

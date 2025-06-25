@@ -1,0 +1,12 @@
+{
+    "display_name": "Sampler Commands",
+    "loading_order": 800,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "",
+    "author": "Cohee1207",
+    "version": "1.0.0",
+    "homePage": "https://github.com/SillyTavern/Extension-SamplerCommands",
+    "auto_update": true
+}

@@ -1,0 +1,4 @@
+{
+    "name": "Celestia",
+    "content": "{{#if system}}{{system}}{{/if}}"
+}
